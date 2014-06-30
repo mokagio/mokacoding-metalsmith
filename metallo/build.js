@@ -11,7 +11,9 @@ var metalsmith  = require("metalsmith")
 
 metalsmith(__dirname)
   .source("src")
-  .destination("public")
+  // very important! otherwise everything will be deleted!
+  .clean(false)
+  .destination("..")
 
   .use(ignore("templates/*"))
 

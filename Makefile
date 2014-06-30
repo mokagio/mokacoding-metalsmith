@@ -2,4 +2,5 @@ serve:
 	./node_modules/http-server/bin/http-server -p 8000
 	 
 watch:
-	node watch.js
+	node ./metallo/build.js
+	node ./metallo/watch.js
