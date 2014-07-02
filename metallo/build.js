@@ -109,6 +109,7 @@ function filterImages(filename, properties, index) {
 
 
 function paginator(files, metalsmith, done) {
+  
   /*
    * mokagio's version
    *

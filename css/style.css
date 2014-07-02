@@ -43,13 +43,13 @@ h3 {
     padding: 1.666em 0 0; }
   .post-container h3 {
     padding: 1.444em 0 0; }
-  .post-container p#post-meta {
+  .post-container p.post-meta {
     margin-top: 0;
     margin-bottom: 42px;
     font-size: 0.8em; }
-    .post-container p#post-meta span#post-date {
+    .post-container p.post-meta span.post-date {
       color: #838383; }
-    .post-container p#post-meta a.post-tag {
+    .post-container p.post-meta a.post-tag {
       display: inline-block;
       margin-left: 6px; }
   .post-container p {
@@ -82,3 +82,11 @@ h3 {
 
 .primary-color {
   color: #27ae60; }
+
+.post-container.tag {
+  margin-bottom: 52px; }
+  .post-container.tag .post-meta {
+    margin-bottom: 20px; }
+  .post-container.tag .post-description {
+    margin-top: 20px; }
+
