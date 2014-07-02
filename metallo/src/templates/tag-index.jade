@@ -2,10 +2,10 @@ extends page
 
 block contents
   h1
-    a(href=path)= "Posts tagged \"" + tag + "\""
+    a(href=baseUrl + path)= "Posts tagged \"" + tag + "\""
 
   for post in posts
     .post-container
       h2.post-title
-        a(href="/" + post.path)= post.title
+        a(href=baseUrl + post.path)= post.title
       p#post-date= post.date.toDateString()

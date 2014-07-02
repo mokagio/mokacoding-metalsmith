@@ -1,8 +1,8 @@
 .post-container
   h2.post-title
-    a(href="/" + post.path)= post.title
+    a(href=baseUrl + post.path)= post.title
   p#post-meta
     span#post-date= post.date.toDateString()
     for tag in post.tags
-      a.post-tag(href="/tag/" + tag + "/index.html")= "-" + tag
+      a.post-tag(href=baseUrl + "tag/" + tag + "/index.html")= "-" + tag
   .post!= post.contents

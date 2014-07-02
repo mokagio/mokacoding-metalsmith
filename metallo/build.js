@@ -9,6 +9,8 @@ var metalsmith  = require("metalsmith")
     , ignore = require("metalsmith-ignore")
 ;
 
+var baseUrl = "/mokacoding-metalsmith/";
+
 metalsmith(__dirname)
   .source("src")
   // very important! otherwise everything will be deleted!
@@ -16,6 +18,11 @@ metalsmith(__dirname)
   .destination("..")
 
   .use(ignore("templates/*"))
+
+  .use(function(files, metalsmith, done) {
+    metalsmith.metadata().baseUrl = baseUrl;
+    done();
+  })
 
   // important: collections must be set before templates
   // or the templates won't have the variables and crash
