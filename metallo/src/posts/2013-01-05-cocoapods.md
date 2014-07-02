@@ -14,88 +14,93 @@ description: A brief introduction to CocoaPods, the Objective-C dependencies man
 
 > CocoaPods: The best way to manage library dependencies in Objective-C projects.
 
-<p>If you're familiar with Ruby on Rails, it's the same thing as <a href="http://gembundler.com/">Bundler</a>, or it's lame copy attempt for Symfony 2, <a href="http://getcomposer.org/">Composer</a>.</p>
+If you're familiar with Ruby on Rails, it's the same thing as <a href="http://gembundler.com/">Bundler</a>, or it's lame copy attempt for Symfony 2, <a href="http://getcomposer.org/">Composer</a>.
 
-<p>If you're not, and you haven't sorted it out from the quote above, CocoaPods is a tool that's let us manage our libraries and their dependencies in our Objective-C projects. This means:</p>
+If you're not, and you haven't sorted it out from the quote above, CocoaPods is a tool that's let us manage our libraries and their dependencies in our Objective-C projects. This means:
 
-<ol>
-<li>No more wasted time downloading all the libraries the one we want to use depends on.</li>
-<li>Smart and safe version management, specially when we're working on a project with other people, which is 90% of the time.</li>
-</ol>
+1. No more wasted time downloading all the libraries the one we want to use depends on.
+2. Smart and safe version management, specially when we're working on a project with other people, which is 90% of the time.
 
-<p>To <i>"get my hands dirty"</i> with CocoaPods I made this little project called <a href="https://github.com/mokagio/justninegags">JustNineGags</a>, feel free to check it out on GitHub.</p>
+To _"get my hands dirty"_ with CocoaPods I made this little project called <a href="https://github.com/mokagio/justninegags">JustNineGags</a>, feel free to check it out on GitHub.</p>
 
-<h2>Why should I use it?</h2>
+## Why should I use it?
 
-<p>Because it's awesome! It makes development faster and easier, and also safer! It easier to work in teams and keep the libraries versions even. Should I go on? Ok! Just think about this: you won't download and move in your project a library anymore, <code>pod</code> will do it all for you!</p>
+Because it's awesome! It makes development faster and easier, and also safer! It easier to work in teams and keep the libraries versions even. Should I go on? Ok! Just think about this: you won't download and move in your project a library anymore, <code>pod</code> will do it all for you!
 
-<h2>Installing CocoaPods</h2>
+## Installing CocoaPods
 
-<p>Installing CocoaPods is as simple as installing all the other Ruby Gems, I shouldn't even writing this, as what's written in the <a href="http://cocoapods.org/#install">install section</a> is more than enough, anyway:</p>
+Installing CocoaPods is as simple as installing all the other Ruby Gems, I shouldn't even writing this, as what's written in the <a href="http://cocoapods.org/#install">install section</a> is more than enough, anyway:
 
-<p><code>gem install cocoapods</code></p>
+```
+gem install cocoapods
+```
 
-<p>Once the installation is completed run:</p>
+Once the installation is completed run:
 
-<p><code>pod setup</code><p>
+```
+pod setup
+```
 
-<p>This will, guess what, setup everything CocoaPods needs on your system. You should see an output like this:</p>
+This will, guess what, setup everything CocoaPods needs on your system. You should see an output like this:
 
-	Setting up CocoaPods master repo
-	Cloning spec repo `master' from `https://github.com/CocoaPods/Specs.git' (branch `master')
-	Setup completed (read-only access)
+```
+Setting up CocoaPods master repo
+Cloning spec repo `master' from `https://github.com/CocoaPods/Specs.git' (branch `master')
+Setup completed (read-only access)
+```
         
-<p>Done! :)</p>
+Done! :)
 
-<p><i>You should avoid using </i><code>sudo</code><i> otherwise everything else you'll do with </i><code>pod</code><i> will need to use </i><code>sudo</code><i> as well. And this mean that the folders and file that are gonna be created will be owend by </i><code>root</code><i> instead that by you.</i></p>
+_You should avoid using `sudo` otherwise everything else you'll do with `pod` will need to use `sudo` as well. And this mean that the folders and file that are gonna be created will be owend by `root` instead that by you._
 
-<h2>Using CocoaPods</h2>
+## Using CocoaPods
 
-<p>Again, everything written on the <a href="http://cocoapods.org/#get_started">website</a> is pretty straightforward.</p>
+Again, everything written on the <a href="http://cocoapods.org/#get_started">website</a> is pretty straightforward.
 
-<p>Go in the root folder of your Objective-C project and create a file named `Podfile`, with whatever editor you like. We'll use this file to list all the libraries, _pods_, we need in the project. The JustNineGags `Podfile` content is:</p>
+Go in the root folder of your Objective-C project and create a file named `Podfile`, with whatever editor you like. We'll use this file to list all the libraries, _pods_, we need in the project. The JustNineGags `Podfile` content is:
 
-{% highlight ruby %}
-	platform :ios
-	pod 'MBProgressHUD', '~> 0.5'
-	pod 'Reachability',  '~> 3.1.0'
-{% endhighlight %}
+```ruby
+platform :ios
+pod 'MBProgressHUD', '~> 0.5'
+pod 'Reachability',  '~> 3.1.0'
+```
 
-<h3>Adding a Pod</h3>
+### Adding a Pod
 
-<p>As you can see adding a Pod is really easy, just go on <a href="http://cocoapods.org">CocoaPods website</a>, look for the it, and then add it to the `Podfile` using it's name and the version you need.</p>
+As you can see adding a Pod is really easy, just go on <a href="http://cocoapods.org">CocoaPods website</a>, look for the it, and then add it to the `Podfile` using it's name and the version you need.
 
-<h3>Installing the Pods</h3>
+### Installing the Pods
 
-<p>Right now we've told CocoaPods the Pods we need but they aren't yet in out project. So let's run</p>
+Right now we've told CocoaPods the Pods we need but they aren't yet in out project. So let's run
 
-<p><code>pod install</p></code>
+```
+pod install
+```
     
-<p>This will download all the libraries we've asked for, and all their dependencies. Sweet!</p>
+This will download all the libraries we've asked for, and all their dependencies. Sweet!
 
-<p>The first time we run `pod install` something else will happen, a `Pods/` folder, a `Podfile.lock`, and a `YourProjectName.xcworkspace` will be created.</p>
+The first time we run `pod install` something else will happen, a `Pods/` folder, a `Podfile.lock`, and a `YourProjectName.xcworkspace` will be created.
 
-<p><b>Important!</b> From now on remember to open your project through the `YourProjectName.xcworkspace` file, otherwise the pods won't be loaded by Xcode.</p>
+**Important!** From now on remember to open your project through the `YourProjectName.xcworkspace` file, otherwise the pods won't be loaded by Xcode.
 
-<p>That's all folks! :)</p>
+That's all folks! :)
 
-<h3>What should we track?</h3>
+### What should we track?
 
-<p>Using CocoaPods adds some files and folders to our project, which of those should we track in our repo, and which should be left aside, adding them to the <code>.gitignore</code>? That of course assuming you're using git, and you definitely should. Let's have a look at the new stuff:</p>
-
-<p><ul>
-<li><code>Podfile</code>, we definitely <b>need</b> this one, as all the pods we need are listed in it.</li>
-<li><code>Podfile.lock</code>, as for all the other library management systems, we <b>need</b> this one too, because it's used to assure all the developers are using the same versions of the pods and their dependencies.</li>
-<li><code>Pods/</code>, we <b>don't need</b> to track this folder, it's created by <code>pod install</code>, and all it's content is downloaded for us from other repos.</li>
-<li><code>YourProjectName.xcworkspace</code>, we <b>don't need</b> this one either, because it's generated by <code>pod install</code> too.</li>
-</ul></p>
+Using CocoaPods adds some files and folders to our project, which of those should we track in our repo, and which should be left aside, adding them to the `.gitignore`? That of course assuming you're using git, and you definitely should. Let's have a look at the new stuff:
 
 
-<h2>What's coming next?</h2>
+* `Podfile`, we definitely <b>need</b> this one, as all the pods we need are listed in it.
+* `Podfile.lock`, as for all the other library management systems, we <b>need</b> this one too, because it's used to assure all the developers are using the same versions of the pods and their dependencies.
+* `Pods/`, we <b>don't need</b> to track this folder, it's created by `pod install`, and all it's content is downloaded for us from other repos.
+* `YourProjectName.xcworkspace`, we <b>don't need</b> this one either, because it's generated by <code>pod install</code> too.
 
-<p>How to setup our own pods. I'll probably write a little and simple <code>Category</code> to add other colors to the <code>UIColor</code> factories, stay tuned!</p>
+## What's coming next?
+
+How to setup our own pods. I'll probably write a little and simple Category to add other colors to the `UIColor` factories, stay tuned!
 
 ---
-<h2>Update 2013-01-06</h2>
+
+## Update 2013-01-06
 
 <p>To implement HTTP requests in <a href="https://github.com/mokagio/justninegags">JustNineGags</a> I used <code><a href="https://github.com/nfarina/webrequest">SMWebRequest</a></code> because I'm too lazy to write everything by myself. <code>SMWebRequest</code> wasn't a Pod yet so I opened an <a href="https://github.com/nfarina/webrequest/issues/7">issue</a> asking good guy <a href="https://twitter.com/nfarina">nfarina</a> to add it. In less than 12 hours the Pod was added! :D</p>
