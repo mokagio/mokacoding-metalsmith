@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "metalsmith": "~0.8.0",
+    "metalsmith": "git://github.com/mokagio/metalsmith#mokagio/clean-except",
     "metalsmith-markdown": "~0.2.1",
     "metalsmith-templates": "~0.5.1",
     "jade": "~1.3.1",

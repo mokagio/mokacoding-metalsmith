@@ -13,9 +13,8 @@ var baseUrl = "/mokacoding-metalsmith/";
 
 metalsmith(__dirname)
   .source("src")
-  // very important! otherwise everything will be deleted!
-  .clean(false)
   .destination("..")
+  .clean(true).except([ ".git", "metallo", "node_modules", ".gitignore", "Makefile", "package.json", "README.md", "TODO.md" ])
 
   .use(ignore("templates/*"))
 
