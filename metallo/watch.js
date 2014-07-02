@@ -7,7 +7,7 @@ function puts(error, stdout, stderr) {
 }
 
 var baseDir = process.cwd() + "/metallo";
-watch([baseDir + "/src"], function(filename) {
+watch([baseDir + "/src", baseDir + "/build.js", baseDir + "/../package.json"], function(filename) {
 	console.log(filename, 'changed. Re-buildind...');
 	exec("node " + baseDir + "/build.js", puts);
 });
