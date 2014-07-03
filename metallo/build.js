@@ -23,6 +23,36 @@ metalsmith(__dirname)
     done();
   })
 
+  // automatically set some values for the posts
+  // lazy devolepers => smart developers
+  .use(branch("posts/*.md")
+    .use(function (files, metalsmith, done) {
+      for (var key in files) {
+        var post = files[key];
+        var name = key.split("/").pop();
+
+        var date = post.date;
+        if (!date) {
+          date = name.slice(0,10);
+          post.date = new Date(date);
+        }
+
+        var slug = post.slug;
+        if (!slug) {
+          slug = name.slice(11, -3);
+          post.slug = slug;
+        }
+
+        // set tags to empty array if tags are missing form post
+        // (this avoids crashes in the templete)
+        // TODO: or should it be responsibility of the template to check that tags exist?
+        var tags = post.tags;
+        if (!tags) { post.tags = []; }
+      }
+      done();
+    })
+  )
+
   // important: collections must be set before templates
   // or the templates won't have the variables and crash
   .use(collections({
@@ -159,6 +189,7 @@ function tagList(files, metalsmith, done) {
   for (var post in metalsmith.data.posts) {
       for (var t in metalsmith.data.posts[post].tags) {
           tag = metalsmith.data.posts[post].tags[t];
+          tag = tag.replace(/ /g, "-");
           if (! tags[tag]) {
               tags[tag] = [];
           }
