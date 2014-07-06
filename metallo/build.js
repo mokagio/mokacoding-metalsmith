@@ -10,6 +10,7 @@ var metalsmith  = require("metalsmith")
 ;
 
 var baseUrl = "/mokacoding-metalsmith/";
+baseUrl = "/";
 
 metalsmith(__dirname)
   .source("src")
