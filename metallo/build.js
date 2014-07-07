@@ -91,6 +91,27 @@ metalsmith(__dirname)
       }
       done();
     })
+    .use(function (files, metalsmith, done) {
+      for (var key in files) {
+        post = files[key];
+
+        var day = post.date.getDate();
+        if (day < 10) { day = "0" + day; }
+
+        var month = post.date.getMonth() + 1;
+        if (month < 10) { month = "0" + month; }
+
+        var path = post.date.getFullYear() + "/" + month + "/" + day + "/" + post.slug + ".html";
+        
+        var retrocompatible_post = {};
+        for (var _key in post) {
+          retrocompatible_post[_key] = post[_key];
+        }
+        
+        files[path] = retrocompatible_post;
+      }
+      done();
+    })
   )
 
   .use(paginator)
