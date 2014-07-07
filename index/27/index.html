@@ -4,17 +4,17 @@
 The first step is to have something to make a pod of, I guess every developer has his own little set of smart methods that make his life easier. Don&#39;t be greedy, share them with the community!</p>
 <p><h3>Step 2 - Tag your pod properly</h3>
 Since we&#39;re gonna work with a dependency manager we need to take care of the version number of our pod.</p>
-<pre><code>git <span class="hljs-built_in">tag</span> <span class="hljs-attribute">-a</span> <span class="hljs-number">1.0</span><span class="hljs-number">.0</span> <span class="hljs-attribute">-m</span> <span class="hljs-string">"Tag release 1.0.0"</span>
+<pre><code class="">git <span class="hljs-built_in">tag</span> <span class="hljs-attribute">-a</span> <span class="hljs-number">1.0</span><span class="hljs-number">.0</span> <span class="hljs-attribute">-m</span> <span class="hljs-string">"Tag release 1.0.0"</span>
 </code></pre><p>Take a couple of minutes to read through the <a href="http://semver.org/">Semantic Versioning</a> to learn how to use tagging for version numbers properly and in a way that allows for <a href="https://github.com/CocoaPods/Specs/wiki/Cross-dependencies-resolution-example">resolution of cross-dependencies</a>.</p>
 <p><h3>Step 3 - The podspec</h3>
 Once our project is tagged properly we can create the <code>.podspec</code> file. The extension name explains that it will contain the &quot;specs&quot; of our &quot;pod&quot;.</p>
-<pre><code>pod spec <span class="hljs-operator"><span class="hljs-keyword">create</span> Donut</span>
+<pre><code class="">pod spec <span class="hljs-operator"><span class="hljs-keyword">create</span> Donut</span>
 </code></pre><p>This will generate the <code>Donut.podspec</code> file.</p>
 <p>You can also generate the <code>podspec</code> from a GitHub repo using the GitHub url instead of the name.</p>
 <p><h3>Step 4 - Leave your mark on the podspec</h3>
 If you open the freshly generated <code>Donut.podspec</code> you&#39;ll find a lot of comments explaining the information you need to provide. There are a lot of options, but you don&#39;t need to set them all. You&#39;ll also notice that its nothing more that a Ruby file.</p>
 <p>Here&#39;s how the podspec of my toy framework, looks like.</p>
-<pre><code>{<span class="hljs-subst">%</span> highlight objective<span class="hljs-attribute">-c</span> <span class="hljs-subst">%</span>}
+<pre><code class="">{<span class="hljs-subst">%</span> highlight objective<span class="hljs-attribute">-c</span> <span class="hljs-subst">%</span>}
 Pod<span class="hljs-tag">::Spec.new</span> <span class="hljs-keyword">do</span> <span class="hljs-subst">|</span>s<span class="hljs-subst">|</span>
   s<span class="hljs-built_in">.</span>name         <span class="hljs-subst">=</span> <span class="hljs-string">"MGCraftman"</span>
   s<span class="hljs-built_in">.</span>version      <span class="hljs-subst">=</span> <span class="hljs-string">"0.1.0"</span>
@@ -33,9 +33,9 @@ end
 {<span class="hljs-subst">%</span> endhighlight <span class="hljs-subst">%</span>}
 </code></pre><p><h3>Step 5 - Is my podspec ok?</h3>
 Once your <code>podspec</code> its ready validate it running</p>
-<pre><code>pod spec lint Peanut<span class="hljs-preprocessor">.podspec</span>
+<pre><code class="">pod spec lint Peanut<span class="hljs-preprocessor">.podspec</span>
 </code></pre><p>If everything is fine you&#39;ll read</p>
-<pre><code>pod spec lint Peanut.podspec 
+<pre><code class="">pod spec lint Peanut.podspec 
 -<span class="ruby">&gt; <span class="hljs-constant">Peanut</span> (<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>)
 </span>Analyzed 1 podspec.
 Peanut.podspec passed validation.

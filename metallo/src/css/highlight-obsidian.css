@@ -5,10 +5,16 @@
  * ported by Alexander Marenin (http://github.com/ioncreature)
  */
 
-.hljs {
+pre code, .hljs {
   display: inline-block;
   padding: 0.5em;
-  background: #282b2e;
+  /* original obsidian */
+  /*background: #282b2e;*/
+  background: #404040;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .hljs-keyword,
@@ -28,7 +34,7 @@
   color: #ffcd22;
 }
 
-.hljs {
+pre code, .hljs {
   color: #e0e2e4;
 }
 
@@ -152,4 +158,9 @@
 .xml .css,
 .xml .hljs-cdata {
   opacity: 0.5;
+}
+
+pre code:not(.hljs) [class^='hljs'],
+pre code:not(.hljs) [class*="hljs"] {
+  color: #e0e2e4;
 }

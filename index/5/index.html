@@ -13,12 +13,12 @@
 <p>Then how do we make a bundle? Or in our case a Resource Bundle, so that we can add it in our <code>.podspec</code>? As you can imagine the Documentation is still not helpful...</p>
 <p>I spent a couple of hours messing around creating folders naming the <code>folder.bundle</code>, googling and <a href="http://stackoverflow.com/questions/8458953/ios-build-a-resource-bundle-via-xcode-target">stackoverflowing</a>, but with no luck integrating it with my pod. I also found a <a href="http://www.galloway.me.uk/tutorials/ios-library-with-resources/">tutorial</a> by Matt Galloway, but it looked like a complex hack, there had to be something simpler!</p>
 <p>Turns out it&#39;s <strong>dead simple</strong>! Just list the resources path you want in the bundle and the pod will generate it for you. Boom. No tricks, no hacks, just a line of code.</p>
-<pre><code class="hljs ruby">spec.ios.resource_bundle = { <span class="hljs-string">'MapBox'</span> =&gt; <span class="hljs-string">'MapView/Map/Resources/*.png'</span> }
+<pre><code class=" hljs ruby">spec.ios.resource_bundle = { <span class="hljs-string">'MapBox'</span> =&gt; <span class="hljs-string">'MapView/Map/Resources/*.png'</span> }
 </code></pre>
 <h3 id="dynamically-load-the-fonts">Dynamically load the fonts</h3>
 <p>Now that the we have our Resource Bundle ready we only need to skip the annoying process of adding the fonts to the <code>Info.plist</code> and we&#39;re good to go.</p>
 <p>To do that I used the approach suggested by Marco Armet in <a href="http://www.marco.org/2012/12/21/ios-dynamic-font-loading">this blog post</a>. It&#39;s possible to dynamically load fonts and then consume them with the usual <code>fontNamed:withSize</code> <code>UIFont</code> class method.</p>
-<pre><code class="hljs objc">NSData *inData = /* your decrypted font-<span class="hljs-type">file</span> data */;
+<pre><code class=" hljs objc">NSData *inData = /* your decrypted font-<span class="hljs-type">file</span> data */;
 CFErrorRef <span class="hljs-keyword">error</span>;
 CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)inData);
 CGFontRef font = CGFontCreateWithDataProvider(provider);
@@ -31,7 +31,7 @@ CFRelease(font);
 CFRelease(provider);
 </code></pre>
 <p>The only downside of this approach is that we need to run that code at some point. I put it into a <code>FontsManager</code> class, with getters for the fonts that sort of lazy loads them. Like this:</p>
-<pre><code class="hljs objc"><span class="hljs-keyword">static</span> <span class="hljs-built_in">NSString</span> * <span class="hljs-keyword">const</span> kBundle = @<span class="hljs-string">"ResourceBundle.bundle"</span>;
+<pre><code class=" hljs objc"><span class="hljs-keyword">static</span> <span class="hljs-built_in">NSString</span> * <span class="hljs-keyword">const</span> kBundle = @<span class="hljs-string">"ResourceBundle.bundle"</span>;
 
 + (<span class="hljs-built_in">UIFont</span> *)openSansLightFontOfSize:(<span class="hljs-built_in">CGFloat</span>)size
 {
