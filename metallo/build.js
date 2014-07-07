@@ -15,7 +15,17 @@ baseUrl = "/";
 metalsmith(__dirname)
   .source("src")
   .destination("..")
-  .clean(true).except([ ".git", "metallo", "node_modules", ".gitignore", "Makefile", "package.json", "README.md", "TODO.md" ])
+  .clean(true).except([
+    ".git",
+    "metallo",
+    "node_modules",
+    ".gitignore",
+    "Makefile",
+    "npm-shrinkwrap.json",
+    "package.json",
+    "README.md",
+    "TODO.md"
+  ])
 
   .use(ignore("templates/*"))
 
