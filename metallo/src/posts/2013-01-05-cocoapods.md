@@ -25,7 +25,7 @@ tags:
 <li>Smart and safe version management, specially when we're working on a project with other people, which is 90% of the time.</li>
 </ol>
 
-<p>To <em>"get my hands dirty"</em> with CocoaPods I made this little project called <a href="https://github.com/mokagio/justninegags">JustNineGags</a>, feel free to check it out on GitHub.</p></p>
+<p>To <em>"get my hands dirty"</em> with CocoaPods I made this little project called <a href="https://github.com/mokagio/justninegags">JustNineGags</a>, feel free to check it out on GitHub.</p>
 
 <h2>Why should I use it?</h2>
 
