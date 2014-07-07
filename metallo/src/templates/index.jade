@@ -2,4 +2,5 @@ extends page
 
 block contents
   include _posts_list
-  include _pagination
+  //- we have a post per page, no point in using pagination, just rely on the prev and next properties given by collection
+  //- include _pagination

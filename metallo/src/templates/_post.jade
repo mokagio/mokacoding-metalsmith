@@ -3,3 +3,16 @@
     a(href=baseUrl + post.path)= post.title
   include _post_meta
   .post!= post.contents
+
+  #paginator
+    if post.previous
+      div
+        a(href="#{baseUrl}#{post.previous.path}") 
+          | <<&nbsp;
+          = post.previous.title
+    
+    if post.next
+      div(style="text-align: right")
+        a(href="#{baseUrl}#{post.next.path}") 
+          = post.next.title
+          | &nbsp;>>

@@ -112,7 +112,9 @@ metalsmith(__dirname)
     })
   )
 
-  .use(paginator)
+  // for the moment the blog has a post per page, no point in paginating it when collections already
+  // provider next and previous
+  // .use(paginator)
   .use(tagList)
 
   // temp fix for metalsmith-template corrupting images
@@ -198,7 +200,7 @@ function paginator(files, metalsmith, done) {
   for (var i = 1; i <= index.numPages; i++) {
       index.pagination.push({
           num: i,
-          url: (1 == i) ? '/' : '/index/' + i
+          url: (1 == i) ? '' : 'index/' + i
       });
 
       if (i > 1) {
