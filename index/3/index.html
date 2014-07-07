@@ -8,7 +8,7 @@
 <p>The CAGradientLayer class draws a color gradient over its background color, filling the shape of the layer (including rounded corners)</p>
 </blockquote>
 <p>Creating the layer is simple:</p>
-<pre><code class="hljs objc">CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+<pre><code class=" hljs objc">CAGradientLayer *gradientLayer = [CAGradientLayer layer];
 gradientLayer<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> clearColor]<span class="hljs-variable">.CGColor</span>;
 
 <span class="hljs-built_in">CGRect</span> frame = CGRectMake(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
@@ -21,7 +21,7 @@ gradientLayer<span class="hljs-variable">.colors</span> = @[ (<span class="hljs-
 </code></pre>
 <p><img src="{{ site.url }}/assets/2014-04-03/cagradientlayer.jpg" alt="Simple CAGradientLayer" style="width: 30%"/></p>
 <p>There are cool things we can do, like having more colors and configuring how the gradient is rendered through its start and end point.</p>
-<pre><code class="hljs objc">CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+<pre><code class=" hljs objc">CAGradientLayer *gradientLayer = [CAGradientLayer layer];
 gradientLayer<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> clearColor]<span class="hljs-variable">.CGColor</span>;
 
 <span class="hljs-built_in">CGRect</span> frame = CGRectMake(<span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">200</span>, <span class="hljs-number">200</span>);
@@ -40,7 +40,7 @@ gradientLayer<span class="hljs-variable">.endPoint</span> = CGPointMake(<span cl
 <p>Gradient Backgrounds Studio generates an image out of the one you pick and the gradient you configure. So the next thing I had to do was merging those images.</p>
 <p>As with most things, there are multiple ways to achieve that result. The one I choose was to make an image out of the gradient layer, and then merge the two images into one.</p>
 <p>The code to do it may look mysterious, but I added comments to explain it. </p>
-<pre><code class="hljs objc"><span class="hljs-built_in">CGRect</span> frame = CGRectMake(<span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">200</span>, <span class="hljs-number">200</span>);
+<pre><code class=" hljs objc"><span class="hljs-built_in">CGRect</span> frame = CGRectMake(<span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">200</span>, <span class="hljs-number">200</span>);
 <span class="hljs-built_in">UIColor</span> *startColor = [<span class="hljs-built_in">UIColor</span> orangeColor];
 <span class="hljs-built_in">UIColor</span> *endColor = [<span class="hljs-built_in">UIColor</span> purpleColor];
 
@@ -93,7 +93,7 @@ UIGraphicsEndImageContext();
 <p>If you have been reading other articles from my blog you know by now I&#39;m not clever, the credits for this code goes to <a href="http://stackoverflow.com/questions/16788305/how-to-create-uiimage-with-vertical-gradient-using-from-color-and-to-color">this question</a> on SO.</p>
 <h3 id="uiimage-merging-images">UIImage merging images</h3>
 <p>Now that we have the image with the gradient we can merge it with the background image. The code to do that is simpler than the one above, but based on the same principle; create a context, draw in it, and get an <code>UIImage</code> from it with what&#39;s drawn in it.</p>
-<pre><code class="hljs objc">UIImage *image = <span class="hljs-keyword">...</span>
+<pre><code class=" hljs objc">UIImage *image = <span class="hljs-keyword">...</span>
 UIImage *gradientImage = <span class="hljs-keyword">...</span>
 CGRect size = <span class="hljs-keyword">...</span>
 
@@ -113,7 +113,7 @@ UIGraphicsEndImageContext();
 <p><img src="{{ site.url }}/assets/2014-04-03/blur-buttons.jpg" alt="The round blurred buttons" style="width: 50%"/></p>
 <p>When I started reading about how to blur stuff I almost laughed at people suggesting to use <a href="https://developer.apple.com/library/ios/documentation/uikit/reference/UIToolbar_Class/Reference/Reference.html"><code>UIToolbar</code></a>, and looked into solutions like <a href="https://github.com/nicklockwood/FXBlurView">FXBlurView</a> but the performance on live blurring were horrible. <code>UIToolbar</code> won it in the end.</p>
 <p>A funny thing I bumped into when making the buttons rounded is that if I used exactly half of the frame side to set the corner radius, as you would normally do, the view disappeared! The solution I found to that was to set the corner radius to <em>almost</em> half the frame side, where <em>almost</em> = 0.999.</p>
-<pre><code class="hljs objc">CGRect frame = ...
+<pre><code class=" hljs objc">CGRect frame = ...
 
 UIToolbar *blurredView = [[UIToolbar alloc] initWithFrame:frame]<span class="hljs-comment">;</span>
 
@@ -132,7 +132,7 @@ blurredView<span class="hljs-preprocessor">.layer</span><span class="hljs-prepro
 <h3 id="justify">Justify</h3>
 <p>The final thing I&#39;d like to share is how to justify the text in a <code>UILabel</code>. Despite the fact that the <code>textAlignement</code> property accepts <code>NSTextAlignmentJustified</code> as an option I wasn&#39;t able to make my multiline label justify just like that.</p>
 <p>I was finally able to achieve the result by using <a href="https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/classes/NSAttributedString_Class/Reference/Reference.html"><code>NSAttributedString</code></a> and a <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/ApplicationKit/Classes/NSMutableParagraphStyle_Class/Reference/Reference.html"><code>NSMutableParagraphStyle</code></a>.</p>
-<pre><code class="hljs objc">NSString *message = <span class="hljs-keyword">...</span>
+<pre><code class=" hljs objc">NSString *message = <span class="hljs-keyword">...</span>
 
 NSMutableParagraphStyle *justifiedParagraph = [[NSMutableParagraphStyle alloc] init];
 justifiedParagraph.alignment = NSTextAlignmentJustified;

@@ -3,14 +3,14 @@
 <p>Note: I&#39;m using <a href="https://github.com/rspec/rspec">rspec</a> and <a href="https://github.com/thoughtbot/shoulda">shoulda</a> to write the tests.</p>
 <h3 id="step-1-create-the-challenge-model">Step 1 - Create the <code>Challenge</code> model</h3>
 <p>Creating a new empty model is easy, just run</p>
-<pre><code class="hljs bash">rails g model challenge
+<pre><code class=" hljs bash">rails g model challenge
 </code></pre>
 <p>and the resulting migration</p>
-<pre><code class="hljs bash"><span class="hljs-attribute">rake db:migrate RAILS_ENV</span>=<span class="hljs-string">development</span>
+<pre><code class=" hljs bash"><span class="hljs-attribute">rake db:migrate RAILS_ENV</span>=<span class="hljs-string">development</span>
 </code></pre>
 <h3 id="step-2-add-the-association-challenge-has-many-items-">Step 2 - Add the association &quot;challenge has many items&quot;</h3>
 <p>We want to have a model that makes these tests pass:</p>
-<pre><code class="hljs ruby">describe Challenge <span class="hljs-built_in">do</span>
+<pre><code class=" hljs ruby">describe Challenge <span class="hljs-built_in">do</span>
   <span class="hljs-keyword">it</span> { should have_many :<span class="hljs-keyword">items</span> }
 <span class="hljs-function"><span class="hljs-keyword">end</span></span>
 
@@ -19,7 +19,7 @@ describe Item <span class="hljs-built_in">do</span>
 <span class="hljs-function"><span class="hljs-keyword">end</span></span>
 </code></pre>
 <p>The first thing would be to write a migration, but there is no way to generate a migration for an association with the <code>rails generate migration</code> command. So we have to do it manually, and then write the migration to update the db and schema.</p>
-<pre><code class="hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Challenge</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+<pre><code class=" hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Challenge</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
     has_many <span class="hljs-symbol">:items</span>
 <span class="hljs-keyword">end</span>
 
@@ -27,10 +27,10 @@ describe Item <span class="hljs-built_in">do</span>
     belongs_to <span class="hljs-symbol">:challenge</span>
 <span class="hljs-keyword">end</span>
 </code></pre>
-<pre><code class="hljs bash">rails g migration AddItemsAssociationToChallenge
+<pre><code class=" hljs bash">rails g migration AddItemsAssociationToChallenge
 </code></pre>
 <p>This is the code to put in the resulting migartion file</p>
-<pre><code class="hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AddItemsAssociationToChallenge</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Migration</span></span></span>
+<pre><code class=" hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AddItemsAssociationToChallenge</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Migration</span></span></span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> </span><span class="hljs-keyword">self</span>.up
       add_column <span class="hljs-symbol">:items</span>, <span class="hljs-symbol">:challenge_id</span>, <span class="hljs-symbol">:integer</span>
       add_index <span class="hljs-string">'items'</span>, [<span class="hljs-string">'challenge_id'</span>], <span class="hljs-symbol">:name</span> =&gt; <span class="hljs-string">'index_challenge_id'</span> 
@@ -44,7 +44,7 @@ describe Item <span class="hljs-built_in">do</span>
 <p>Finally let&#39;s run <code>rake db:migrate</code> and <code>rspec</code> (because we&#39;re using <a href="http://mislav.uniqpath.com/2013/01/understanding-binstubs/">binstub</a> aren&#39;t we?) and everything should be fine.</p>
 <h3 id="step-3-the-levels">Step 3 – The Levels</h3>
 <p>The process for the levels will be the same as before, a good way to commit the steps to memory. We want this specs to pass:</p>
-<pre><code class="hljs ruby">describe Level <span class="hljs-built_in">do</span>
+<pre><code class=" hljs ruby">describe Level <span class="hljs-built_in">do</span>
     <span class="hljs-keyword">it</span> { should have_many :challenges }
 <span class="hljs-function"><span class="hljs-keyword">end</span></span>
 
@@ -53,10 +53,10 @@ describe Challenge <span class="hljs-built_in">do</span>
 <span class="hljs-function"><span class="hljs-keyword">end</span></span>
 </code></pre>
 <p>So we generate a migration</p>
-<pre><code class="hljs bash">rails g migration AddChallengesAssociationToLevel
+<pre><code class=" hljs bash">rails g migration AddChallengesAssociationToLevel
 </code></pre>
 <p>and we write this inside it</p>
-<pre><code class="hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AddChallengeAssociationToLevel</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Migration</span></span></span>
+<pre><code class=" hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AddChallengeAssociationToLevel</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Migration</span></span></span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> </span><span class="hljs-keyword">self</span>.up
       add_column <span class="hljs-symbol">:challenges</span>, <span class="hljs-symbol">:level_id</span>, <span class="hljs-symbol">:integer</span>
       add_index <span class="hljs-string">'challenges'</span>, [<span class="hljs-string">'level_id'</span>], <span class="hljs-symbol">:name</span> =&gt; <span class="hljs-string">'index_level_id'</span> 
@@ -68,7 +68,7 @@ describe Challenge <span class="hljs-built_in">do</span>
 <span class="hljs-keyword">end</span>
 </code></pre>
 <p>finally we cannot forget to manually update our models</p>
-<pre><code class="hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Level</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+<pre><code class=" hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Level</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
     has_many <span class="hljs-symbol">:challenges</span>
 <span class="hljs-keyword">end</span>
 

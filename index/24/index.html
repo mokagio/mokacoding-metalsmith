@@ -24,7 +24,7 @@
 </ol>
 <h4 id="check-if-the-user-is-logged-in">Check if the user is logged in</h4>
 <p>To get the current Facebook session we use <code>FBSession.activeSession</code>. To see if the session is active, and therefore the user is already logged in, we need to check the <code>state</code> property: <code>FBSession.activeSession.state</code>. A quick look to the <code>typedef enum</code> of the <code>FBSessionState</code> and:</p>
-<pre><code>{% highlight objective-c <span class="hljs-variable">%}</span>
+<pre><code class="">{% highlight objective-c <span class="hljs-variable">%}</span>
 + (BOOL)isUserLoggedInFacebook
 {
     <span class="hljs-keyword">if</span> (FBSession.activeSession.<span class="hljs-keyword">state</span> == FBSessionStateCreatedTokenLoaded
@@ -38,7 +38,7 @@
 {% endhighlight <span class="hljs-variable">%}</span>
 </code></pre><h4 id="call-the-facebook-sdk-method-to-login">Call the Facebook SDK method to login</h4>
 <p>Easy peasy:</p>
-<pre><code>{% highlight objective-c %}
+<pre><code class="">{% highlight objective-c %}
 [FBSession openActiveSessionWithReadPermissions:<span class="hljs-literal">nil</span>
                                    allowLoginUI:<span class="hljs-literal">YES</span>
                               completionHandler:^(FBSession *session, FBSessionState state, <span class="hljs-built_in">NSError</span> *error) {
