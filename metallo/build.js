@@ -127,7 +127,11 @@ metalsmith(__dirname)
   )
 
   .build(function(err) {
-    if (err) throw err;
+    if (err) {
+      throw err;
+    } else {
+      console.log("✔ done");
+    }
   }
 );
 
