@@ -30,7 +30,7 @@ clang: error: linker command failed with exit code <span class="hljs-number">1</
 <p>We need to make the Pods aware of what we set in our target. There are two ways to do this.</p>
 <h3 id="with-a-version-controlled-pods-folder">With a Version-Controlled Pods Folder</h3>
 <p>If your Pods folder is under version control just set them in the Pods target that uses them in the same way you did for your target.</p>
-<p><img src="/assets/2014-04-16/linked-libraries.jpg" /></p>
+<p><img src="http://mokacoding.s3.amazonaws.com/2014-04-16-linked-libraries.jpg" /></p>
 <p>Git (<em>your using git right?!</em>) will remember the settings forever.</p>
 <h3 id="without-a-pods-folder">Without a Pods Folder</h3>
 <p>If the Pods are not versioned every time <code>pod install</code> or <code>pod update</code> run the Pods project is regenerated. The way to automate setting the preprocessor macro is through a <a href="http://guides.cocoapods.org/syntax/podfile.html#post_install"><code>post_install</code></a> hook.</p>

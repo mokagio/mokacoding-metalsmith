@@ -58,17 +58,17 @@ After a non irrelevant amount of time spent deleting Derived Data and googling I
 
 So I took a look at the "Link Binary With Libraries", this is what I found:
 
-<img src="{{ site.url }}/assets/2014-03-28/linked-libraries2.png" alt="Link Binary With Libraries for the updated project"/>
+<img src="http://mokacoding.s3.amazonaws.com/2014-03-28-linked-libraries2.png" alt="Link Binary With Libraries for the updated project"/>
 
 If we'd rolled back to the previous version we'd seen this:
 
-<img src="{{ site.url }}/assets/2014-03-28/linked-libraries.png" alt="Link Binary With Libraries for the obsolete project"/>
+<img src="http://mokacoding.s3.amazonaws.com/2014-03-28-linked-libraries.png" alt="Link Binary With Libraries for the obsolete project"/>
 
 Mmm... what is that new `libPods-MyProject` static library?
 
 And then I looked at the Pods project:
 
-<img src="{{ site.url }}/assets/2014-03-28/pods-targets.png" style="width: 300px" alt="Linked Frameworks and Libraries for the updated project"/>
+<img src="http://mokacoding.s3.amazonaws.com/2014-03-28-pods-targets.png" style="width: 300px" alt="Linked Frameworks and Libraries for the updated project"/>
 
 Can you spot it? There is no Pods target! 
 
@@ -80,7 +80,7 @@ An extra thing: the same operation needs to be done for the tests target, beacus
 
 Another extra thing: this _memory_ of `libPods`" error happens when you **change the name of the target** as well.
 
-<img src="{{ site.url }}/assets/2014-03-28/linked-libraries3.png" alt="Link Binary With Libraries after changing the target name"/>
+<img src="http://mokacoding.s3.amazonaws.com/2014-03-28-linked-libraries3.png" alt="Link Binary With Libraries after changing the target name"/>
 
 ---
 

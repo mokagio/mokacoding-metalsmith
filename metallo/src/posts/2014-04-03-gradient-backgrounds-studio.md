@@ -11,7 +11,7 @@ seo_description:
 keyword: 
 ---
 
-<img src="{{ site.url }}/assets/2014-04-03/gbs-icon.png" alt="Gradient Backgrounds Studio Icon" style="width: 120px"/>
+<img src="http://mokacoding.s3.amazonaws.com/2014-04-03-gbs-icon.png" alt="Gradient Backgrounds Studio Icon" style="width: 120px"/>
 
 At the beginning of March I released [Gradient Backgrounds Studio](https://itunes.apple.com/us/app/gradient-backgrounds-studio/id815508757?mt=8), app born from a simple need my girlfriend had to add a gradient on top of an image to make a better background. It was one of those ideas that hit you and no matter if it's 1 o'clock in the morning you have to code them.
 
@@ -40,7 +40,7 @@ gradientLayer.frame = frame;
 gradientLayer.colors = @[ (id)starColor.CGColor, (id)endColor.CGColor ];
 ```
 
-<img src="{{ site.url }}/assets/2014-04-03/cagradientlayer.jpg" alt="Simple CAGradientLayer" style="width: 30%"/>
+<img src="http://mokacoding.s3.amazonaws.com/2014-04-03-cagradientlayer.jpg" alt="Simple CAGradientLayer" style="width: 30%"/>
 
 There are cool things we can do, like having more colors and configuring how the gradient is rendered through its start and end point.
 
@@ -60,7 +60,7 @@ gradientLayer.colors = @[ (id)startColor.CGColor, (id)middleColor.CGColor, (id)e
 gradientLayer.endPoint = CGPointMake(1.0, 0.5);
 ```
 
-<img src="{{ site.url }}/assets/2014-04-03/cagradientlayer-advanced.jpg" alt="More customized CAGradientLayer" style="width: 30%"/>
+<img src="http://mokacoding.s3.amazonaws.com/2014-04-03-cagradientlayer-advanced.jpg" alt="More customized CAGradientLayer" style="width: 30%"/>
 
 ### UIImage from a gradient
 
@@ -143,7 +143,7 @@ UIImage *combinedImage = UIGraphicsGetImageFromCurrentImageContext();
 UIGraphicsEndImageContext();
 ```
 
-<img src="{{ site.url }}/assets/2014-04-03/merged-images.jpg" alt="Gradient and background images overlapped" style="width: 30%"/>
+<img src="http://mokacoding.s3.amazonaws.com/2014-04-03-merged-images.jpg" alt="Gradient and background images overlapped" style="width: 30%"/>
 
 Note that the image is deformed, this is the [original](http://thewindsbeachclub.com/wp-content/uploads/2013/07/The-Winds-Sea-Turtle-Has-a-Name.jpg), the reason is that it's drawn in a `rect` that has a different ratio.
 
@@ -151,7 +151,7 @@ Note that the image is deformed, this is the [original](http://thewindsbeachclub
 
 The buttons of Gradient Backgrounds Studio are blurred because... iOS 7. 
 
-<img src="{{ site.url }}/assets/2014-04-03/blur-buttons.jpg" alt="The round blurred buttons" style="width: 50%"/>
+<img src="http://mokacoding.s3.amazonaws.com/2014-04-03-blur-buttons.jpg" alt="The round blurred buttons" style="width: 50%"/>
 
 When I started reading about how to blur stuff I almost laughed at people suggesting to use [`UIToolbar`](https://developer.apple.com/library/ios/documentation/uikit/reference/UIToolbar_Class/Reference/Reference.html), and looked into solutions like [FXBlurView](https://github.com/nicklockwood/FXBlurView) but the performance on live blurring were horrible. `UIToolbar` won it in the end.
 

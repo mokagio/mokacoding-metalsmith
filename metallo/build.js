@@ -30,6 +30,7 @@ metalsmith(__dirname)
   ])
 
   .use(ignore("templates/*"))
+  .use(ignore("assets/*"))
 
   .use(function(files, metalsmith, done) {
     metalsmith.metadata().baseUrl = baseUrl;

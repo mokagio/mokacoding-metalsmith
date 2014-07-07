@@ -24,18 +24,18 @@ clang: error: linker command failed <span class="hljs-keyword">with</span> <span
 <p>...that in our case doesn&#39;t work!</p>
 <p>After a non irrelevant amount of time spent deleting Derived Data and googling I went back to the error and asked myself: <em>what does <code>library not found for -lPods</code> mean?</em> It means that something that should be there is not there anymore! <em>And what&#39;s missing?__ <code>library not found</code>. _And where are the libraries?</em> In the &quot;Link Binary With Libraries&quot; section of the target build phase. Daaah.</p>
 <p>So I took a look at the &quot;Link Binary With Libraries&quot;, this is what I found:</p>
-<p><img src="{{ site.url }}/assets/2014-03-28/linked-libraries2.png" alt="Link Binary With Libraries for the updated project"/></p>
+<p><img src="http://mokacoding.s3.amazonaws.com/2014-03-28-linked-libraries2.png" alt="Link Binary With Libraries for the updated project"/></p>
 <p>If we&#39;d rolled back to the previous version we&#39;d seen this:</p>
-<p><img src="{{ site.url }}/assets/2014-03-28/linked-libraries.png" alt="Link Binary With Libraries for the obsolete project"/></p>
+<p><img src="http://mokacoding.s3.amazonaws.com/2014-03-28-linked-libraries.png" alt="Link Binary With Libraries for the obsolete project"/></p>
 <p>Mmm... what is that new <code>libPods-MyProject</code> static library?</p>
 <p>And then I looked at the Pods project:</p>
-<p><img src="{{ site.url }}/assets/2014-03-28/pods-targets.png" style="width: 300px" alt="Linked Frameworks and Libraries for the updated project"/></p>
+<p><img src="http://mokacoding.s3.amazonaws.com/2014-03-28-pods-targets.png" style="width: 300px" alt="Linked Frameworks and Libraries for the updated project"/></p>
 <p>Can you spot it? There is no Pods target! </p>
 <p>And here the solution to the problem: the linker cannot find <code>libPods</code> because there is no <code>libPods</code> at all, not anymore. It is just a memory of the previous configuration that CocoaPods didn&#39;t remove.</p>
 <p>I removed <code>libPods.a</code> from the &quot;Linked Frameworks and Libraries&quot; and everything was running smoothly again.</p>
 <p>An extra thing: the same operation needs to be done for the tests target, beacuse of the <code>link_with [&#39;MyProject&#39;, &#39;MyProjectTests&#39;]</code>.</p>
 <p>Another extra thing: this <em>memory</em> of <code>libPods</code>&quot; error happens when you <strong>change the name of the target</strong> as well.</p>
-<p><img src="{{ site.url }}/assets/2014-03-28/linked-libraries3.png" alt="Link Binary With Libraries after changing the target name"/></p>
+<p><img src="http://mokacoding.s3.amazonaws.com/2014-03-28-linked-libraries3.png" alt="Link Binary With Libraries after changing the target name"/></p>
 <hr>
 <p>As we develop advanced badass systems we rely on many tools and frameworks, to delegate work to someone that knows how to do it better. Knowing how those we rely most heavily upon work on a level that is deeper than what&#39;s written in the README is invaluable to save time debugging and to get the most out of them.</p>
 <p>I challenge you to spend some time reading the source code of one of the tools you use the most. Have fun!</p>

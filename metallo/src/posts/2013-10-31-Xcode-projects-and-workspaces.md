@@ -133,7 +133,7 @@ The `.xcworkspace` from [KZPropertyMapper](https://github.com/krzysztofzablocki/
 If you open the `AFNetworking.xcworkspace` you'll see this
 
 <!-- I know, I know... inline style is shit :(-->
-<img src="{{ site.url }}/assets/2013-10-31/afnetworking_fs.png" style="width: 200px" alt="AFNetworking Workspace"/>
+<img src="http://mokacoding.s3.amazonaws.com/2013-10-31-afnetworking_fs.png" style="width: 200px" alt="AFNetworking Workspace"/>
 
 It all then comes together. It works more or less as the `project.pbxproj` does. The `Group` tag contains other `Group`s or `FileRef` tags, which represent where the file is in the filesystem related to the location of the workspace.
 

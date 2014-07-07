@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><title>mokacoding</title><link href="/mokacoding-metalsmith/css/griddy.css" rel="stylesheet"><link href="/mokacoding-metalsmith/css/style.css" rel="stylesheet"><link href="/mokacoding-metalsmith/css/highlight-obsidian.css" rel="stylesheet"></head><body><div class="page"><div class="row-12"><div class="col-12 header"><h1 class="brand"><a href="/mokacoding-metalsmith/">mokacoding</a></h1><div class="punchline">mokagio's blabbering on software</div></div><div class="col-12"><div class="post-container"><h2 class="post-title"><a href="/mokacoding-metalsmith/blog/gradient-backgrounds-studio">Gradient Backgrounds Studio: Lessons Learned</a></h2><p class="post-meta"><span class="post-date">Thu Apr 03 2014&nbsp;</span><a href="/mokacoding-metalsmith/tag/Xcode/index.html" class="post-tag">-Xcode</a><a href="/mokacoding-metalsmith/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/mokacoding-metalsmith/tag/Objective-C/index.html" class="post-tag">-Objective-C</a></p><div class="post"><p><img src="{{ site.url }}/assets/2014-04-03/gbs-icon.png" alt="Gradient Backgrounds Studio Icon" style="width: 120px"/></p>
+<!DOCTYPE html><html lang="en"><head><title>mokacoding</title><link href="/mokacoding-metalsmith/css/griddy.css" rel="stylesheet"><link href="/mokacoding-metalsmith/css/style.css" rel="stylesheet"><link href="/mokacoding-metalsmith/css/highlight-obsidian.css" rel="stylesheet"></head><body><div class="page"><div class="row-12"><div class="col-12 header"><h1 class="brand"><a href="/mokacoding-metalsmith/">mokacoding</a></h1><div class="punchline">mokagio's blabbering on software</div></div><div class="col-12"><div class="post-container"><h2 class="post-title"><a href="/mokacoding-metalsmith/blog/gradient-backgrounds-studio">Gradient Backgrounds Studio: Lessons Learned</a></h2><p class="post-meta"><span class="post-date">Thu Apr 03 2014&nbsp;</span><a href="/mokacoding-metalsmith/tag/Xcode/index.html" class="post-tag">-Xcode</a><a href="/mokacoding-metalsmith/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/mokacoding-metalsmith/tag/Objective-C/index.html" class="post-tag">-Objective-C</a></p><div class="post"><p><img src="http://mokacoding.s3.amazonaws.com/2014-04-03-gbs-icon.png" alt="Gradient Backgrounds Studio Icon" style="width: 120px"/></p>
 <p>At the beginning of March I released <a href="https://itunes.apple.com/us/app/gradient-backgrounds-studio/id815508757?mt=8">Gradient Backgrounds Studio</a>, app born from a simple need my girlfriend had to add a gradient on top of an image to make a better background. It was one of those ideas that hit you and no matter if it&#39;s 1 o&#39;clock in the morning you have to code them.</p>
 <p>Gradient Backgrounds Studio is a very simple app with a very simple implementation, but it gave me an excuse to play with some components of the framework I didn&#39;t know about.</p>
 <h3 id="-cggradientlayer-"><code>CGGradientLayer</code></h3>
@@ -19,7 +19,7 @@ gradientLayer<span class="hljs-variable">.backgroundColor</span> = [<span class=
 gradientLayer<span class="hljs-variable">.frame</span> = frame;
 gradientLayer<span class="hljs-variable">.colors</span> = @[ (<span class="hljs-keyword">id</span>)starColor<span class="hljs-variable">.CGColor</span>, (<span class="hljs-keyword">id</span>)endColor<span class="hljs-variable">.CGColor</span> ];
 </code></pre>
-<p><img src="{{ site.url }}/assets/2014-04-03/cagradientlayer.jpg" alt="Simple CAGradientLayer" style="width: 30%"/></p>
+<p><img src="http://mokacoding.s3.amazonaws.com/2014-04-03-cagradientlayer.jpg" alt="Simple CAGradientLayer" style="width: 30%"/></p>
 <p>There are cool things we can do, like having more colors and configuring how the gradient is rendered through its start and end point.</p>
 <pre><code class=" hljs objc">CAGradientLayer *gradientLayer = [CAGradientLayer layer];
 gradientLayer<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> clearColor]<span class="hljs-variable">.CGColor</span>;
@@ -35,7 +35,7 @@ gradientLayer<span class="hljs-variable">.colors</span> = @[ (<span class="hljs-
 
 gradientLayer<span class="hljs-variable">.endPoint</span> = CGPointMake(<span class="hljs-number">1.0</span>, <span class="hljs-number">0.5</span>);
 </code></pre>
-<p><img src="{{ site.url }}/assets/2014-04-03/cagradientlayer-advanced.jpg" alt="More customized CAGradientLayer" style="width: 30%"/></p>
+<p><img src="http://mokacoding.s3.amazonaws.com/2014-04-03-cagradientlayer-advanced.jpg" alt="More customized CAGradientLayer" style="width: 30%"/></p>
 <h3 id="uiimage-from-a-gradient">UIImage from a gradient</h3>
 <p>Gradient Backgrounds Studio generates an image out of the one you pick and the gradient you configure. So the next thing I had to do was merging those images.</p>
 <p>As with most things, there are multiple ways to achieve that result. The one I choose was to make an image out of the gradient layer, and then merge the two images into one.</p>
@@ -106,11 +106,11 @@ UIImage *combinedImage = UIGraphicsGetImageFromCurrentImageContext();
 
 UIGraphicsEndImageContext();
 </code></pre>
-<p><img src="{{ site.url }}/assets/2014-04-03/merged-images.jpg" alt="Gradient and background images overlapped" style="width: 30%"/></p>
+<p><img src="http://mokacoding.s3.amazonaws.com/2014-04-03-merged-images.jpg" alt="Gradient and background images overlapped" style="width: 30%"/></p>
 <p>Note that the image is deformed, this is the <a href="http://thewindsbeachclub.com/wp-content/uploads/2013/07/The-Winds-Sea-Turtle-Has-a-Name.jpg">original</a>, the reason is that it&#39;s drawn in a <code>rect</code> that has a different ratio.</p>
 <h3 id="blurring-uitoolbar-does-the-job">Blurring: <code>UIToolbar</code> does the job</h3>
 <p>The buttons of Gradient Backgrounds Studio are blurred because... iOS 7. </p>
-<p><img src="{{ site.url }}/assets/2014-04-03/blur-buttons.jpg" alt="The round blurred buttons" style="width: 50%"/></p>
+<p><img src="http://mokacoding.s3.amazonaws.com/2014-04-03-blur-buttons.jpg" alt="The round blurred buttons" style="width: 50%"/></p>
 <p>When I started reading about how to blur stuff I almost laughed at people suggesting to use <a href="https://developer.apple.com/library/ios/documentation/uikit/reference/UIToolbar_Class/Reference/Reference.html"><code>UIToolbar</code></a>, and looked into solutions like <a href="https://github.com/nicklockwood/FXBlurView">FXBlurView</a> but the performance on live blurring were horrible. <code>UIToolbar</code> won it in the end.</p>
 <p>A funny thing I bumped into when making the buttons rounded is that if I used exactly half of the frame side to set the corner radius, as you would normally do, the view disappeared! The solution I found to that was to set the corner radius to <em>almost</em> half the frame side, where <em>almost</em> = 0.999.</p>
 <pre><code class=" hljs objc">CGRect frame = ...
