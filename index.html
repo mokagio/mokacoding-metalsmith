@@ -51,5 +51,1132 @@ clang: error: linker command failed with exit code <span class="hljs-number">1</
 <p>There are few things as rewarding as solving a problem by understanding all the pieces of the puzzle, looking back at it and suddenly seeing everything clearly. It is something that is possible only when using open source tools.</p>
 <p>I love the ability to look under the hood of the stuff I use, and I am  very grateful to the CocoaPods team for the awesome work they&#39;re doing. I was lucky enough to meet some of them in person, and they are all lovely people as well!</p>
 <p><em>Enjoy haking around open source</em></p>
-</div></div><div id="paginator"><a href="//index/2">next</a></div></div><div class="col-12 footer">made with &hearts; by mokagio since 2013 
+</div><div id="paginator"><div style="text-align: right"><a href="/blog/2014-resolutions-review">2014 resolutions review&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/2014-resolutions-review">2014 resolutions review</a></h2><p class="post-meta"><span class="post-date">Wed Apr 09 2014&nbsp;</span><a href="/tag/Health/index.html" class="post-tag">-Health</a><a href="/tag/Productivity/index.html" class="post-tag">-Productivity</a></p><div class="post"><p>At the start of this year I posted a <a href="{{ site.baseurl }}/2014-01-02-2013-retrospeectives-and-2014-propositions">cheesy retro on 2013</a>, that ended up with some resolutions for 2014:</p>
+<ul>
+<li>5 tweets sharing tech articles I&#39;ve read a week.</li>
+<li>3 days of exercise, or at least <a href="http://well.blogs.nytimes.com/2013/05/09/the-scientific-7-minute-workout/?_r=0">7 minutes workout</a>, a week.</li>
+<li>1 original tech blogpost per month.</li>
+<li>1 social event for developers a month.</li>
+<li>1 tech book every quarter.</li>
+<li>1 PR per quarter</li>
+<li>2 decent (&gt; 100 stars on GitHub) open source softwares during the year</li>
+<li>1 new programming language learned during the year.</li>
+</ul>
+<p>The first quarter of 2014 is gone, and I feel like it&#39;s time to review how I&#39;ve been doing.</p>
+<p>I&#39;ve kept track of all my <em>achievements</em> on a <code>.md</code> file on my Dropbox, but I guessed moving the system <a href="https://github.com/mokagio/2014-Resolutions">on GitHub</a> would be better, and more readable.</p>
+<p>My only big failure is with the tweets, I see to be very good at adding articles to my Pocket list, but no so much at archiving them.</p>
+<p>The point of a retrospective is to improve the next iteration. So taking inspiration from <a href="https://the-pastry-box-project.net/remy-sharp/2014-january-3">this post</a> by <a href="https://twitter.com/rem">Remy Sharp</a> that ends saying:</p>
+<blockquote>
+<p>Don’t make it hard to achieve, make it hard to give up.</p>
+<p>Plan to fail. Plan to cheat.</p>
+</blockquote>
+<p>I&#39;ll <strong>tune my weekly articles target from 5 to 3</strong>, and celebrate chocolate all the extra ones.</p>
+<p>Apart from not being very good at reading blogs I&#39;ve been able to tick all the other checkboxes in my resolutions lists, and I&#39;ve learned <strong>a lot</strong> doing so, specially by contributing to <a href="https://github.com/thoughtbot/liftoff">liftoff</a>, a tool to setup new Xcode projects without the usual pain written in Ruby. I&#39;ve also choose what&#39;s my new programming language gonna be, Clojure! But before digging into it I need to clear a backlog of iOS/Ruby projects.</p>
+<p>I feel like a mention is needed for the exercises. I&#39;m using <a href="https://7minuteworkout.jnj.com/">yet another 7 minutes workout app</a>, that I found really good because it has other exercises apart from the canonical 7 minutes, and let&#39;s you build your own sets. I&#39;ve also got into the habit of doing a quick <em>moving around</em> almost every hour while at work, part of it because of the reminders in the <a href="http://www.nike.com/us/en_us/c/nikeplus-fuelband">Nike FuelBand SE</a>. I could be running down and up the stairs (we&#39;re at the 4th floor), doing front squats, or something with elastic bands. Those tiny breaks make me feel better and more energetic, and help focus back on work.</p>
+<p>Although the biggest gain I had from sticking to my resolutions was the value of <strong>community events</strong>. I&#39;m very lucky to be living in London, and being surrounded by amazing people in the tech scene. The <a href="http://www.meetup.com/NSLondon/">NSLondon</a> meetup has been my favourite monthly event so far, and I had a chance to meet <a href="https://github.com/mattt">Mattt Thompson</a> and <a href="https://github.com/irrationalfab">Fabio Pelosin</a>, two developers that inspire me every day, and get in touch with new ideas or tools every time. </p>
+<p>Sometime it&#39;s easy to get lost between lines of code and impersonal names such as <em>composition</em>, <em>proxy</em>, <em>mock</em>, but the fact is that software is <strong>made by people</strong> and the real engine that makes our software better is the interaction with other individuals, exchanging opinions, ideas, and a good dose of nonesense!</p>
+<p><em>Enjoy the next three quarters of 2014</em></p>
+</div><div id="paginator"><div><a href="/blog/cocoapods-and-custom-build-configurations"><<&nbsp;CocoaPods and custom Build Configurations</a></div><div style="text-align: right"><a href="/blog/gradient-backgrounds-studio">Gradient Backgrounds Studio: Lessons Learned&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/gradient-backgrounds-studio">Gradient Backgrounds Studio: Lessons Learned</a></h2><p class="post-meta"><span class="post-date">Thu Apr 03 2014&nbsp;</span><a href="/tag/Xcode/index.html" class="post-tag">-Xcode</a><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a></p><div class="post"><p><img src="{{ site.url }}/assets/2014-04-03/gbs-icon.png" alt="Gradient Backgrounds Studio Icon" style="width: 120px"/></p>
+<p>At the beginning of March I released <a href="https://itunes.apple.com/us/app/gradient-backgrounds-studio/id815508757?mt=8">Gradient Backgrounds Studio</a>, app born from a simple need my girlfriend had to add a gradient on top of an image to make a better background. It was one of those ideas that hit you and no matter if it&#39;s 1 o&#39;clock in the morning you have to code them.</p>
+<p>Gradient Backgrounds Studio is a very simple app with a very simple implementation, but it gave me an excuse to play with some components of the framework I didn&#39;t know about.</p>
+<h3 id="-cggradientlayer-"><code>CGGradientLayer</code></h3>
+<p>Guess what? The app is all about gradients. The first thing I had to learn was how to create and manipulate gradients.</p>
+<p>When it comes down to graphic staff <a href="https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/QuartzCoreRefCollection/_index.html">Quartz</a> is the framework we need to look at, and it has exactly the class we&#39;re looking for: <a href="https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CAGradientLayer_class/Reference/Reference.html"><code>CAGradientLayer</code></a>.</p>
+<blockquote>
+<p>The CAGradientLayer class draws a color gradient over its background color, filling the shape of the layer (including rounded corners)</p>
+</blockquote>
+<p>Creating the layer is simple:</p>
+<pre><code class=" hljs objc">CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+gradientLayer<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> clearColor]<span class="hljs-variable">.CGColor</span>;
+
+<span class="hljs-built_in">CGRect</span> frame = CGRectMake(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+
+<span class="hljs-built_in">UIColor</span> *startColor = [<span class="hljs-built_in">UIColor</span> redColor];
+<span class="hljs-built_in">UIColor</span> *endColor = [<span class="hljs-built_in">UIColor</span> orangeColor];
+
+gradientLayer<span class="hljs-variable">.frame</span> = frame;
+gradientLayer<span class="hljs-variable">.colors</span> = @[ (<span class="hljs-keyword">id</span>)starColor<span class="hljs-variable">.CGColor</span>, (<span class="hljs-keyword">id</span>)endColor<span class="hljs-variable">.CGColor</span> ];
+</code></pre>
+<p><img src="{{ site.url }}/assets/2014-04-03/cagradientlayer.jpg" alt="Simple CAGradientLayer" style="width: 30%"/></p>
+<p>There are cool things we can do, like having more colors and configuring how the gradient is rendered through its start and end point.</p>
+<pre><code class=" hljs objc">CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+gradientLayer<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> clearColor]<span class="hljs-variable">.CGColor</span>;
+
+<span class="hljs-built_in">CGRect</span> frame = CGRectMake(<span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">200</span>, <span class="hljs-number">200</span>);
+
+<span class="hljs-built_in">UIColor</span> *startColor = [<span class="hljs-built_in">UIColor</span> blueColor];
+<span class="hljs-built_in">UIColor</span> *middleColor = [<span class="hljs-built_in">UIColor</span> whiteColor];
+<span class="hljs-built_in">UIColor</span> *endColor = [<span class="hljs-built_in">UIColor</span> purpleColor];
+
+gradientLayer<span class="hljs-variable">.frame</span> = frame;
+gradientLayer<span class="hljs-variable">.colors</span> = @[ (<span class="hljs-keyword">id</span>)startColor<span class="hljs-variable">.CGColor</span>, (<span class="hljs-keyword">id</span>)middleColor<span class="hljs-variable">.CGColor</span>, (<span class="hljs-keyword">id</span>)endColor<span class="hljs-variable">.CGColor</span> ];
+
+gradientLayer<span class="hljs-variable">.endPoint</span> = CGPointMake(<span class="hljs-number">1.0</span>, <span class="hljs-number">0.5</span>);
+</code></pre>
+<p><img src="{{ site.url }}/assets/2014-04-03/cagradientlayer-advanced.jpg" alt="More customized CAGradientLayer" style="width: 30%"/></p>
+<h3 id="uiimage-from-a-gradient">UIImage from a gradient</h3>
+<p>Gradient Backgrounds Studio generates an image out of the one you pick and the gradient you configure. So the next thing I had to do was merging those images.</p>
+<p>As with most things, there are multiple ways to achieve that result. The one I choose was to make an image out of the gradient layer, and then merge the two images into one.</p>
+<p>The code to do it may look mysterious, but I added comments to explain it. </p>
+<pre><code class=" hljs objc"><span class="hljs-built_in">CGRect</span> frame = CGRectMake(<span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">200</span>, <span class="hljs-number">200</span>);
+<span class="hljs-built_in">UIColor</span> *startColor = [<span class="hljs-built_in">UIColor</span> orangeColor];
+<span class="hljs-built_in">UIColor</span> *endColor = [<span class="hljs-built_in">UIColor</span> purpleColor];
+
+<span class="hljs-comment">// Create a new bitmap-based image context, and make it current.</span>
+<span class="hljs-comment">// This way we'll be able to draw stuff in the context and get an UIImage back from it.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-built_in">CGSize</span> size = frame<span class="hljs-variable">.size</span>;
+UIGraphicsBeginImageContextWithOptions(size, <span class="hljs-literal">NO</span>, <span class="hljs-number">0</span>);
+
+CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+
+<span class="hljs-comment">// Define the "locations" of the gradient, the points where the color(s) transformation starts and ends</span>
+<span class="hljs-comment">//</span>
+size_t gradientNumberOfLocations = <span class="hljs-number">2</span>;
+<span class="hljs-built_in">CGFloat</span> gradientLocations[<span class="hljs-number">2</span>] = { <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span> };
+
+<span class="hljs-comment">// Get the color components out of startColor and endColor</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// This is all just because I'm lazy and don't want to write the numbers myself. </span>
+<span class="hljs-comment">//</span>
+<span class="hljs-built_in">CGFloat</span> r0 = <span class="hljs-number">0</span>, g0 = <span class="hljs-number">0</span>, b0 = <span class="hljs-number">0</span>, a0 = <span class="hljs-number">0</span>;
+<span class="hljs-built_in">CGFloat</span> r1 = <span class="hljs-number">0</span>, g1 = <span class="hljs-number">0</span>, b1 = <span class="hljs-number">0</span>, a1 = <span class="hljs-number">0</span>;
+[startColor getRed:&amp;r0 green:&amp;g0 blue:&amp;b0 alpha:&amp;a0];
+[endColor getRed:&amp;r1 green:&amp;g1 blue:&amp;b1 alpha:&amp;a1];
+
+<span class="hljs-built_in">CGFloat</span> gradientComponents[<span class="hljs-number">8</span>] = {
+    r0, g0, b0, a0,
+    r1, g1, b1, a1,
+};
+
+<span class="hljs-comment">// Build a CGGradientRef structure with the values just gathered</span>
+<span class="hljs-comment">//</span>
+CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, gradientComponents, gradientLocations, gradientNumberOfLocations);
+
+<span class="hljs-comment">// Draw the gradient in the current context</span>
+<span class="hljs-comment">//</span>
+CGContextRef context = UIGraphicsGetCurrentContext();
+CGContextDrawLinearGradient(context, gradient, CGPointMake(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>), CGPointMake(<span class="hljs-number">0</span>, size<span class="hljs-variable">.height</span>), <span class="hljs-number">0</span>);
+
+<span class="hljs-comment">// Get an image from the content of the curret context</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-built_in">UIImage</span> *image = UIGraphicsGetImageFromCurrentImageContext();
+
+<span class="hljs-comment">// Release stuff and clean the context</span>
+<span class="hljs-comment">//</span>
+CGGradientRelease(gradient);
+CGColorSpaceRelease(colorspace);
+UIGraphicsEndImageContext();
+</code></pre>
+<p>If you have been reading other articles from my blog you know by now I&#39;m not clever, the credits for this code goes to <a href="http://stackoverflow.com/questions/16788305/how-to-create-uiimage-with-vertical-gradient-using-from-color-and-to-color">this question</a> on SO.</p>
+<h3 id="uiimage-merging-images">UIImage merging images</h3>
+<p>Now that we have the image with the gradient we can merge it with the background image. The code to do that is simpler than the one above, but based on the same principle; create a context, draw in it, and get an <code>UIImage</code> from it with what&#39;s drawn in it.</p>
+<pre><code class=" hljs objc">UIImage *image = <span class="hljs-keyword">...</span>
+UIImage *gradientImage = <span class="hljs-keyword">...</span>
+CGRect size = <span class="hljs-keyword">...</span>
+
+UIGraphicsBeginImageContext(size);
+
+CGRect imageRect = CGRectMake(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, size.width, size.height);
+[image drawInRect:imageRect];
+[gradient drawInRect:imageRect];
+UIImage *combinedImage = UIGraphicsGetImageFromCurrentImageContext();
+
+UIGraphicsEndImageContext();
+</code></pre>
+<p><img src="{{ site.url }}/assets/2014-04-03/merged-images.jpg" alt="Gradient and background images overlapped" style="width: 30%"/></p>
+<p>Note that the image is deformed, this is the <a href="http://thewindsbeachclub.com/wp-content/uploads/2013/07/The-Winds-Sea-Turtle-Has-a-Name.jpg">original</a>, the reason is that it&#39;s drawn in a <code>rect</code> that has a different ratio.</p>
+<h3 id="blurring-uitoolbar-does-the-job">Blurring: <code>UIToolbar</code> does the job</h3>
+<p>The buttons of Gradient Backgrounds Studio are blurred because... iOS 7. </p>
+<p><img src="{{ site.url }}/assets/2014-04-03/blur-buttons.jpg" alt="The round blurred buttons" style="width: 50%"/></p>
+<p>When I started reading about how to blur stuff I almost laughed at people suggesting to use <a href="https://developer.apple.com/library/ios/documentation/uikit/reference/UIToolbar_Class/Reference/Reference.html"><code>UIToolbar</code></a>, and looked into solutions like <a href="https://github.com/nicklockwood/FXBlurView">FXBlurView</a> but the performance on live blurring were horrible. <code>UIToolbar</code> won it in the end.</p>
+<p>A funny thing I bumped into when making the buttons rounded is that if I used exactly half of the frame side to set the corner radius, as you would normally do, the view disappeared! The solution I found to that was to set the corner radius to <em>almost</em> half the frame side, where <em>almost</em> = 0.999.</p>
+<pre><code class=" hljs objc">CGRect frame = ...
+
+UIToolbar *blurredView = [[UIToolbar alloc] initWithFrame:frame]<span class="hljs-comment">;</span>
+
+// To enable proper blurring
+//
+blurredView<span class="hljs-preprocessor">.barStyle</span> = UIBarStyleDefault<span class="hljs-comment">;</span>
+blurredView<span class="hljs-preprocessor">.translucent</span> = YES<span class="hljs-comment">;</span>
+
+blurredView<span class="hljs-preprocessor">.clipsToBounds</span> = YES<span class="hljs-comment">;</span>
+// this makes the toolbar invisible! o<span class="hljs-preprocessor">.O</span>
+blurredView<span class="hljs-preprocessor">.layer</span><span class="hljs-preprocessor">.cornerRadius</span> = frame<span class="hljs-preprocessor">.size</span><span class="hljs-preprocessor">.width</span> / <span class="hljs-number">2</span><span class="hljs-comment">;</span>
+// this works!
+blurredView<span class="hljs-preprocessor">.layer</span><span class="hljs-preprocessor">.cornerRadius</span> = frame<span class="hljs-preprocessor">.size</span><span class="hljs-preprocessor">.width</span> / <span class="hljs-number">2</span> * <span class="hljs-number">0.999</span><span class="hljs-comment">;</span>
+</code></pre>
+<p>One other important thing is that the toolbar blurs the background of it&#39;s superview, keep this in mind in case you have overlapping view.</p>
+<h3 id="justify">Justify</h3>
+<p>The final thing I&#39;d like to share is how to justify the text in a <code>UILabel</code>. Despite the fact that the <code>textAlignement</code> property accepts <code>NSTextAlignmentJustified</code> as an option I wasn&#39;t able to make my multiline label justify just like that.</p>
+<p>I was finally able to achieve the result by using <a href="https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/classes/NSAttributedString_Class/Reference/Reference.html"><code>NSAttributedString</code></a> and a <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/ApplicationKit/Classes/NSMutableParagraphStyle_Class/Reference/Reference.html"><code>NSMutableParagraphStyle</code></a>.</p>
+<pre><code class=" hljs objc">NSString *message = <span class="hljs-keyword">...</span>
+
+NSMutableParagraphStyle *justifiedParagraph = [[NSMutableParagraphStyle alloc] init];
+justifiedParagraph.alignment = NSTextAlignmentJustified;
+
+NSDictionary *attributes = @{ NSParagraphStyleAttributeName: justifiedParagraph, NSBaselineOffsetAttributeName: @<span class="hljs-number">0</span> };
+
+NSAttributedString *justifiedMessage = [[NSAttributedString alloc] initWithString:message attributes:attributes];
+</code></pre>
+<hr>
+<p>Market-wise <a href="https://itunes.apple.com/us/app/gradient-backgrounds-studio/id815508757?mt=8">Gradient Backgrounds Studio</a> is a failure, no more that an handful of downloads a day. But it was fun to make, and gave me a chance to learn new things, try out new designs patterns, and experiment. At the end of the day this is what matters, being able to always learn something new, and having fun!</p>
+<p>If you have better solutions for the problems I faced <strong>I&#39;d really like to hear them</strong> please tweet me <a href="https://twitter.com/mokagio">@mokagio</a></p>
+<p><em>Enjoy your next project!</em></p>
+</div><div id="paginator"><div><a href="/blog/2014-resolutions-review"><<&nbsp;2014 resolutions review</a></div><div style="text-align: right"><a href="/blog/upgrading-podfile">A caveat when upgrading a Podfile&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/upgrading-podfile">A caveat when upgrading a Podfile</a></h2><p class="post-meta"><span class="post-date">Fri Mar 28 2014&nbsp;</span><a href="/tag/Xcode/index.html" class="post-tag">-Xcode</a><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a><a href="/tag/CocoaPods/index.html" class="post-tag">-CocoaPods</a></p><div class="post"><p>I recently went through the process of upgrading a <code>Podfile</code> from a legacy codebase and bumped into an issue with a very simple solution, for those who understand how <a href="http://cocoapods.org">CocoaPods</a> works under the hood.</p>
+<p>I made an example project to show the behaviour, check it out <a href="https://github.com/mokagio/mokacoding-samples/tree/podfile-upgrade">here</a>.</p>
+<p>The <code>Podfile</code> looked like this:</p>
+<pre><code class=" hljs ruby">link_with [<span class="hljs-string">'MyProject'</span>, <span class="hljs-string">'MyProjectTests'</span>]
+
+pod <span class="hljs-string">'AFNetworking'</span>
+pod <span class="hljs-string">'Kiwi'</span>
+</code></pre>
+<p>(<em>it was actually longer an messier, with random newlines a lot of pods commented out, but no need to inflict you with that</em>)</p>
+<p>Apart from the obsolete <code>Podfile</code> style, there&#39;s one big issue; <a href="https://github.com/allending/Kiwi">Kiwi</a> should be linked only in the test target, as it is a testing framework.</p>
+<p>Updating the <code>Podfile</code> into a more semantic and not leaky one was simple:</p>
+<pre><code class=" hljs ruby">target <span class="hljs-symbol">:MyProject</span> <span class="hljs-keyword">do</span>
+  pod <span class="hljs-string">'AFNetworking'</span>
+<span class="hljs-keyword">end</span>
+
+target <span class="hljs-symbol">:MyProjectTests</span>, <span class="hljs-symbol">:exclusive</span> =&gt; <span class="hljs-keyword">true</span> <span class="hljs-keyword">do</span>
+  pod <span class="hljs-string">'Kiwi'</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>So far so good, but at that point after running <code>pod install</code> the project didn&#39;t build anymore! The error was:</p>
+<pre><code class="">ld: <span class="hljs-keyword">library</span> <span class="hljs-keyword">not</span> found <span class="hljs-keyword">for</span> -lPods
+clang: error: linker command failed <span class="hljs-keyword">with</span> <span class="hljs-keyword">exit</span> code <span class="hljs-number">1</span> (<span class="hljs-keyword">use</span> -v <span class="hljs-keyword">to</span> see invocation)
+</code></pre><p>This happens to be a pretty common error, specially for newbies, and in the <a href="http://guides.cocoapods.org/using/troubleshooting.html#using-the-cocoapods-project">CocoaPods Troubleshooting page</a> there&#39;s a solution for it...</p>
+<p>...that in our case doesn&#39;t work!</p>
+<p>After a non irrelevant amount of time spent deleting Derived Data and googling I went back to the error and asked myself: <em>what does <code>library not found for -lPods</code> mean?</em> It means that something that should be there is not there anymore! <em>And what&#39;s missing?__ <code>library not found</code>. _And where are the libraries?</em> In the &quot;Link Binary With Libraries&quot; section of the target build phase. Daaah.</p>
+<p>So I took a look at the &quot;Link Binary With Libraries&quot;, this is what I found:</p>
+<p><img src="{{ site.url }}/assets/2014-03-28/linked-libraries2.png" alt="Link Binary With Libraries for the updated project"/></p>
+<p>If we&#39;d rolled back to the previous version we&#39;d seen this:</p>
+<p><img src="{{ site.url }}/assets/2014-03-28/linked-libraries.png" alt="Link Binary With Libraries for the obsolete project"/></p>
+<p>Mmm... what is that new <code>libPods-MyProject</code> static library?</p>
+<p>And then I looked at the Pods project:</p>
+<p><img src="{{ site.url }}/assets/2014-03-28/pods-targets.png" style="width: 300px" alt="Linked Frameworks and Libraries for the updated project"/></p>
+<p>Can you spot it? There is no Pods target! </p>
+<p>And here the solution to the problem: the linker cannot find <code>libPods</code> because there is no <code>libPods</code> at all, not anymore. It is just a memory of the previous configuration that CocoaPods didn&#39;t remove.</p>
+<p>I removed <code>libPods.a</code> from the &quot;Linked Frameworks and Libraries&quot; and everything was running smoothly again.</p>
+<p>An extra thing: the same operation needs to be done for the tests target, beacuse of the <code>link_with [&#39;MyProject&#39;, &#39;MyProjectTests&#39;]</code>.</p>
+<p>Another extra thing: this <em>memory</em> of <code>libPods</code>&quot; error happens when you <strong>change the name of the target</strong> as well.</p>
+<p><img src="{{ site.url }}/assets/2014-03-28/linked-libraries3.png" alt="Link Binary With Libraries after changing the target name"/></p>
+<hr>
+<p>As we develop advanced badass systems we rely on many tools and frameworks, to delegate work to someone that knows how to do it better. Knowing how those we rely most heavily upon work on a level that is deeper than what&#39;s written in the README is invaluable to save time debugging and to get the most out of them.</p>
+<p>I challenge you to spend some time reading the source code of one of the tools you use the most. Have fun!</p>
+</div><div id="paginator"><div><a href="/blog/gradient-backgrounds-studio"><<&nbsp;Gradient Backgrounds Studio: Lessons Learned</a></div><div style="text-align: right"><a href="/blog/sharing-assets-with-cocoapods-resource-bundle-and-dynamically-loaded-fonts">Sharing assets across iOS projects with CocoaPods, Resource Bundle, and dynamically loaded fonts&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/sharing-assets-with-cocoapods-resource-bundle-and-dynamically-loaded-fonts">Sharing assets across iOS projects with CocoaPods, Resource Bundle, and dynamically loaded fonts</a></h2><p class="post-meta"><span class="post-date">Thu Feb 13 2014&nbsp;</span><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Architecture/index.html" class="post-tag">-Architecture</a><a href="/tag/Productivity/index.html" class="post-tag">-Productivity</a></p><div class="post"><p>It is useful and time saving to centralize all the resources, assets and fonts that are shared across different projects. The best solution for that is <a href="http://cocoapods.org/">CocoaPods</a>, and a bit of code to avoid doing any kind on <code>Info.plist</code> update.</p>
+<p>If you can&#39;t be bothered reading the post, and want to look at some code straightaway checkout <a href="https://github.com/mokagio/mokacoding-samples/tree/master/ResourceBundlePodExample">this example</a> I&#39;ve made.</p>
+<p>The process is very simple:</p>
+<ol>
+<li>Create the pod</li>
+<li>Add the resources to the pod resource bundle</li>
+<li>Dynamically load the fonts</li>
+</ol>
+<p>Creating a pod is super simple, I already <a href="http://www.mokacoding.com/2013/01/21/cocoapods-how-to-create-your-own-pod.html">wrote about it</a>, but it was a while ago, the best place to look for it is the <a href="http://guides.cocoapods.org/making/specs-and-specs-repo.html">official CocoaPod documentation</a>.</p>
+<h3 id="add-the-assets-to-the-pod-resource-bundle">Add the assets to the pod resource bundle</h3>
+<p>Since version <a href="https://github.com/CocoaPods/CocoaPods/blob/master/CHANGELOG.md#0230rc1">0.23.0</a> the Spec DSL has a <code>resource_bundle</code> attribute, and it&#39;s recommended to use it instead of the old <code>resources</code>, to avoid potential name clashes with other pods or libraries.</p>
+<p>But what&#39;s a resource bundle? As usual the <a href="https://developer.apple.com/library/ios/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html">Apple Documentation</a> is not very clear, but we could define a bundle as <em>a folder with an extension, conforming to some rules for it&#39;s content</em>. </p>
+<p>Then how do we make a bundle? Or in our case a Resource Bundle, so that we can add it in our <code>.podspec</code>? As you can imagine the Documentation is still not helpful...</p>
+<p>I spent a couple of hours messing around creating folders naming the <code>folder.bundle</code>, googling and <a href="http://stackoverflow.com/questions/8458953/ios-build-a-resource-bundle-via-xcode-target">stackoverflowing</a>, but with no luck integrating it with my pod. I also found a <a href="http://www.galloway.me.uk/tutorials/ios-library-with-resources/">tutorial</a> by Matt Galloway, but it looked like a complex hack, there had to be something simpler!</p>
+<p>Turns out it&#39;s <strong>dead simple</strong>! Just list the resources path you want in the bundle and the pod will generate it for you. Boom. No tricks, no hacks, just a line of code.</p>
+<pre><code class=" hljs ruby">spec.ios.resource_bundle = { <span class="hljs-string">'MapBox'</span> =&gt; <span class="hljs-string">'MapView/Map/Resources/*.png'</span> }
+</code></pre>
+<h3 id="dynamically-load-the-fonts">Dynamically load the fonts</h3>
+<p>Now that the we have our Resource Bundle ready we only need to skip the annoying process of adding the fonts to the <code>Info.plist</code> and we&#39;re good to go.</p>
+<p>To do that I used the approach suggested by Marco Armet in <a href="http://www.marco.org/2012/12/21/ios-dynamic-font-loading">this blog post</a>. It&#39;s possible to dynamically load fonts and then consume them with the usual <code>fontNamed:withSize</code> <code>UIFont</code> class method.</p>
+<pre><code class=" hljs objc">NSData *inData = /* your decrypted font-<span class="hljs-type">file</span> data */;
+CFErrorRef <span class="hljs-keyword">error</span>;
+CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)inData);
+CGFontRef font = CGFontCreateWithDataProvider(provider);
+<span class="hljs-keyword">if</span> (! CTFontManagerRegisterGraphicsFont(font, &amp;<span class="hljs-keyword">error</span>)) {
+    CFStringRef errorDescription = CFErrorCopyDescription(<span class="hljs-keyword">error</span>)
+    NSLog(@<span class="hljs-string">"Failed to load font: %@"</span>, errorDescription);
+    CFRelease(errorDescription);
+}
+CFRelease(font);
+CFRelease(provider);
+</code></pre>
+<p>The only downside of this approach is that we need to run that code at some point. I put it into a <code>FontsManager</code> class, with getters for the fonts that sort of lazy loads them. Like this:</p>
+<pre><code class=" hljs objc"><span class="hljs-keyword">static</span> <span class="hljs-built_in">NSString</span> * <span class="hljs-keyword">const</span> kBundle = @<span class="hljs-string">"ResourceBundle.bundle"</span>;
+
++ (<span class="hljs-built_in">UIFont</span> *)openSansLightFontOfSize:(<span class="hljs-built_in">CGFloat</span>)size
+{
+    <span class="hljs-built_in">NSString</span> *fontName = @<span class="hljs-string">"OpenSans-Light"</span>;
+    <span class="hljs-built_in">UIFont</span> *font = [<span class="hljs-built_in">UIFont</span> fontWithName:fontName size:size];
+    <span class="hljs-keyword">if</span> (!font) {
+        [[<span class="hljs-keyword">self</span> class] dynamicallyLoadFontNamed:fontName];
+        font = [<span class="hljs-built_in">UIFont</span> fontWithName:fontName size:size];
+
+        <span class="hljs-comment">// safe fallback</span>
+        <span class="hljs-keyword">if</span> (!font) font = [<span class="hljs-built_in">UIFont</span> systemFontOfSize:size];
+    }
+
+    <span class="hljs-keyword">return</span> font;
+}
+
++ (<span class="hljs-keyword">void</span>)dynamicallyLoadFontNamed:(<span class="hljs-built_in">NSString</span> *)name
+{
+    <span class="hljs-built_in">NSString</span> *resourceName = [<span class="hljs-built_in">NSString</span> stringWithFormat:@<span class="hljs-string">"%@/%@"</span>, kBundle, name];
+    <span class="hljs-built_in">NSURL</span> *url = [[<span class="hljs-built_in">NSBundle</span> mainBundle] URLForResource:resourceName withExtension:@<span class="hljs-string">"ttf"</span>];
+    NSData *fontData = [NSData dataWithContentsOfURL:url];
+    <span class="hljs-keyword">if</span> (fontData) {
+        CFErrorRef error;
+        CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)fontData);
+        CGFontRef font = CGFontCreateWithDataProvider(provider);
+        <span class="hljs-keyword">if</span> (! CTFontManagerRegisterGraphicsFont(font, &amp;error)) {
+            CFStringRef errorDescription = CFErrorCopyDescription(error);
+            <span class="hljs-built_in">NSLog</span>(@<span class="hljs-string">"Failed to load font: %@"</span>, errorDescription);
+            CFRelease(errorDescription);
+        }
+        CFRelease(font);
+        CFRelease(provider);
+    }
+}
+</code></pre>
+<h3 id="what-about-the-images-">What about the images?</h3>
+<p>We can access images with the same strategy used for the fonts, a manager that lazy loads them from the bundle.</p>
+<hr>
+<p>Having a tidy project is invaluable, specially when it only needs a couple of lines of code. Plus by grouping our assets in a pod we can quickly implement other apps with a style consistent to our branding. </p>
+<p>If you&#39;re interested in the matter of handling big projects by modularizing them, <a href="http://dev.hubspot.com/blog/architecting-a-large-ios-app-with-cocoapods">this</a> article will be an interesting read.</p>
+<p><em>Leave your codebase better than you found it</em></p>
+</div><div id="paginator"><div><a href="/blog/upgrading-podfile"><<&nbsp;A caveat when upgrading a Podfile</a></div><div style="text-align: right"><a href="/blog/automating-ios-enterprise-deployment">Automating iOS Enterprise Deployment with shenzhen&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/automating-ios-enterprise-deployment">Automating iOS Enterprise Deployment with shenzhen</a></h2><p class="post-meta"><span class="post-date">Mon Jan 06 2014&nbsp;</span><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Ruby/index.html" class="post-tag">-Ruby</a><a href="/tag/Automate/index.html" class="post-tag">-Automate</a><a href="/tag/Productivity/index.html" class="post-tag">-Productivity</a></p><div class="post"><p>In this short post I&#39;m gonna have a look at how to use the splendid <a href="https://github.com/nomad/shenzhen/">shenzhen</a> gem by <a href="http://mattt.me/">Mattt</a> to automate the process of building an <code>.ipa</code> for enterprise distribution and shipping it.</p>
+<p>Here&#39;s the code for the build phase:</p>
+<pre><code class="">ipa build \
+  -<span class="ruby">-workspace <span class="hljs-constant">MyAwesomeApp</span>.xcworkspace \
+</span>  -<span class="ruby">-configuration <span class="hljs-constant">MyAwesomeAppEnterpriseConfiguration</span> \
+</span>  -<span class="ruby">-scheme <span class="hljs-constant">MyAwesomeAppEnterpriseScheme</span> \
+</span>  -<span class="ruby">-embed <span class="hljs-constant">MyAweseomAppEnterpriseDistribution</span>.mobileprovision \
+</span>  -<span class="ruby">-clean \
+</span>  -<span class="ruby">-archive<span class="hljs-string">"</span></span>
+</code></pre><p>or the shorter version:</p>
+<pre><code class="">ipa build \
+  -<span class="ruby">w <span class="hljs-constant">MyAwesomeApp</span>.xcworkspace \
+</span>  -<span class="ruby">c <span class="hljs-constant">MyAwesomeAppEnterpriseConfiguration</span> \
+</span>  -<span class="ruby">s <span class="hljs-constant">MyAwesomeAppEnterpriseScheme</span> \
+</span>  -<span class="ruby">m <span class="hljs-constant">MyAweseomAppEnterpriseDistribution</span>.mobileprovision \
+</span>  -<span class="ruby">-clean \
+</span>  -<span class="ruby">-archive<span class="hljs-string">"</span></span>
+</code></pre><h3 id="how-does-it-work-">How does it work?</h3>
+<p>What shenzhen does is calling <code>xcodebuild</code> for us using the proper arguments and avoiding the unreadable output. <em>Speaking of which, take a look at what <a href="https://github.com/mneorr/XCPretty">xcpretty</a> does to help us</em>.</p>
+<p>As you can see from the code above there are quite a few options to specify. In particular <em>in my experience</em> I saw that to build properly we need <strong>both</strong> <code>--scheme</code> and <code>--configuration</code>. If you are reading this article you&#39;re probably already managing your enterprise build with a different pair of Build Configuration and Scheme, in order to change the Bundle Id and the other configurations, so those parameters will surely make sense to you. But why <strong>both</strong>? </p>
+<p>As far as I can see after 10 minutes of hacking this is due to the fact that shenzen looks for the configuration parameter if this is not specified, <a href="https://github.com/mokagio/shenzhen/blob/master/lib/shenzhen/commands/build.rb">source here</a>), and passes it to <code>xcodebuild</code>. What happens in my case is that shenzhen guesses the wrong configuration, and this is why I have to specify it in the parameters. No big deals anyway ;)</p>
+<p>Another thing we notice in the parameters is the <code>--embed XXX.mobileprovision</code> one. This is used to sign the build with the certificate specified for the enterprise distribution. You can download the Provisioning Profile you need from the Member Center in the <a href="https://developer.apple.com/membercenter">Apple Developer Portal</a>. Keep it in a safe place! Everything will work fine as long as you have the private key for that.</p>
+<p>A tip I have regarding the Provisioning Profile is to be sure that the keychain where its keys are is <em>unlocked</em>, unless you want to the OS to pop you a dialog asking for the keychain credentials at some point. The keychain can be unlocked from the Keychain Access app.</p>
+<h3 id="time-to-distribute-">Time to distribute!</h3>
+<p>shenzhen&#39;s <code>distribute</code> command lets us distribute our freshly built <code>.ipa</code> through 4 different channels, <a href="http://hockeyapp.net/features/">HockeyApp</a>, <a href="http://testflightapp.com/">TestFlight</a>, upload to S3, or simple FTP. </p>
+<p>Take a look at the <a href="https://github.com/mokagio/shenzhen/#building--distribution">README</a> for the details of the single channels, or just type <code>ipa distribute:XXX --help</code> to find out about the parameter.</p>
+<p>It&#39;s super simple!</p>
+<h3 id="where-to-go-from-here-">Where to go from here?</h3>
+<ul>
+<li>Is it possible to unlock the keychain from the script, maybe just for its execution, in order to have more protections?</li>
+<li>Dig better into the scheme and configuration issue, and maybe submit a PR.</li>
+</ul>
+<p>I hope after reading this you&#39;ll be able save time by automating your enterprise deployment process, and use it to read my other blogpost :P</p>
+<p>Happy deploying!</p>
+<hr>
+<p>Thanks to <a href="https://twitter.com/jerryhjones">@jerryhjones</a> for finding a typo ;)</p>
+</div><div id="paginator"><div><a href="/blog/sharing-assets-with-cocoapods-resource-bundle-and-dynamically-loaded-fonts"><<&nbsp;Sharing assets across iOS projects with CocoaPods, Resource Bundle, and dynamically loaded fonts</a></div><div style="text-align: right"><a href="/blog/2013-retrospectives-and-2014-propositions">2013 retrospectives... and 2014 propositions&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/2013-retrospectives-and-2014-propositions">2013 retrospectives... and 2014 propositions</a></h2><p class="post-meta"><span class="post-date">Thu Jan 02 2014&nbsp;</span><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Ruby/index.html" class="post-tag">-Ruby</a><a href="/tag/Health/index.html" class="post-tag">-Health</a><a href="/tag/Productivity/index.html" class="post-tag">-Productivity</a><a href="/tag/Resolutions/index.html" class="post-tag">-Resolutions</a></p><div class="post"><p>2013 has been a very dense year for me, full on new experiences and challenges. I can really say I&#39;ve grown a lot during year. In this post I&#39;m gonna try to do a quick <em>retrospective</em> on 2013, in full agile fashion. Finally I&#39;m gonna set some expectations for 2014.</p>
+<h3 id="retrospectives-on-2013">Retrospectives on 2013</h3>
+<h3 id="what-s-been-good">What&#39;s been good</h3>
+<h4 id="love-it-or-leave-it-">Love it or leave it!</h4>
+<p>I was able to overcome some fears and leave <a href="http://memrise.com">Memrise</a>, my first job and first love in London, when I realized I wasn&#39;t loving it anymore, and that my work there was teaching me less and less things week after week. Although I have to admit that to change job in a city like London, where the market is so vibrant, and developers receive many emails a week from recruiters you don&#39;t really need to be brave, just smart.</p>
+<h4 id="podcasts-and-screencasts">Podcasts and Screencasts</h4>
+<p>In the last quarter of the year I decided to optimize those dead moments of my day, like walking to work or eating, trying to learn a bit of stuff in a chilled way. I therefore started following a number of <a href="http://www.mokacoding.com/2013/11/20/podcasts.html">podcasts</a> and screencasts about technology, mainly iOS and Ruby. It&#39;s a good way to keep my mind busy and pick up some good things without really focusing. It&#39;s also an healthier alternative to watching Dexter at dinner time and getting caught into the episodes till 3 in the morning!</p>
+<h4 id="standing-desk">Standing desk</h4>
+<p>At the beginning of the year, thanks to the example of my colleague <a href="http://adamj.eu">Adam</a>, I picked up the habit of working standing. It&#39;s amazing! Not a back pain or a position problem, and I always feel very energetic! Plus... <a href="http://lifehacker.com/standing-for-3-hours-a-day-on-weekdays-is-like-running-1447078889"><em>&quot;Standing on Weekdays Burns Calories Like Running 10 Marathons a Year!&quot;</em></a></p>
+<h3 id="what-could-be-improved">What could be improved</h3>
+<h4 id="reading-books-and-blog-posts">Reading books and blog posts</h4>
+<p>The internet is full of resources and informations, and so are the libraries. When 2013 started I wanted to read many technical books and blogs. I&#39;ve skimmed through a handful of technical books, and except for <a href="http://nshipster.com/">NSHipster</a> and <a href="http://objc.io">objc.io</a> I mainly just put links in my <a href="http://getpocket.com">Pocket</a> read it later list, without picking them out anymore.</p>
+<h4 id="looking-at-the-source-code">Looking at the source code</h4>
+<p>I believe looking at the source code of libraries you&#39;re using is really important for two reasons, first because it provides a better understanding of how things work, second because it&#39;s usually a good way to pick up good coding styles. That said I spent most of 2013 looking at the source code of a library only when something didn&#39;t work properly.</p>
+<h4 id="estimates">Estimates</h4>
+<p>It took me a while to understand that the time I estimate in my head it&#39;s not gonna be the one it will take me to actually do the job, and therefore increase it of a good .5 or more before writing it down on the task ticket.</p>
+<h4 id="blogging">Blogging</h4>
+<p>When I started this blog, on <a href="http://amokafullofstuff.wordpress.com/">Wordpress.com</a> at the time, I wanted to do a post per week. I posted 21 posts, of which 5 are just a collection of things learned during the month. That, like the estimates, was clearly shooting to high...</p>
+<h3 id="what-has-been-bad">What has been bad</h3>
+<h4 id="i-worked-too-much">I worked too much</h4>
+<p>February has been hell, I worked all the weekends of the month, on a rush to complete and app that got taken off the store after a month or so. That was bad for sooo many reasons. I was always working in a rush, skipping unit tests, making silly mistakes, writing poor code, and I didn&#39;t get almost any free time to relax or to work on personal projects, every thing for a product that just a couple of thousands UK iPhone users downloaded, and that&#39;s not even online anymore.</p>
+<h4 id="at-the-edge-of-the-community">At the edge of the community</h4>
+<p>I&#39;ve been at the edge of the community. I&#39;ve lived for one year in a city like London, where there&#39;s a meetup every night and a hackthon every weekend, but I&#39;ve attended only a few of those. I&#39;ve also produced little open source software, just a couple of not really maintained iOS libraries, and a handful of PR.</p>
+<h4 id="late-ios-7-adoption">Late iOS 7 adoption</h4>
+<p>I&#39;ve started looking into the iOS 7 SDK news at the end of August, joining the party late and having, still now, to work hard to catch up.</p>
+<h4 id="not-enough-tdd">Not enough TDD</h4>
+<p>I&#39;ve let the hurries of my CEO drive the development of my projects, rather than the tests and a clear roadmap.</p>
+<h4 id="haven-t-learned-any-new-language-">Haven&#39;t learned any new language!</h4>
+<p>Nor even tried something new! I realized this only now writing this blogpost, and I feel really bad about it.</p>
+<h4 id="didn-t-exercise">Didn&#39;t exercise</h4>
+<p>I put aside swimming and gym to focus on work... That&#39;s not really healthy and I&#39;m starting to feeling and seeing the consequences of 6 month of almost sedentary life style already.</p>
+<h3 id="2014-propositions">2014 propositions</h3>
+<p>After having looked back at the 2013 with a critical eye, I can say that on 2014 I&#39;ll <strong>set the bar low, but jump higher</strong>. I&#39;m not gonna say or write something like <em>&quot;I&#39;m gonna write a blogpost every week&quot;</em>, or <em>&quot;I&#39;m gonna wake up at 6 every morning to do pushups, like Bruce Waine&quot;</em>. I&#39;ll set the bar low, <em>&quot;I&#39;m gonna write a blogpost every month&quot;</em>, and I&#39;m gonna try to jump higher than it every time. I&#39;m also <strong>not gonna be a slave of my daily job</strong>, and be sure to have enough free time to both work on my own things and just chill. I&#39;ll try to <strong>expand my technical knowledge both deeper and wider</strong>, deeper in what I work on daily, and wider towards new tools. Finally I&#39;m going to be more involved in the community, because those few time I&#39;ve been at a conference or a meetup I&#39;ve always came home with something new to try out and with new friends to talk to.</p>
+<p>Here&#39;s some goals:</p>
+<ul>
+<li>5 tweets sharing tech articles I&#39;ve read a week.</li>
+<li>3 days of exercise, or at least <a href="http://well.blogs.nytimes.com/2013/05/09/the-scientific-7-minute-workout/?_r=0">7 minutes workout</a>, a week.</li>
+<li>1 original tech blogpost per month.</li>
+<li>1 social event for developers a month.</li>
+<li>1 tech book every quarter.</li>
+<li>1 PR per quarter</li>
+<li>2 decent (&gt; 100 stars on GitHub) open source softwares during the year</li>
+<li>1 new programming language learned during the year.</li>
+</ul>
+<hr>
+<p>That&#39;s it, as always in the first days of January I feel energetic and unbeatable. I&#39;ll try to keep up to those resolution, we&#39;ll see how it went in 12 month.</p>
+<p>Happy coding!</p>
+</div><div id="paginator"><div><a href="/blog/automating-ios-enterprise-deployment"><<&nbsp;Automating iOS Enterprise Deployment with shenzhen</a></div><div style="text-align: right"><a href="/blog/podcasts">Podcasts, grow your brain through soundwaves&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/podcasts">Podcasts, grow your brain through soundwaves</a></h2><p class="post-meta"><span class="post-date">Wed Nov 20 2013&nbsp;</span><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Ruby/index.html" class="post-tag">-Ruby</a><a href="/tag/Node/index.html" class="post-tag">-Node</a><a href="/tag/Agile/index.html" class="post-tag">-Agile</a><a href="/tag/Learn/index.html" class="post-tag">-Learn</a><a href="/tag/Podcasts/index.html" class="post-tag">-Podcasts</a></p><div class="post"><p>Recently I&#39;ve been listening to a lot of podcasts, actually too many to keep up with. I wanted to try to to <em>learn through soundwaves</em>, in a sort of passive way while doing something in which my <em>brain power</em> -if we want to go as far as calling it power- is wasted, like washing the dishes, or walking somewhere. I found podcasts a great way to get in touch with new things that I can then come back to and look in more deeply. It&#39;s also nice to hear all the guests speaking, it&#39;s a fraction of the experience you get when going to a conference.</p>
+<p>These are my favourite podcasts, in random order:</p>
+<h3 id="-build-phase-"><a href="http://podcasts.thoughtbot.com/buildphase">Build Phase</a></h3>
+<p>At the moment I&#39;m a professional iOS developer. This podcast is a weekly source of thoughts, new things, and inspiration. Gordon and Adam always start like they don&#39;t know what they&#39;re talking about, but they quickly get back on track and keep up a rich and fun podcast.</p>
+<p><strong>One thing I learned:</strong> The XVim plug-in for Xcode.</p>
+<h3 id="-developing-perspective-"><a href="http://developingperspective.com/">Developing Perspective</a></h3>
+<p>This podcast is about what it&#39;s like to be a human being, not a super start. <a href="http://twitter.com/_DavidSmith">David Smith</a> is a indie iOS developer and shares it&#39;s views and experience on this world. I like the simplicity of this podcast, and the sort of comfort I get from discovering that even successful developers have problems similar to mine.</p>
+<p><strong>One thing I learned:</strong> It&#39;s fine to make mistakes, as long as you take responsibilty for them and try to learn a lesson.</p>
+<h3 id="-rubyrouges-"><a href="rubyrogues.com">RubyRouges</a></h3>
+<p>As I said I&#39;m working as an iOS developer, but at night I like to write readable code. With Ruby and Coffeescript. The RubyRouges crew is too long to be listed. This guys know their Ruby and the usually either have a guest or a book to talk about. But don&#39;t get fouled by the name, this podcast is more about good programming techniques and mentality than Ruby as a language itself.</p>
+<p><strong>One thing I learned:</strong> Getting into the habit of spending 15-20 minutes a day on &quot;tools sharpening&quot;.</p>
+<h3 id="-giant-robots-smashing-into-other-giant-robots-"><a href="http://podcasts.thoughtbot.com/giantrobots">Giant Robots Smashing into other Giant Robots</a></h3>
+<p>Produced by <a href="http://thoughtbot.com/">thoughtbot</a>, the same company behind Build Phase, this weekly podcast has a different guest everytime, covering various topics always realted to the world of development, but without being too techy. </p>
+<p>It&#39;s worth mentioning that the guys at thoughtbot are also the developers of two gems I can&#39;t live without when doing Rails apps: <a href="https://github.com/thoughtbot/factory_girl">factory_girl</a> and <a href="https://github.com/thoughtbot/shoulda">shoulda</a>.</p>
+<p><strong>One thing I learned:</strong> I can&#39;t recall anything tangible I learned form this podcast at the moment. Althought the episodes with <a href="http://podcasts.thoughtbot.com/giantrobots/72">Nathan Barry</a> and <a href="http://podcasts.thoughtbot.com/giantrobots/70">Jeff Atwood</a> have been really inspirational.</p>
+<h3 id="-this-agile-life-"><a href="thisagilelife.com">This Agile Life</a></h3>
+<p>Another weekly podcast related to the world of programming, but not too techy. Try to guess what this is about? This agile team of speakers goes deep into an agile topic every week, and it&#39;s a great source of information, specially for someone like me how&#39;s always been at the boarder line of the agile development without being really able to implement it completely.</p>
+<p><strong>One thing I learned:</strong> The best estimate is no-estimate. More <a href="http://www.thisagilelife.com/?p=494">here</a>.</p>
+<h3 id="other-podcast-worth-mentioning">Other podcast worth mentioning</h3>
+<ul>
+<li><a href="http://thechangelog.com/podcast/">The Changelog</a></li>
+<li><a href="http://nodeup.com/">NodeUp</a></li>
+<li><a href="http://nsbrief.com/">NSBrief</a></li>
+</ul>
+<h3 id="and-one-more-thing-">And one more thing...</h3>
+<p><a href="https://itunes.apple.com/au/podcast/aussie-mac-zone/id269632901">Aussie Mac Zone</a>. This podcast is simply hilarious. I love these guys! They keep me posted on all the news in the Apple world in the most fun way ever!</p>
+<p>If you have any other podcast on the line of these one that you want to share, tweet me <a href="https://twitter.com/mokagio">@mokagio</a>. </p>
+<p>Happy coding!</p>
+</div><div id="paginator"><div><a href="/blog/2013-retrospectives-and-2014-propositions"><<&nbsp;2013 retrospectives... and 2014 propositions</a></div><div style="text-align: right"><a href="/blog/rails-add-has-many-association-to-existing-model">Rails: adding a new has_many association to an existing model&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/rails-add-has-many-association-to-existing-model">Rails: adding a new has_many association to an existing model</a></h2><p class="post-meta"><span class="post-date">Wed Nov 13 2013&nbsp;</span><a href="/tag/Ruby/index.html" class="post-tag">-Ruby</a><a href="/tag/Ruby on Rails/index.html" class="post-tag">-Ruby on Rails</a></p><div class="post"><p>I&#39;m gonna quick go through the process of how to evolve an existing schema adding new models and association in Ruby on Rails. I had to do this for work this morning and had to put together pieces from the <a href="http://guides.rubyonrails.org/index.html">Rails Guides</a> and other resources.</p>
+<p>The starting point is a schema with a single <strong>items</strong> table. We want to have a <strong>level</strong> system, where each level is made up by a group of <strong>challenges</strong>, and each challenge contains a number of items.</p>
+<p>Note: I&#39;m using <a href="https://github.com/rspec/rspec">rspec</a> and <a href="https://github.com/thoughtbot/shoulda">shoulda</a> to write the tests.</p>
+<h3 id="step-1-create-the-challenge-model">Step 1 - Create the <code>Challenge</code> model</h3>
+<p>Creating a new empty model is easy, just run</p>
+<pre><code class=" hljs bash">rails g model challenge
+</code></pre>
+<p>and the resulting migration</p>
+<pre><code class=" hljs bash"><span class="hljs-attribute">rake db:migrate RAILS_ENV</span>=<span class="hljs-string">development</span>
+</code></pre>
+<h3 id="step-2-add-the-association-challenge-has-many-items-">Step 2 - Add the association &quot;challenge has many items&quot;</h3>
+<p>We want to have a model that makes these tests pass:</p>
+<pre><code class=" hljs ruby">describe Challenge <span class="hljs-built_in">do</span>
+  <span class="hljs-keyword">it</span> { should have_many :<span class="hljs-keyword">items</span> }
+<span class="hljs-function"><span class="hljs-keyword">end</span></span>
+
+describe Item <span class="hljs-built_in">do</span>
+  <span class="hljs-keyword">it</span> { should belong_to :challenge }
+<span class="hljs-function"><span class="hljs-keyword">end</span></span>
+</code></pre>
+<p>The first thing would be to write a migration, but there is no way to generate a migration for an association with the <code>rails generate migration</code> command. So we have to do it manually, and then write the migration to update the db and schema.</p>
+<pre><code class=" hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Challenge</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+    has_many <span class="hljs-symbol">:items</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+    belongs_to <span class="hljs-symbol">:challenge</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<pre><code class=" hljs bash">rails g migration AddItemsAssociationToChallenge
+</code></pre>
+<p>This is the code to put in the resulting migartion file</p>
+<pre><code class=" hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AddItemsAssociationToChallenge</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Migration</span></span></span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span><span class="hljs-keyword">self</span>.up
+      add_column <span class="hljs-symbol">:items</span>, <span class="hljs-symbol">:challenge_id</span>, <span class="hljs-symbol">:integer</span>
+      add_index <span class="hljs-string">'items'</span>, [<span class="hljs-string">'challenge_id'</span>], <span class="hljs-symbol">:name</span> =&gt; <span class="hljs-string">'index_challenge_id'</span> 
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span><span class="hljs-keyword">self</span>.down
+      remove_column <span class="hljs-symbol">:items</span>, <span class="hljs-symbol">:challenge_id</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>Finally let&#39;s run <code>rake db:migrate</code> and <code>rspec</code> (because we&#39;re using <a href="http://mislav.uniqpath.com/2013/01/understanding-binstubs/">binstub</a> aren&#39;t we?) and everything should be fine.</p>
+<h3 id="step-3-the-levels">Step 3 – The Levels</h3>
+<p>The process for the levels will be the same as before, a good way to commit the steps to memory. We want this specs to pass:</p>
+<pre><code class=" hljs ruby">describe Level <span class="hljs-built_in">do</span>
+    <span class="hljs-keyword">it</span> { should have_many :challenges }
+<span class="hljs-function"><span class="hljs-keyword">end</span></span>
+
+describe Challenge <span class="hljs-built_in">do</span>
+    <span class="hljs-keyword">it</span> { should belong_to :level }
+<span class="hljs-function"><span class="hljs-keyword">end</span></span>
+</code></pre>
+<p>So we generate a migration</p>
+<pre><code class=" hljs bash">rails g migration AddChallengesAssociationToLevel
+</code></pre>
+<p>and we write this inside it</p>
+<pre><code class=" hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AddChallengeAssociationToLevel</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Migration</span></span></span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span><span class="hljs-keyword">self</span>.up
+      add_column <span class="hljs-symbol">:challenges</span>, <span class="hljs-symbol">:level_id</span>, <span class="hljs-symbol">:integer</span>
+      add_index <span class="hljs-string">'challenges'</span>, [<span class="hljs-string">'level_id'</span>], <span class="hljs-symbol">:name</span> =&gt; <span class="hljs-string">'index_level_id'</span> 
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span><span class="hljs-keyword">self</span>.down
+      remove_column <span class="hljs-symbol">:challenges</span>, <span class="hljs-symbol">:level_id</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>finally we cannot forget to manually update our models</p>
+<pre><code class=" hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Level</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+    has_many <span class="hljs-symbol">:challenges</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Challenge</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+    has_many <span class="hljs-symbol">:items</span>
+    belongs_to <span class="hljs-symbol">:level</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>That&#39;s all. Nothing incredibly hard, but still not obvious for someone who manly writes Objective-C. Happy coding!</p>
+</div><div id="paginator"><div><a href="/blog/podcasts"><<&nbsp;Podcasts, grow your brain through soundwaves</a></div><div style="text-align: right"><a href="/blog/things-learned-in-october">Some things I learned in October&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/things-learned-in-october">Some things I learned in October</a></h2><p class="post-meta"><span class="post-date">Wed Nov 13 2013&nbsp;</span><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Open Source/index.html" class="post-tag">-Open Source</a></p><div class="post"><p>The month of October has been strange. I decided to change my job, <em>I&#39;ll write about it later</em>, and so I spent a lot of time sorting out my websites and CV, some of my open source projects, looking for a new possible company. I also reached the final stage of the development of a new -sort of- app with my current company, in the worst possible way ever, rushing into last minue changes, UI redisigns, bugfixes. All this to say... I read and explored less than usual, and probably forgot to take record of interesting things.</p>
+<h2 id="ios-simulator-screen-recording">iOS Simulator Screen Recording</h2>
+<p>As I mentioned we reached the pre submit state for an app with the currently that I&#39;m gonna leave in some days. I&#39;m not proud of that app so I&#39;m not gonna link it. Anyway they wanted a screencapture to show to some chinese dude. I used <a href="http://www.jaml.co.uk/simcap/">SimCap</a> and <a href="http://cycling74.com/products/soundflower/">Soundflower</a>, and I&#39;ve been pretty happy with the result. Everything is simple and straightforward to used. Only one note: don&#39;t panic if after enabling Soundflower the sound in your Mac doesn&#39;t work anymore, it&#39;s just going through it instead.</p>
+<h2 id="an-html5-nightstand-">An HTML5 nightstand...</h2>
+<p>For a sleepless night I got into HTML5 game development, part because of a <a href="http://www.youtube.com/watch?v=CV5TA2aXXaQ">talk I saw</a>, part because of an idea I had, that I had to put aside because I needed more time to implement it. It all brought me to discover <a href="https://github.com/cykod/Quintus">Quintus</a> a nice HTML5 game framework. Here&#39;s an interesting tutorial I took: <a href="http://www.gamedevacademy.org/create-a-html5-mario-style-platformer-game/">Create a HTML5 Mario style platformer game</a>.</p>
+<h2 id="new-discoveries">New discoveries</h2>
+<p>Through some friends I came across these interesting websites.</p>
+<ul>
+<li><a href="http://www.jsdb.io/?sort=trending">JSDB</a> a collection of JavaScript frameworks, plugins and tools</li>
+<li><a href="http://www.codewars.com/r/-u60aA">Codewars</a> a gamified way to improve your coding. <em>Full disclosure: that link will give me referral points. Normal one <a href="http://www.codewars.com/">here</a></em></li>
+</ul>
+<h2 id="a-final-word">A final word</h2>
+<p>I also failed to fullfit my commitment to answer <a href="http://www.mokacoding.com/blog/2013-10-06-october-questions">4 questions I asked myself</a>. I won&#39;t make any commitment this month.</p>
+</div><div id="paginator"><div><a href="/blog/rails-add-has-many-association-to-existing-model"><<&nbsp;Rails: adding a new has_many association to an existing model</a></div><div style="text-align: right"><a href="/blog/xcode-projects-and-workspaces">A dive into Xcode projects and workspaces&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/xcode-projects-and-workspaces">A dive into Xcode projects and workspaces</a></h2><p class="post-meta"><span class="post-date">Thu Oct 31 2013&nbsp;</span><a href="/tag/Xcode/index.html" class="post-tag">-Xcode</a><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a><a href="/tag/Questions/index.html" class="post-tag">-Questions</a><a href="/tag/Hacking/index.html" class="post-tag">-Hacking</a></p><div class="post"><p><em>Note: this is post is the first answer to my <a href="http://www.mokacoding.com/blog/october-questions">October&#39;s Questions</a>. It should have arrived earlier but this month has been strange, because of several reasons I didn&#39;t had and didn&#39;t make enough time to write. But let&#39;s get started!</em></p>
+<p>I use Xcode every day (what an happy life), and it has now come the time to dig deeper into this pain in the butt of an IDE. Where to start if not from the <em>merge nightmare</em>, the <code>project.pbxproj</code>.</p>
+<p><code>project.pbxproj</code> is contained into <code>YourProjectName.xcodeproj</code>, which is nothing more than a folder. It might be interesting to explore the rest of the content, but for now let&#39;s just focus on the <code>.pbxproj</code>.</p>
+<p>The <a href="https://developer.apple.com/library/ios/featuredarticles/XcodeConcepts/Concept-Projects.html#//apple_ref/doc/uid/TP40009328-CH5-SW1">Apple Documentation</a> sais:</p>
+<blockquote>
+<p>An Xcode project is a repository for all the files, resources, and information required to build one or more software products. A project contains all the elements used to build your products and maintains the relationships between those elements. It contains one or more targets, which specify how to build products. A project defines default build settings for all the targets in the project (each target can also specify its own build settings, which override the project build settings).</p>
+</blockquote>
+<p>Cool, I got that, but what about the file itself? Let&#39;s open one with a text editor. I&#39;ve used the <code>project.pbxproj</code> from <a href="https://github.com/krzysztofzablocki/KZPropertyMapper/blob/master/Example/Example.xcodeproj/project.pbxproj">KZPropertyMapper</a> a smart and timesaving library that you should all checkout.</p>
+<p>It appears as a sort of JSON, written in C, as it as a <code>{}</code> hierarchy, with inside <code>=</code>, <code>;</code> and <code>/* inline comments */</code>.</p>
+<p>The top level is something like</p>
+<pre><code class="">// !$*UTF8*$!
+{
+    archiveVersion = <span class="hljs-number">1</span>;
+    classes = {
+    };
+    objectVersion = <span class="hljs-number">46</span>;
+    objects = {
+        <span class="hljs-keyword">...</span>
+    };
+    rootObject = CDAC62FA17A0EF1A00F5452A /* Project object */;
+}
+</code></pre><p>The <code>objects</code> part is the real deal. Everything about the project is in there. All stored again in a dictionary fashion, with hexadecimal identifiers. A common parameter is the <code>isa</code> key. Here&#39;s an example:</p>
+<pre><code class="">CDAC634017A0EF4C00F5452A <span class="hljs-comment">/* KZPropertyMapper.m in Sources */</span> = {
+    isa = PBXBuildFile; 
+    fileRef = CDAC633F17A0EF4C00F5452A <span class="hljs-comment">/* KZPropertyMapper.m */</span>;
+};
+</code></pre><p>Lucky for us Xcode adds some comments to make the things a bit more readable for humans. <em>Note:</em> I&#39;m sure they&#39;re comment and not part of the way stuff is written because I actually tried changing one and everything run fine.</p>
+<p>The <code>objects</code> has many sections, each wrapped between <code>/* Begin SectionName section */</code> and <code>/* End SectionName section */</code> comments. </p>
+<p>Here&#39;s the ones I found more interesting, the <a href="http://docs.cocoapods.org/xcodeproj/index.html">xcodeproj</a> gem documentation used by <a href="http://cocoapods.org/">CocoaPods</a> has been really helpful in understanding what some sections were about:</p>
+<h4 id="-pbxfilereference-"><code>PBXFileReference</code></h4>
+<p>All the files in the project are in this list.</p>
+<pre><code class="">CDAC633F17A0EF4C00F5452A <span class="hljs-comment">/* KZPropertyMapper.m */</span> = {
+    isa = PBXFileReference<span class="hljs-comment">;</span>
+    fileEncoding = <span class="hljs-number">4</span><span class="hljs-comment">; </span>
+    lastKnownFileType = sourcecode<span class="hljs-preprocessor">.c</span><span class="hljs-preprocessor">.objc</span><span class="hljs-comment">; </span>
+    path = KZPropertyMapper<span class="hljs-preprocessor">.m</span><span class="hljs-comment">; </span>
+    sourceTree = <span class="hljs-string">"&lt;group&gt;"</span><span class="hljs-comment">; </span>
+}<span class="hljs-comment">;</span>
+</code></pre><h4 id="-pbxgroup-"><code>PBXGroup</code></h4>
+<p>This section has the groups tree. The groups are those fake folders that are useful only to create confusion on how the filesystem is oraganized. A PBXGroup can contain <code>PBXFirleReference</code>s, as well as other <code>PBXGroup</code>s. </p>
+<h4 id="-pbxnativetarget-"><code>PBXNativeTarget</code></h4>
+<p>In this section we have the settings of the <em>Targets</em> of the project, in particular there&#39;s references to <code>buildPhases</code> and <code>buildRules</code>, like in the UI.</p>
+<h4 id="-pbxshellscriptbuildphase-"><code>PBXShellScriptBuildPhase</code></h4>
+<p>Here we have the settings for a <em>Build Phase</em> of type <em>Run Script</em>. The funny thing about this part is that the script you insterted in the text box is stored as a one string…</p>
+<h4 id="-pbxvariantgroup-"><code>PBXVariantGroup</code></h4>
+<p>I found it hard to guess from the name, but here we have the information about the localized files.</p>
+<p>That&#39;s it, more or less… The <code>project.pbxproj</code> file stores all the informations regarding the project we&#39;re working on, and it&#39;s organized in a lot of meaningful sections related together by keeping track of the objects identifiers in form of hex hashes. Let&#39;s move on to the workspace then.</p>
+<p>I first came across an Xcode workspace when I used <a href="http://www.kobold2d.com/display/KKSITE/Home">Kobold2d</a> to develop a simple and unsuccesful game of iOS. It&#39;s easy to guess what a workspace might be. </p>
+<p>The <a href="https://developer.apple.com/library/ios/featuredarticles/XcodeConcepts/Concept-Workspace.html">Apple Documentation</a> sais:</p>
+<blockquote>
+<p>A workspace is an Xcode document that groups projects and other documents so you can work on them together. A workspace can contain any number of Xcode projects, plus any other files you want to include. In addition to organizing all the files in each Xcode project, a workspace provides implicit and explicit relationships among the included projects and their targets.</p>
+</blockquote>
+<p>The <code>.xcworkspace</code> from <a href="https://github.com/krzysztofzablocki/KZPropertyMapper/tree/master/Example/Example.xcworkspace">KZPropertyMapper</a> is too tiny, so let&#39;s  take a look at another one, <a href="https://github.com/AFNetworking/AFNetworking/blob/master/AFNetworking.xcworkspace/contents.xcworkspacedata">AFNetworking</a>. As for the project the workspace is nothing but a folder, grouping configuration files. The interesting file here is <code>contents.xcworkspacedata</code>. Let&#39;s open it… Surprise! Unlike the project file this one is a more readable <a href="http://en.wikipedia.org/wiki/XML">XML</a>. Inside there&#39;s a list of the workspace components. </p>
+<pre><code class=" hljs xml">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;
+&lt;Workspace
+    version = <span class="hljs-string">"1.0"</span>&gt;
+    &lt;Group
+        location = <span class="hljs-string">"group:AFNetworking"</span>
+        name = <span class="hljs-string">"AFNetworking"</span>&gt;
+        &lt;FileRef
+            location = <span class="hljs-string">"group:AFNetworking.h"</span>&gt;
+        &lt;/FileRef&gt;
+        &lt;Group
+            location = <span class="hljs-string">"container:"</span>
+            name = <span class="hljs-string">"NSURLConnection"</span>&gt;
+            &lt;FileRef
+                location = <span class="hljs-string">"group:AFNetworking/AFURLConnectionOperation.h"</span>&gt;
+            &lt;/FileRef&gt;
+            <span class="hljs-keyword">...</span>
+        &lt;/Group&gt;
+        &lt;Group
+            location = <span class="hljs-string">"container:"</span>
+            name = <span class="hljs-string">"NSURLSession"</span>&gt;
+            <span class="hljs-keyword">...</span>
+        &lt;/Group&gt;
+        <span class="hljs-keyword">...</span>
+    &lt;/Group&gt;
+    <span class="hljs-keyword">...</span>
+    &lt;FileRef
+        location = <span class="hljs-string">"group:Tests/AFNetworking Tests.xcodeproj"</span>&gt;
+    &lt;/FileRef&gt;    
+    <span class="hljs-keyword">...</span>
+&lt;/Workspace&gt;
+</code></pre>
+<p>If you open the <code>AFNetworking.xcworkspace</code> you&#39;ll see this</p>
+<!-- I know, I know... inline style is shit :(-->
+<p><img src="{{ site.url }}/assets/2013-10-31/afnetworking_fs.png" style="width: 200px" alt="AFNetworking Workspace"/></p>
+<p>It all then comes together. It works more or less as the <code>project.pbxproj</code> does. The <code>Group</code> tag contains other <code>Group</code>s or <code>FileRef</code> tags, which represent where the file is in the filesystem related to the location of the workspace.</p>
+<p>This is it. Of course there could be, and may be there will be, a lot more to dig and look into, but for tonight I&#39;m fine with this. I now have a clearer picture of what happens when I add a new file to a project or I use the GUI to edit the configurations of a target. I can&#39;t say this is gonna make my everyday battle with Xcode easier, but definitely knowing more of how it works makes me feel smarted.</p>
+<p>Happy coding.</p>
+<h3 id="references">References</h3>
+<ul>
+<li>The <a href="http://docs.cocoapods.org/xcodeproj/index.html">xcodeproj</a> gem used by <a href="">CocoaPods</a>.</li>
+<li><a href="https://github.com/rayh/xcoder">xcoder</a>, another gem to manipulate an Xcode project. </li>
+</ul>
+</div><div id="paginator"><div><a href="/blog/things-learned-in-october"><<&nbsp;Some things I learned in October</a></div><div style="text-align: right"><a href="/blog/october-questions">October's Questions&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/october-questions">October's Questions</a></h2><p class="post-meta"><span class="post-date">Sun Oct 06 2013&nbsp;</span><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a><a href="/tag/Ruby/index.html" class="post-tag">-Ruby</a><a href="/tag/Open Source/index.html" class="post-tag">-Open Source</a></p><div class="post"><p>I&#39;m reading <a href="http://pragprog.com/book/cfcar2/the-passionate-programmer">The Passionate Programmer</a>, by <a href="https://twitter.com/chadfowler">Chad Fowler</a> a book I reccomend to everyone, even if you&#39;re not really into coding. It&#39;s a set of tips on how to make the most out of your work as a software developer, all written in a easy to follow and engaging style.</p>
+<p>One of the tips is called &quot;Learn to Fish&quot;, and, quoting the famous saying <a href="http://en.wiktionary.org/wiki/give_a_man_a_fish_and_you_feed_him_for_a_day._Teach_a_man_to_fish_and_you_feed_him_for_a_lifetime"><em>&quot;Give a man a fish and you feed him for a day. Teach a man to fish and you feed him for a lifetime.&quot;</em></a>, it tells us about the importance of going deep in the understanding of our development tools, and business domain. The chapter ends by saying:</p>
+<blockquote>
+<p>Better yet, don&#39;t <em>ask</em> to be taught -go learn yourself.</p>
+</blockquote>
+<p>Chad Fowler also gives a tip on how to learn to fish:</p>
+<blockquote>
+<p>You can ask yourself two extremely useful questions about any given area to drill down into the murky layer: <strong>How does it work?</strong> and <strong>Why does this (have to) happen?</strong></p>
+</blockquote>
+<p>So this is what I&#39;m gonna do (more) from now on. Spending time asking myself this type of questions around the technologies I use. And, inspired a bit by <a href="http://jenniferdewalt.com/">Jennifer Dewalt (180 websites im 180 days)</a>, I&#39;m gonna track everything here. Let&#39;s get started!</p>
+<h2 id="october-s-questions">October&#39;s Questions</h2>
+<p>I&#39;ll start by trying understand better the tools I use in my daily job. At the moment I&#39;m working as an iOS developer and next to the classic iOS SDK, Objective-C, Xcode and the iPhone Simulator, I&#39;m making massive use of <a href="http://cocoapods.org/">CocoaPods</a>, <a href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a>, and <a href="https://github.com/facebook/xctool">xctool</a>.</p>
+<p>I already have many questions on those technologies and tools, but one thing I&#39;ve learned about propositions is <strong>start small!</strong>. So I&#39;ll start with only four questions. One per week, this shouldn&#39;t be hard to accomplish.</p>
+<h3 id="1-xcode">1 - Xcode</h3>
+<p><strong>How does it...</strong> stores the informations about project and workspace?</p>
+<h3 id="2-objective-c">2 - Objective-C</h3>
+<p><strong>Why does it...</strong> allow us to use the messages syntax AND the dot notation to call methods?</p>
+<h3 id="3-cocoapods">3 - CocoaPods</h3>
+<p><strong>How does it...</strong> generate the workspace and manage the pods in it?</p>
+<h3 id="4-afnetworking">4 - AFNetworking</h3>
+<p><strong>How does it...</strong> wrap Apple&#39;s newtworking classes?</p>
+</div><div id="paginator"><div><a href="/blog/xcode-projects-and-workspaces"><<&nbsp;A dive into Xcode projects and workspaces</a></div><div style="text-align: right"><a href="/blog/things-learned-in-september">Some things I learned in September&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/things-learned-in-september">Some things I learned in September</a></h2><p class="post-meta"><span class="post-date">Wed Oct 02 2013&nbsp;</span><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a><a href="/tag/Ruby/index.html" class="post-tag">-Ruby</a><a href="/tag/Layout/index.html" class="post-tag">-Layout</a><a href="/tag/CSS/index.html" class="post-tag">-CSS</a><a href="/tag/Open Source/index.html" class="post-tag">-Open Source</a><a href="/tag/Node.js/index.html" class="post-tag">-Node.js</a><a href="/tag/Data Visualization/index.html" class="post-tag">-Data Visualization</a><a href="/tag/Jenkins/index.html" class="post-tag">-Jenkins</a></p><div class="post"><h3 id="javascript-and-data-visualization">Javascript and Data Visualization</h3>
+<p>My company wanted a custom viewer for analytics data, perfect occasion for experiment with data visualization powered by Javascript. I started by taking a look at <a href="http://d3js.org/">D3.js</a>, which is the library used by the GitHub guys to draw their amazing repo graphs. It&#39;s incredibly powerful, but requires quite a bit of coding to get stuff done. I then used <a href="https://github.com/nnnick/Chart.js">Chart.js</a> for a bit. It&#39;s smaller, simpler, and faster to learn. This all comes with the downside of being less powerful, and with not enough of the features I needed out of the box. Also the development seems to be going really slow at the moment. So now I&#39;m working with <a href="http://g.raphaeljs.com/">gRaphaël</a>, it&#39;s built on top of <a href="http://raphaeljs.com/">Raphaël</a> and has more of the things I was looking for ready made.</p>
+<h3 id="node-node-node-">Node, node, node!</h3>
+<p>With the project I mentioned above I finally had the occasion to spend company time working on <a href="nodejs.org">Node.js</a>. I like how lighter it is compared to Rails, and I&#39;m definitely gonna keep experimenting with it.</p>
+<p>In fact I used <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Node + Heroku</a> to setup my <a href="http://www.giovannilodi.com">personal landing page</a>.</p>
+<p><em>Sneak peek:</em> having setup an Node + Express + Coffeescript task more than two times, and being DRY, <em>or lazy</em>, I&#39;ve decided to put it in a repo. Stay tuned!</p>
+<h3 id="bower">Bower</h3>
+<p>They&#39;ve done it again! After Bootstrap the Twitter team has released <a href="http://bower.io/">Bower</a> <em>&quot;A package manager for the web&quot;</em>. It&#39;s the bundler or npm of your web packages. Smart! One of those things you say &quot;How could I&#39;ve lived without it?&quot;</p>
+<h3 id="other-javascript-stuff">Other Javascript stuff</h3>
+<ul>
+<li><a href="http://momentjs.com/">Moment.js</a>, a slim yet powerful library to manipulate time.</li>
+<li>I&#39;ve played quite a lot with <a href="http://jade-lang.com/">Jade</a>, it&#39;s really cool, but not as flexible as I hope, <em>or maybe I need to dig more in the documentation…</em>. Anyway, I found this nice <a href="http://garann.github.io/template-chooser/">Javascript Template Chooser</a>.</li>
+</ul>
+<h3 id="css-frameworks">CSS Frameworks</h3>
+<p>I looked into alternatives to Bootstrap. Here&#39;s what I found:</p>
+<ul>
+<li><a href="http://designmodo.github.io/Flat-UI">Flat UI</a></li>
+<li><a href="http://gumbyframework.com/">Gumby</a></li>
+<li><a href="http://purecss.io/">Pure</a></li>
+<li><a href="http://www.getskeleton.com/">Skeleton</a></li>
+<li><a href="http://foundation.zurb.com/">Foundation</a></li>
+<li><a href="http://goldilocksapproach.com/">Goldilocks</a></li>
+<li><a href="http://inuitcss.com/">IntuiCSS</a></li>
+</ul>
+<h3 id="jenkins">Jenkins</h3>
+<p>I&#39;ve finally been able to plant the seed of the TDD and CI culture in my company. They bought me a Mac Mini, and I&#39;ve set it up with Jenkins. It&#39;s been a bit painful, but really fun! And now we have the tests running at every push and two nightly builds, development and qa, distributed via TestFlight. <em>It&#39;s a shame I&#39;m the only iOS dev who writes tests :(</em></p>
+<h3 id="ruby">Ruby</h3>
+<p>I had a quick, and not finished yet, blast at making a ruby gem. Enter <a href="mokagio.github.io/swagify/">Swagify</a> a gem to add some your commands and scripts outputs. I&#39;m not gonna talk too much about it here, as I don&#39;t consider the learning experience over (it never is btw).</p>
+<h3 id="readings">Readings</h3>
+<ul>
+<li><a href="http://mashable.com/2013/09/09/increase-search-traffic/">How to increase search traffic without being an asshole</a>.</li>
+<li><a href="http://www.wired.com/opinion/2013/09/designing-for-mobile-means-ditching-deeply-ingrained-pc-instincts/">An Insider’s View of Mobile-First Design: Don’t Make These Mistakes</a></li>
+<li><a href="http://fendrich.se/blog/2012/09/28/no/">Why you should use zsh</a></li>
+</ul>
+<h3 id="something-funny">Something funny</h3>
+<ul>
+<li><a href="http://sloppyui.tumblr.com/">Sloppy UI</a> - It&#39;s all about the flaws in iOS 7 design</li>
+<li><a href="http://thecodinglove.com/">the_coding_love();</a> - Funny gifs to ease the dev life</li>
+<li><a href="http://developersasanimals.tumblr.com/">Developers as Animals</a></li>
+</ul>
+</div><div id="paginator"><div><a href="/blog/october-questions"><<&nbsp;October's Questions</a></div><div style="text-align: right"><a href="/blog/ios7-ux-designers-verdict">Sharing some thoughts on iOS 7&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/ios7-ux-designers-verdict">Sharing some thoughts on iOS 7</a></h2><p class="post-meta"><span class="post-date">Tue Sep 24 2013&nbsp;</span><a href="/tag/iOS 7/index.html" class="post-tag">-iOS 7</a><a href="/tag/UX/index.html" class="post-tag">-UX</a></p><div class="post"><p>Today I read this article I added to my reading list a couple of days ago: <a href="http://www.digitalartsonline.co.uk/news/interactive-design/ios-7-leading-ux-designers-give-their-verdict/">iOS 7: leading UX designers give their verdict</a>. I founded some of the opinions quite interesting and worth sharing.</p>
+<blockquote>
+<p>The functionality at the core of iOS7 hasn’t changed much it has just been extended in a number of ways. The main deviations are from a visual perspective.</p>
+<p>The biggest change is the introduction of a brighter colour palette, which allows Apple’s LCD screens to compete with vivid OLED smartphones (suc as the Samsung Galaxy). This allows Apple to increase its appeal to the Asian market who demonstrate a preference for bright colours throughout their consumption of visual culture.</p>
+<p>This suggests a shift in focus from user experience to customer experience.</p>
+<p><strong>Kostja Paschalidis, service designer at <a href="http://www.fjordnet.com/">Fjord</a></strong></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>A lot of the button pushing, slide out panels and alert boxes from the previous skin were reminiscent of stale formats we are accustomed to from the &#39;Web 2.0&#39; era and the lack of innovation within Windows.</p>
+<p><strong>Andy Parker, UX designer at <a href="http://www.clearleft.com/">Clearleft</a></strong></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>We know when a button&#39;s a button. It doesn&#39;t need real-world lighting to trick us into tapping it. We&#39;re living in a digitally savvy world now compared to 2007 when the iPhone first launched. Therefore UI in general going forward will feel authentically digital and that&#39;s regardless of the mobile platform it&#39;s being designed for.</p>
+<p><strong>Shaun Tollerton, Visual Designer at <a href="http://www.ustwo.co.uk/">ustwo</a></strong></p>
+</blockquote>
+</div><div id="paginator"><div><a href="/blog/things-learned-in-september"><<&nbsp;Some things I learned in September</a></div><div style="text-align: right"><a href="/blog/setup-a-dev-machine">Setting a Mac for Development&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/setup-a-dev-machine">Setting a Mac for Development</a></h2><p class="post-meta"><span class="post-date">Mon Sep 23 2013&nbsp;</span><a href="/tag/Mac OSX/index.html" class="post-tag">-Mac OSX</a><a href="/tag/Be smart, or at least try/index.html" class="post-tag">-Be smart, or at least try</a><a href="/tag/Reminders/index.html" class="post-tag">-Reminders</a></p><div class="post"><p>Last week I setup our new office Mac Mini, that we will use as CI server for our iOS apps (finally!), and for other tasks, such as a constant view on our products analytics.</p>
+<p>Our machine is the workshop where we create awesomeness (or bugs). I really love setting up a machine for development, but I&#39;ve always ended up mad at something, or spending ages looking how to install this or that. So this time, once and for all, I took note of every step, and here&#39;s my little checklist on how to set up a Mac for development.</p>
+<p><em>Note: the original version of this post was long and basically just me blabbering about the usual suspects, Ruby, Node, Xcode… I refactored it in a condesed version. No need to thank me.</em></p>
+<h3 id="setup-os-x-for-development-the-checklist">Setup OS X for Development: the checklist</h3>
+<h4 id="-homebrew-http-brew-sh-"><a href="http://brew.sh/">Homebrew</a></h4>
+<p>Save time, and your sanity, use homebrew!</p>
+<pre><code class="">ruby <span class="hljs-operator">-e</span> <span class="hljs-string">"<span class="hljs-variable">$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)</span>"</span>
+</code></pre><p>homebrew saves stuff in <code>/usr/local/bin</code>, so make sure it comes <strong>before</strong> the default <code>/bin</code> in the <code>$PATH</code>.</p>
+<pre><code class="">export <span class="hljs-constant">PATH</span>=<span class="hljs-regexp">/usr/local</span><span class="hljs-regexp">/bin/</span><span class="hljs-symbol">:</span><span class="hljs-variable">$PATH</span>
+</code></pre><h4 id="-zsh-http-www-zsh-org-"><a href="http://www.zsh.org/">zsh</a></h4>
+<pre><code class="">brew <span class="hljs-keyword">install</span> zsh
+</code></pre><p>Zsh is cool, and with <a href="https://github.com/sorin-ionescu/prezto">prezto</a> we can make it super shiny. 
+<br/>
+<em>Note:</em> the following instructions are from the prezto README, <a href="https://github.com/sorin-ionescu/prezto#installation">check it out</a> just to be sure they are up to date.</p>
+<pre><code class="">zsh
+git clone --recursive https://github.com/sorin-ionescu/prezto.git <span class="hljs-string">"<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>/.zprezto"</span>
+setopt EXTENDED_GLOB
+<span class="hljs-keyword">for</span> rcfile <span class="hljs-keyword">in</span> <span class="hljs-string">"<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>"</span>/.zprezto/runcoms/^README.md(.N); <span class="hljs-keyword">do</span>
+  ln <span class="hljs-operator">-s</span> <span class="hljs-string">"<span class="hljs-variable">$rcfile</span>"</span> <span class="hljs-string">"<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>/.<span class="hljs-variable">${rcfile:t}</span>"</span>
+<span class="hljs-keyword">done</span>
+</code></pre><p>Finally, set zsh as the default shell</p>
+<pre><code class="">chsh <span class="hljs-attribute">-s</span> /usr/<span class="hljs-built_in">local</span>/bin/zsh
+</code></pre><h4 id="-ruby-https-www-ruby-lang-org-en-of-course-via-rvm-https-rvm-io-"><a href="https://www.ruby-lang.org/en/">Ruby</a>, of course via <a href="https://rvm.io/">rvm</a></h4>
+<pre><code class="">\curl -L <span class="hljs-keyword">https</span>://<span class="hljs-built_in">get</span>.rvm.io | bash -s stable
+rvm install <span class="hljs-number">2.0</span><span class="hljs-number">.0</span>
+</code></pre><h4 id="-python-http-www-python-org-a-proper-one"><a href="http://www.python.org/">Python</a>, a proper one</h4>
+<pre><code class="">brew <span class="hljs-keyword">install</span> python
+</code></pre><h4 id="-node-js-http-nodejs-org-"><a href="http://nodejs.org/">Node.js</a></h4>
+<p>Just head to the <a href="http://nodejs.org/">home page</a> and hit the green &quot;Install&quot; button, it&#39;s the <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#osx">reccomened way</a>! <em>Or use homebrew again:</em></p>
+<pre><code class="">brew <span class="hljs-keyword">install</span> node
+</code></pre><h4 id="xcode-and-the-command-line-tools">Xcode and the Command Line Tools</h4>
+<p>Get it from <a href="https://developer.apple.com/xcode/">Apple&#39;s Developer page</a>, and then search for &quot;Command Line Tools&quot; in the &quot;Downloads&quot; tab of the &quot;Preferences&quot;.</p>
+<p>There&#39;s also an <a href="http://kennethreitz.org/xcode-gcc-and-homebrew/">open source way</a>, but I haven&#39;t tried it.</p>
+<h4 id="-java-http-www-java-com-en-"><a href="http://www.java.com/en/">Java</a></h4>
+<p>Apparently OS X doesn&#39;t come with Java ready for us, but at least installing it is easy, just try to use it in the terminal, and the installation wizard will start.</p>
+<pre><code class="">java
+</code></pre><h4 id="some-useful-extra-stuff">Some useful extra stuff</h4>
+<ul>
+<li><a href="http://www.google.com/chrome">Chrome</a></li>
+<li><a href="http://www.alfredapp.com/">Alfred</a></li>
+<li><a href="http://www.boastr.net/">BetterTouchTool</a></li>
+<li><a href="http://lightheadsw.com/caffeine/">Caffeine</a></li>
+<li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
+</ul>
+</div><div id="paginator"><div><a href="/blog/ios7-ux-designers-verdict"><<&nbsp;Sharing some thoughts on iOS 7</a></div><div style="text-align: right"><a href="/blog/mtfonticon">Bringing font icons in iOS with MTFontIcon&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/mtfonticon">Bringing font icons in iOS with MTFontIcon</a></h2><p class="post-meta"><span class="post-date">Tue Sep 17 2013&nbsp;</span><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a><a href="/tag/Ruby/index.html" class="post-tag">-Ruby</a><a href="/tag/Layout/index.html" class="post-tag">-Layout</a><a href="/tag/CSS/index.html" class="post-tag">-CSS</a><a href="/tag/Open Source/index.html" class="post-tag">-Open Source</a></p><div class="post"><p>Let me introduce you one of my latests projects, on which I worked almost a month ago, but I&#39;m both lazy and hyperactive when it comes to projects, so the blog post arrives only now...</p>
+<h3 id="mtfonticon">MTFontIcon</h3>
+<p><strong>MTFontIcons</strong>, available as a <a href="cocoapods.org/?q=mtfonticon">CocoaPod</a> and on <a href="https://github.com/mokagio/MTFontIcon">GitHub</a>, is a library that let&#39;s us use font-based icons in iOS application, speeding up the development and helping those poor developers that don&#39;t even know how to select the pen tool in Adobe Illustrator.</p>
+<h3 id="the-problem">The problem</h3>
+<p>Few people in our world are both great developers and skilled artist, my friend and ex-colleague <a href="https://twitter.com/Liquidimage_">Tancredi</a> is one of those. For the rest of us mere mortals finding building a well crafted app is already a big task, and we don&#39;t have time to go through the <a href="http://net.tutsplus.com/">Nettus+</a> Illustrator and Photoshop tutorials to learn how to make a nice icon set for our apps. We only speak code.</p>
+<p>It would be really nice to have a way to iterate on the attributes of our icons and images quickly and without losing quality. Changing the color from #f0f0f0 to #f0dff1, making it 2pts wider, increasing the alpha of the shadow, without opening Illustrator, or worst waiting for the designer to put the assets on Dropobox. It would be nice to code all those things.</p>
+<h3 id="the-solution">The solution</h3>
+<p>The fact is our cousins from the web world already faced this problem, and solved in a really nice way! They&#39;ve been using <a href="http://css-tricks.com/examples/IconFont/">Icon Fonts</a> for a while, and they&#39;re really happy about them.
+This technique is so powerful and popular that even the famous framework <a href="http://getbootstrap.com/">Bootstrap</a> made by the guys at Twitter is using it. And there are plenty of resources only to get ready made stets of icons, or roll out our own font uploading the SVGs.</p>
+<h3 id="how-does-it-work-">How does it work?</h3>
+<p>Then why not using the same smartness in Objective-C? The MTFontIcon idea was born from the above mentioned rebel genious of Tancredi, while working on a prototype for a new concept at <a href="http://www.memrise.com">Memrise</a>. Unfortunately the idea protoyped wasn&#39;t that good, unlike the tech behind it.</p>
+<p>The usage is simple:</p>
+<ol>
+<li>Create a font with all your icons, using web tools like <a href="http://icomoon.io/app/">IcoMoon</a>.</li>
+<li>Import the font in your app, and don&#39;t forget to updated the <code>Info.plist</code>.</li>
+<li>Define the matchings between the names you want to use for your icons and the unicode character they have in the font.</li>
+<li>Get an instance of <code>MTFontIconFactory</code> and use it to get as many <code>MTFontIconView</code>s as you want :)</li>
+</ol>
+<p>Two minutes setup, two lines of code usage, twice as fast app UI development and polishing!</p>
+<h3 id="current-problems-and-roadmap">Current problems and roadmap</h3>
+<p>Despite the <code>1.0.0</code> tag, MTFontIcon has still a long way to go before considering itself a mature and really useful project. Here&#39;s a list of things we could improve:</p>
+<ul>
+<li>Issues with ascendant and descendants, if you ever tried to use a custom font on iOS you know what I&#39;m talking about. Otherwise read <a href="http://stackoverflow.com/questions/7535498/uibutton-custom-font-vertical-alignment">this</a> and <a href="">this</a>.</li>
+<li>The library is coupled with <a href="http://icomoon.io/app/">IcoMoon</a>, at the moment you&#39;re better use that service, because all the font tunings (see above), are made on their font. Or you can fork the library and help me out.</li>
+<li>Using CoreText would be cleaner and more performant.</li>
+<li>Why not having a ruby script or gem to automate all the boring part of the process?</li>
+</ul>
+<hr/>
+
+<p>That&#39;s all folks. Working on MTFontIcon has been fun and stimulating. The library, and its authors, have still a long way to go, but I hope whoever will read the code will see the intention of making a top quality, well crafted, 2013 styled, piece of code.</p>
+<p>If you&#39;re intereseted in font icons or in using MTFontIcon check out these resources: <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, 361 (as of version 3.2.1) awesome icons for you, <a href="http://weloveiconfonts.com/">We Love Icon Fonts</a>, a free and open source icon fonts hosting service, <a href="http://fontello.com/">Fontello</a>, an alternative to IcoMoon.</p>
+</div><div id="paginator"><div><a href="/blog/setup-a-dev-machine"><<&nbsp;Setting a Mac for Development</a></div><div style="text-align: right"><a href="/blog/xcode5-crash-on-submission">A workaround to Xcode 5 GM crash on app submission&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/xcode5-crash-on-submission">A workaround to Xcode 5 GM crash on app submission</a></h2><p class="post-meta"><span class="post-date">Mon Sep 16 2013&nbsp;</span><a href="/tag/Xcode/index.html" class="post-tag">-Xcode</a><a href="/tag/App Store/index.html" class="post-tag">-App Store</a><a href="/tag/Bugs/index.html" class="post-tag">-Bugs</a></p><div class="post"><p>I just finished writing this post, and I realized is just about me complaining trying to sound funny. So here&#39;s, frontloaded, the important stuff.</p>
+<p>Apparently Xcode 5 GM crashed on some of us during the App Store submission process. Before even starting it. How annoying.</p>
+<p>The workaround I found relies on bypassing Xcode for the submission process.</p>
+<h4 id="step-1">Step 1</h4>
+<p>Make sure all the provisioning profiles and code signing are set properly</p>
+<h4 id="step-2">Step 2</h4>
+<p>Open your Terminal and generate the <code>.ipa</code> yourself, with the help of <a href="https://github.com/nomad/shenzhen">shenzhen</a>.</p>
+<pre><code class="">cd my/ready/<span class="hljs-keyword">to</span>/be/submitter/ios/project
+ipa build -c <span class="hljs-keyword">Release</span>
+</code></pre><h4 id="step-3">Step 3</h4>
+<p>Upload the app through Application Loader.</p>
+<h4 id="step-4">Step 4</h4>
+<p>Find a tv series to start watching while waiting for your app to be reviewed.</p>
+<p>That&#39;s all. It took me an embarrassing long while to figure this out, I hope to be helping some fellow developer with this post.</p>
+<p>Below the full thing.</p>
+<hr/>
+
+<p>Every now and then in the lifecycle of an iOS project it comes the day when you have to submit an update, or even worst touch the provisioning profiles. When that day comes, it&#39;s better if it&#39;s a Monday, because you don&#39;t want to ruin yourself the weekend. And it&#39;s also better if you have chamomile in your cup instead of coffee.</p>
+<h3 id="submit-your-ios7-apps-today">Submit your iOS7 apps today</h3>
+<p><img src="{{ site.url }}/assets/2013-09-16/submit-today.jpg" alt="Submit today"></p>
+<p>On the 10th of September Apple sent an email to their developers, &quot;Submit your iOS7 apps today&quot; they said. Up to that point we couldn&#39;t submit apps made with the iOS7 SDK, as written somewhere in the Xcode 5 Developer Preview release notes. But that day the iOS7 GM and Xcode 5 GM where released, and the run to submit started.</p>
+<p><img src="{{ site.url }}/assets/2013-09-16/use-xcode5.jpg" alt="Use Xcode 5 GM"></p>
+<p>In their beautiful styled <a href="https://developer.apple.com/ios7/">iOS7 developer page</a> they explained everything. If you follow the link to the <a href="https://developer.apple.com/library/prerelease/ios/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html">App Distribution Guide</a> in the bottom of the page you will have a funny surprise. The link goes to the previous version documentation, and our Apple engineers forgot to add a link to the new version.</p>
+<p><img src="{{ site.url }}/assets/2013-09-16/missing-link.jpg" alt="Missing link"></p>
+<p>I&#39;m sure everything is gonna be fine, Xcode is such a reliable IDE, and the Apple guys are known for the quality of the products they give to their developers. Let&#39;s go!</p>
+<h3 id="the-tragic-message">The tragic message</h3>
+<p>When clicking on &quot;Validate&quot; or &quot;Distribute&quot; from the organizer, no matter how may times I refreshed my Accounts in the Preferences menu this is what I got</p>
+<p><img src="{{ site.url }}/assets/2013-09-16/the-terrible-dialog.jpg" alt="The terrible dialog"></p>
+<p>And guess what? Both those buttons resulted in Xcode crashing, right there, with no explanation, no progress bar, nothing, Boom!</p>
+<p>Out of curiosity I opened the crash log that got generated and…</p>
+<pre><code class="">Crashed <span class="hljs-keyword">Thread</span>:  <span class="hljs-number">0</span>  Dispatch <span class="hljs-built_in">queue</span>: com<span class="hljs-built_in">.</span>apple<span class="hljs-built_in">.</span>main<span class="hljs-attribute">-thread</span>
+
+Exception <span class="hljs-keyword">Type</span>:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes: EXC_I386_GPFLT
+</code></pre><p>Whenever I get an <code>EXC_BAD_ACCESS (SIGSEGV)</code> I feel like punching myself in the face, it&#39;s a memory issue, and I must have been really dumb to produce something like that in the ARC era.</p>
+<p>But let&#39;s not waste time complaining about those things, risking to be kicked out of the dev program, and look for a solution.</p>
+<h3 id="the-workaround">The workaround</h3>
+<p>What&#39;s the place where all the developers go when in trouble? No it&#39;s not church, it&#39;s <a href="stackoverflow.com">StackOverflow</a>! There I found <a href="http://stackoverflow.com/questions/18748779/xcode5-gm-crashes-no-identities-are-available-for-signing-then-crash/">someone with the same problem</a>, suggesting to use Application Loader to upload the app.</p>
+<p>I never used it before, but I was faced with a problem straightaway. Application Loader need an <code>.ipa</code>, which we can generate only through the Organizer in Xcode.</p>
+<p><em>&quot;which we can generate only through the Organizer in Xcode.&quot;</em>. Are you sure about it? </p>
+<p>Actually <code>xcodebuild</code>, Xcode CLI, let us build ipas, in a very complex way. <code>xctool</code> buy the Facebook iOS team makes the task easier, but it the usual suspect, good guy <a href="https://github.com/mattt">Mattt</a> that has the real solution for that. With his gem <a href="https://github.com/nomad/shenzhen">shenzhen</a> we can build an ipa from command line without spending too much time specifing options or reading through the <code>--help</code> guide.</p>
+<pre><code class="">ipa build -c <span class="hljs-keyword">Release</span>
+</code></pre><p>That&#39;s all we need to generate our <code>.ipa</code>.</p>
+<p>Once we have our package we can send it to the Apples servers through Application Loader, bypassing Organizer and the frustrating crash. Smart!</p>
+<p><br/>
+That&#39;s all folks. I&#39;m a bit disappointed by the fact that such an issue is leaked on a GM, when we, some of us at least, spend so much time unit testing our apps, being patient with the QA guys, and taking all the possible measures to make sure everything works as expected. But nobody&#39;s perfect, and every now and then hacking stuff is fun, so no big deal.</p>
+<p>Happy coding!</p>
+</div><div id="paginator"><div><a href="/blog/mtfonticon"><<&nbsp;Bringing font icons in iOS with MTFontIcon</a></div><div style="text-align: right"><a href="/blog/things-learned-in-august">Some things I learned in August&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/things-learned-in-august">Some things I learned in August</a></h2><p class="post-meta"><span class="post-date">Tue Sep 03 2013&nbsp;</span><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a><a href="/tag/Ruby/index.html" class="post-tag">-Ruby</a><a href="/tag/Layout/index.html" class="post-tag">-Layout</a><a href="/tag/CSS/index.html" class="post-tag">-CSS</a><a href="/tag/Open Source/index.html" class="post-tag">-Open Source</a></p><div class="post"><h3 id="ios-and-objective-c">iOS and Objective-C</h3>
+<p>Since <code>NSDecimalNumber</code> can be init from a string there&#39;s the risk it&#39;s gonna produce a NaN. To avoid this check for <code>[myDecimalNumber isEqualToNumber:[NSDecimalNumber notANumber]]</code></p>
+<p><a href="https://github.com/rayh/xcoder">xcoder</a> a Ruby gem to automate our Xcode project management.</p>
+<h3 id="ruby">Ruby</h3>
+<p>As you know I have the -really good- habit of writing scripts to automate routine tasks in my work, mostly in Ruby. I naively used to check for arguments with <code>ARGV.include? &quot;--some-option&quot;</code>, until a workmate had a look at my code and surprisedly asked why Ruby didn&#39;t had an option parser library like <a href="http://docs.python.org/2/library/argparse.html#module-argparse">argparse</a> module in Python. Turns out it does. Meet the <a href="http://ruby-doc.org/stdlib-2.0/libdoc/optparse/rdoc/OptionParser.html">OptionParser</a> class.</p>
+<p>Configure URI.extract to avoid unexpected surpirses. <a href="http://blog.apptamers.com/post/48613650042/uri-extract-incorrect-in-ruby-1-9-3">http://blog.apptamers.com/post/48613650042/uri-extract-incorrect-in-ruby-1-9-3</a></p>
+<p><a href="https://github.com/fazibear/colorize">colorize</a>, gem to add color to Ruby scripts.</p>
+<h3 id="javascript">Javascript</h3>
+<p><a href="http://timeago.yarp.com/">timeago</a>, quick jQuery library to format datetimes in &quot;xxx ago&quot; strings.</p>
+<h3 id="layout-and-css">Layout and CSS</h3>
+<p><a href="http://designmodo.github.io/Flat-UI/">FlatUI framework</a></p>
+<p>Their slow in definig standards, but sometimes the W3C is a good place where to find resources. <a href="http://www.w3.org/Style/Examples/007/fonts.en.html">Fonts usable in CSS</a>.</p>
+<p><a href="http://fontcustom.com/">Font Custom</a> and <a href="http://icomoon.io/">IcoMoon</a>, resources to aggregate icons in a font file, to use as <a href="http://css-tricks.com/examples/IconFont/">font icons</a>. Or, why not, to speedup iOS development, as I&#39;m doing in one project of mine I may write about soon: <a href="https://github.com/mokagio/MTFontIcon">MTFontIcon</a>.</p>
+<h3 id="interesting-readings">Interesting Readings</h3>
+<ul>
+<li><a href="http://www.pocketgamer.biz/r/PG.Biz/Wooga+news/feature.asp?c=52660">The Wooga approach to game prototyping</a></li>
+<li><a href="http://ai.eecs.umich.edu/soar/Classes/494/talks/Schumaker.pdf">Techniques and Strategies for Data-driven design in Game Development</a></li>
+<li><a href="http://eranki.tumblr.com/post/27076431887/scaling-lessons-learned-at-dropbox-part-1">Some scaling tips from Dropbox</a></li>
+<li><a href="https://www.udemy.com/blog/startup-ecosystem-infographic/">A fun infographic about the startup world characters</a></li>
+<li><a href="https://blog.twitter.com/2013/new-tweets-per-second-record-and-how">How Twitter reached 143,199 Tweets per second</a></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<p><a href="https://waffle.io/">waffle.io</a>, a shared kanban board for your projects on GitHub.</p>
+<p>My workmates <a href="http://adamj.eu/">Adam Chainz</a> introduced me to the <a href="http://colemak.com/">Colemak</a> keyboard layout.</p>
+</div><div id="paginator"><div><a href="/blog/xcode5-crash-on-submission"><<&nbsp;A workaround to Xcode 5 GM crash on app submission</a></div><div style="text-align: right"><a href="/blog/things-learned-in-july">Some things I learned in July&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/things-learned-in-july">Some things I learned in July</a></h2><p class="post-meta"><span class="post-date">Thu Aug 01 2013&nbsp;</span><a href="/tag/AWS/index.html" class="post-tag">-AWS</a><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a><a href="/tag/Postgres/index.html" class="post-tag">-Postgres</a><a href="/tag/Ruby/index.html" class="post-tag">-Ruby</a><a href="/tag/Ruby on Rails/index.html" class="post-tag">-Ruby on Rails</a><a href="/tag/Software Engineering/index.html" class="post-tag">-Software Engineering</a></p><div class="post"><p>July has been a month dense of learning and (re)discoveries! First of all <strong>Rails 4</strong>, which I come to love back in the day, when I was working with my friends on the first prototype of <a href="http://www.kunerango.com" target="_blank">Kunerango</a></p>
+<h3 id="objective-c-and-ios-development">Objective-C and iOS Development</h3>
+<p><a href="http://rentzsch.github.io/mogenerator/" target="_blank">http://rentzsch.github.io/mogenerator/</a></p>
+<p>Guess what? CoreData doesn&#39;t make your life easy when you&#39;re seriously working with test, <a href="http://stackoverflow.com/questions/1876568/ocmock-with-core-data-dynamic-properties-problem" target="_blank">http://stackoverflow.com/questions/1876568/ocmock-with-core-data-dynamic-properties-problem</a>. I like the protocol approach, even if it adds a some &quot;boilerplate code&quot; to maintain.</p>
+<p><a href="http://nomad-cli.com/">nomad</a> a set of useful tools to automate the every-day development. Another gift from mister <a href="http://mattt.me/">Mattt</a>.</p>
+<h3 id="ruby-on-rails">Ruby on Rails</h3>
+<p><a href="http://rubyonrails.org/" target="_blank">Rails 4</a> finally out! <a href="http://weblog.rubyonrails.org/2013/6/25/Rails-4-0-final/" target="_blank">http://weblog.rubyonrails.org/2013/6/25/Rails-4-0-final/</a></p>
+<p>Nice and clear guide to testing with RSpec on Rails <a href="http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html" target="_blank">http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html</a></p>
+<p>Binstubs, because the less we type, the better! <a href="http://blog.barbershoplabs.com/blog/2013/03/01/upgrading-to-rails-40-binstubs" target="_blank">http://blog.barbershoplabs.com/blog/2013/03/01/upgrading-to-rails-40-binstubs</a>, <a href="http://mislav.uniqpath.com/2013/01/understanding-binstubs/" target="_blank">http://mislav.uniqpath.com/2013/01/understanding-binstubs/</a>, <a href="http://robots.thoughtbot.com/post/15346721484/use-bundlers-binstubs" target="_blank">http://robots.thoughtbot.com/post/15346721484/use-bundlers-binstubs</a></p>
+<p>The <a href="https://github.com/indirect/haml-rails">haml-rails</a> gem integrates with the template generators, out of the box!</p>
+<p>How cool are named routes? <code>post &#39;items/move_down/:id&#39; =&gt; &#39;items#move_down&#39;, as: :move_down )</code>, look at the routes.rb comments to know more about them.</p>
+<p>Amazon AWS S3 gem <a href="http://amazon.rubyforge.org">http://amazon.rubyforge.org</a></p>
+<p>I found a nice gem to add enumeration type to the ActiveRecord models: <a href="https://github.com/adzap/active_enum">active_enum</a>, but is it compatible with Rails 4? Here&#39;s a <a href="http://qubitlogs.com/Rails/2013/02/01/creating-pre-defined-set-of-attributes-mapping-integers-to-strings-in-rails/#.UdWbpT6DQ_U">link</a> on how to use it.</p>
+<h3 id="ruby">Ruby</h3>
+<p>I wrote some scripts to speed up some of my daily task at work, and used some nice gems in the meantime:
+<a href="http://nokogiri.org/">nokogiri</a>, to parse HTML using CSS selectors
+<a href="https://github.com/rest-client/rest-client">rest-client</a>, fetching pages from the web with one line of code
+<a href="http://rubygems.org/gems/json">json</a>, to parse JSON
+<a href="https://github.com/samg/diffy">diffy</a>, comparing strings has never been so easy
+<a href="https://github.com/mikel/mail">mail</a>, sending emails from your scripts</p>
+<h3 id="coding-recipes">Coding Recipes</h3>
+<p><a href="http://codeartists.com/post/36892733572/how-to-directly-upload-files-to-amazon-s3-from-your">http://codeartists.com/post/36892733572/how-to-directly-upload-files-to-amazon-s3-from-your</a></p>
+<p><a href="http://codeartists.com/post/36892733572/how-to-directly-upload-files-to-amazon-s3-from-your">http://quickleft.com/blog/keeping-your-json-response-lean-in-rails</a></p>
+<p><a href="http://stackoverflow.com/questions/3159945/running-command-line-commands-within-ruby-script">Several ways to run a command line command from a Ruby script.</a></p>
+<h3 id="sysadmin">Sysadmin</h3>
+<p>Fixing Postgres connection error on OS X Mountain Lion <a href="http://jaygoldman.com/2012/11/fixing-postgres-connection-errors-on-mountain-lion/">http://jaygoldman.com/2012/11/fixing-postgres-connection-errors-on-mountain-lion/ </a>(funny because with Node there were no problems)</p>
+<h3 id="javascript">Javascript</h3>
+<p>I looked into a bunch of Javasciprt techs: <a href="http://underscorejs.org/">Underscore.js</a>, <a href="http://jade-lang.com/">Jade</a>, <a href="http://handlebarsjs.com/">Handlebars</a>, <a href="http://learnboost.github.io/stylus/">Stylus</a>, <a href="http://expressjs.com/">Express</a></p>
+<h3 id="tools">Tools</h3>
+<p><a href="http://imageoptim.com/">http://imageoptim.com/</a></p>
+<h3 id="software-engineering-good-practices">Software Engineering Good Practices</h3>
+<p><a href="http://en.wikipedia.org/wiki/Coupling_(computer_programming)">Coupled dependencies</a>, I found one of those monsters in a colleague&#39;s code. It took a lot of self-control to avoid being a prick and pointing it out on GitHub.</p>
+<h3 id="interesting-readings">Interesting readings</h3>
+<p><a href="How Basecamp Next got to be so damn fast without using much client-side UI">How Basecamp Next got to be so damn fast without using much client-side UI</a></p>
+</div><div id="paginator"><div><a href="/blog/things-learned-in-august"><<&nbsp;Some things I learned in August</a></div><div style="text-align: right"><a href="/blog/what-i-did-in-a-week">What I did in a week...&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/what-i-did-in-a-week">What I did in a week...</a></h2><p class="post-meta"><span class="post-date">Fri Jul 26 2013&nbsp;</span><a href="/tag/CoreData/index.html" class="post-tag">-CoreData</a><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Open Source/index.html" class="post-tag">-Open Source</a><a href="/tag/Ruby on Rails/index.html" class="post-tag">-Ruby on Rails</a><a href="/tag/TDD/index.html" class="post-tag">-TDD</a></p><div class="post"><p>As promised one <a href="http://amokafullofstuff.wordpress.com/2013/07/17/a-week-of-time/" target="_blank">week ago</a>, here&#39;s a report of what I managed to do in this unusually full of free time week.</p>
+<p>I&#39;ve caught up with Arrow and Game of Thrones. The Red Wedding was better in the book, in my opinion.</p>
+<p>Oh! Yes... I did some coding as well :D I&#39;ve completed the MVP of my iOS app, and I have a working and tweeting setup of the Twitter based Rails App.</p>
+<h3 id="ios">iOS</h3>
+<p>I&#39;ve built a simple app using CoreData and <a href="https://github.com/magicalpanda/MagicalRecord" target="_blank">MagicalRecod</a> for the data storage, focusing on a simple gesture based UX, powered by <a href="https://github.com/mystcolor/JTGestureBasedTableViewDemo" target="_blank">JTGestureBasedTableView</a>, with an iOS7ish look. The idea was to roll it out on <a href="https://testflightapp.com/" target="_blank">TestFlight</a> for a week or two and then submit, but the recent cracker attack at Apple have delayed plans. I also used my two WIP pods <a href="https://github.com/mokagio/MGCraftman" target="_blank">MGCraftman</a> and <a href="https://github.com/mokagio/MGObjectiveUtils" target="_blank">MGObjectiveUtils</a>, but the project is simple so I didn&#39;t have the occasion to add stuff to them.</p>
+<h3 id="rails">Rails</h3>
+<p>To implement my Twitter based web app I&#39;ve relied on the <a href="https://github.com/sferik/twitter" target="_blank">twitter</a> gem, which does all the dirty work for me. I&#39;m using <a href="http://haml.info/" target="_blank">Haml</a> for the templates, I love it, so minimal and clear. I&#39;m also gonna use <a href="http://sass-lang.com/" target="_blank">SASS</a> for the styling. So far I&#39;ve only been using <a href="http://lesscss.org/" target="_blank">LESS</a>, so I decided to give it a twist.</p>
+<h3 id="good-practices">Good Practices</h3>
+<p>Both the projects are obviously being implemented in a as much test driven way as possible! <a href="https://github.com/rspec/rspec" target="_blank">rspec</a> and <a href="https://github.com/bblimke/webmock" target="_blank">webmock</a> on the Ruby side, <a href="https://github.com/allending/Kiwi" target="_blank">Kiwi</a> on the Objective-C one. Neat!</p>
+<p>Finally my simple <a href="https://github.com/facebook/xctool/pull/106" target="_blank">PR on xctool</a> has been merged, and I&#39;m proud of it. And surprised no one thought about coloring the result output before...</p>
+<p>That&#39;s all. I&#39;m overall satisfied of what I managed to build. Although I could have avoided watching half a season of Arrow in two days while coding and focusing more... -.-</p>
+</div><div id="paginator"><div><a href="/blog/things-learned-in-july"><<&nbsp;Some things I learned in July</a></div><div style="text-align: right"><a href="/blog/a-week-of-time">A week of time...&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/a-week-of-time">A week of time...</a></h2><p class="post-meta"><span class="post-date">Wed Jul 17 2013&nbsp;</span><a href="/tag/xctool/index.html" class="post-tag">-xctool</a></p><div class="post"><p>I found myself in an unusual situation: my girlfriend is gonna be away for a week, and almost all my friends are already busy for the weekend. This means that I&#39;ll have <strong>a lot of lonely time</strong></p>
+<p>What am I gonna do? The answer is easy: code as much as I can, and enjoy the sun that&#39;s been blessing London for the past days.</p>
+<p>I&#39;ve actually already started coding. I&#39;ve just submitted a <a href="https://github.com/facebook/xctool/pull/106">PR to xctool</a>, let&#39;s see how it goes...</p>
+<p>I&#39;m gonna write again in a week and report my progress. Hopefully I&#39;ll have an almost ready iOS app, and an embryo of a Twitter-based web-app ready.</p>
+</div><div id="paginator"><div><a href="/blog/what-i-did-in-a-week"><<&nbsp;What I did in a week...</a></div><div style="text-align: right"><a href="/blog/cocoapods-the-inherited-flag">CocoaPods: the $(inherited) flag&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/cocoapods-the-inherited-flag">CocoaPods: the $(inherited) flag</a></h2><p class="post-meta"><span class="post-date">Tue Jul 09 2013&nbsp;</span><a href="/tag/CocoaPods/index.html" class="post-tag">-CocoaPods</a><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Xcode/index.html" class="post-tag">-Xcode</a></p><div class="post"><p>I&#39;ve done it a lot of times by now, but I keep forgetting it. So here&#39;s a quick post to commit it to memory!</p>
+<p>If we have a project with the Tests target it can happen that after running <code>pod install</code> we get this message:</p>
+<pre><code class="">[!] The target <span class="hljs-smartquote">`MyProjectTests [Debug]` overrides the `FRAMEWORK_SEARCH_PATHS` build setting defined in `Pods/Pods-MyProjectTests.xcconfig'</span>.
+<span class="hljs-bullet">- </span>Use the <span class="hljs-code">`$(inherited)`</span> flag, or
+<span class="hljs-bullet">- </span>Remove the build settings from the target.
+</code></pre><p>How can we &quot;use the $(inherited) flag&quot;? Where should we add it?</p>
+<p>The <code>$(inherited)</code> flag is an flag we can pass to the linker and that <em>does some magic...</em>. I haven&#39;t been able to find a proper explanation for how <code>$(inherited)</code> works, although it&#39;s easy to guess from the name.</p>
+<p>Being a linker flag we can add it in our target Build Settings &gt; Other Linker Flags section.</p>
+<p><a href="http://amokafullofstuff.files.wordpress.com/2013/07/screen-shot-2013-07-10-at-00-16-36.png"><img class="size-medium wp-image-164 aligncenter" alt="Screen Shot 2013-07-10 at 00.16.36" src="http://amokafullofstuff.files.wordpress.com/2013/07/screen-shot-2013-07-10-at-00-16-36.png?w=300" width="300" height="114" /></a></p>
+<p>That&#39;s all. I feel better now that I&#39;ve put this piece of memory in the external storage of my brain that is the internet. And I hope it may help someone else too.</p>
+</div><div id="paginator"><div><a href="/blog/a-week-of-time"><<&nbsp;A week of time...</a></div><div style="text-align: right"><a href="/blog/things-learned-in-june">Some things I learned in June&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/things-learned-in-june">Some things I learned in June</a></h2><p class="post-meta"><span class="post-date">Sat Jul 06 2013&nbsp;</span><a href="/tag/CocoaPods/index.html" class="post-tag">-CocoaPods</a><a href="/tag/Math/index.html" class="post-tag">-Math</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a><a href="/tag/zsh/index.html" class="post-tag">-zsh</a></p><div class="post"><p>Last month I decided to start keeping track of the things learned along the way. This list at the moment seems kinda short, let&#39;s say that&#39;s because I didn&#39;t start keeping track of the stuff from the beginning of the month.</p>
+<h3 id="coding">Coding</h3>
+<p>Testing Objective-C classes equality: <a href="http://stackoverflow.com/questions/10944460/testing-class-equality-in-objective-c">http://stackoverflow.com/questions/10944460/testing-class-equality-in-objective-c</a></p>
+<p>Objective-C <code>_cmd</code> returns the method name within a method: <a href="http://stackoverflow.com/questions/2770307/nslog-the-method-name-with-objective-c-in-iphone">http://stackoverflow.com/questions/2770307/nslog-the-method-name-with-objective-c-in-iphone</a></p>
+<p>You can use a Pod locally: <a href="https://github.com/CocoaPods/CocoaPods/wiki/Working-on-a-pod">https://github.com/CocoaPods/CocoaPods/wiki/Working-on-a-pod</a></p>
+<h3 id="systems-and-tools">Systems and Tools</h3>
+<p>How to stop autocorrect in zsh:
+<a href="http://yountlabs.com/blog/2010/11/06/disable-autocorrect-in-zsh/">http://yountlabs.com/blog/2010/11/06/disable-autocorrect-in-zsh/</a></p>
+<h3 id="trivia">Trivia</h3>
+<p>Where does the Logarithm name come from:
+&quot;Napier first called <i>L</i> an &quot;artificial number&quot;, but later introduced the word <i>&quot;logarithm&quot;</i> to mean a number that indicates a ratio: λόγος (<i>logos</i>) meaning proportion, and ἀριθμός (<i>arithmos</i>) meaning number.&quot; <a href="http://en.wikipedia.org/wiki/Logarithm">http://en.wikipedia.org/wiki/Logarithm</a></p>
+</div><div id="paginator"><div><a href="/blog/cocoapods-the-inherited-flag"><<&nbsp;CocoaPods: the $(inherited) flag</a></div><div style="text-align: right"><a href="/blog/mokagios-self-memo-for-facebook-integration-on-ios-part-1">mokagio's self memo for Facebook Integration on iOS - Part 1&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/mokagios-self-memo-for-facebook-integration-on-ios-part-1">mokagio's self memo for Facebook Integration on iOS - Part 1</a></h2><p class="post-meta"><span class="post-date">Tue Jun 25 2013&nbsp;</span><a href="/tag/CocoaPods/index.html" class="post-tag">-CocoaPods</a><a href="/tag/Facebook/index.html" class="post-tag">-Facebook</a><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a></p><div class="post"><h2 id="part-1-facebook-login">Part 1 - Facebook Login</h2>
+<h3 id="0-create-a-facebook-app">0 - Create a Facebook App</h3>
+<p>Create an app on the <a href="https://developers.facebook.com/apps/">Facebook App Dashboard</a>, what are you gonna integrate otherwise?!</p>
+<h3 id="1-add-the-facebook-sdk-pod">1 - Add the Facebook SDK Pod</h3>
+<p>Given that you have already setup your libraries management with CocoaPods, and you should have, add to your <code>Podfile</code> the line</p>
+<p>  pod &quot;Facebook-iOS-SDK&quot;, &quot;~&gt; 3.5.2&quot;</p>
+<p>Then run <code>pod install</code>.</p>
+<p>For more info about how to use CocoaPods check out <a href="http://amokafullofstuff.wordpress.com/2013/01/05/cocoapods/">this</a> post of mine.</p>
+<h3 id="2-add-some-facebook-data-to-the-info-plist-">2 - Add some Facebook data to the <code>Info.plist</code></h3>
+<p>Facebook requires you to add two fields to your <code>Info.plist</code> file:</p>
+<ul>
+<li><strong>FacebookAppID</strong>: a 15 digits number you can find in the Settings page of your app on your Facebook developer page.</li>
+<li><strong>FacebookDisplayName</strong>: how to comment, the display name of your app?</li>
+</ul>
+<h3 id="3-a-basic-login-flow">3 - A basic login flow</h3>
+<p>The <a href="https://developers.facebook.com/docs/tutorials/ios-sdk-tutorial/">tutorial</a> tells us to put all the Facebook login in the <code>AppDelegate</code>. I don&#39;t like this approach, because I don&#39;t want to make the delegate dirty with code related only to Facebook. I prefer to create a <code>FacebookProxy</code> class, with class methods to call to interact with Facebook.</p>
+<p>Whatever solution you prefer the steps for the login are the same anyway:</p>
+<ol>
+<li>Check if the user is logged already. Let&#39;s assume he isn&#39;t…</li>
+<li>Present in some way a call to action for the Facebook Login.</li>
+<li>Call the Facebook SDK method to login the user.</li>
+<li>Let the SDK do it&#39;s job.</li>
+<li>Come back to the app and handle the result.</li>
+</ol>
+<h4 id="check-if-the-user-is-logged-in">Check if the user is logged in</h4>
+<p>To get the current Facebook session we use <code>FBSession.activeSession</code>. To see if the session is active, and therefore the user is already logged in, we need to check the <code>state</code> property: <code>FBSession.activeSession.state</code>. A quick look to the <code>typedef enum</code> of the <code>FBSessionState</code> and:</p>
+<pre><code class="">{% highlight objective-c <span class="hljs-variable">%}</span>
++ (BOOL)isUserLoggedInFacebook
+{
+    <span class="hljs-keyword">if</span> (FBSession.activeSession.<span class="hljs-keyword">state</span> == FBSessionStateCreatedTokenLoaded
+        || FBSession.activeSession.<span class="hljs-keyword">state</span> == FBSessionStateOpen
+        || FBSession.activeSession.<span class="hljs-keyword">state</span> == FBSessionStateOpenTokenExtended) {
+        <span class="hljs-keyword">return</span> YES;
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> NO;
+    }
+}
+{% endhighlight <span class="hljs-variable">%}</span>
+</code></pre><h4 id="call-the-facebook-sdk-method-to-login">Call the Facebook SDK method to login</h4>
+<p>Easy peasy:</p>
+<pre><code class="">{% highlight objective-c %}
+[FBSession openActiveSessionWithReadPermissions:<span class="hljs-literal">nil</span>
+                                   allowLoginUI:<span class="hljs-literal">YES</span>
+                              completionHandler:^(FBSession *session, FBSessionState state, <span class="hljs-built_in">NSError</span> *error) {
+     <span class="hljs-comment">// handle stuff here</span>
+ }];
+ {% endhighlight %}
+</code></pre><p>In the completion handler we should… handle the result of the open active session. I think that this really depends on what our app will do, so I&#39;m not gonna write any snippet here.</p>
+<h4 id="come-back-to-the-app-and-handle-the-result">Come back to the app and handle the result</h4>
+<p>If you&#39;re user&#39;s are using iOS 5 -I hope they&#39;re not-, or if they&#39;re so dumb they haven&#39;t installed the native Facebook app for iOS, the login will occur with a sort of modal window in your app. In all the rest of the cases the</p>
+<h3 id="frameworks-needed-in-the-test-bundle">Frameworks needed in the Test Bundle</h3>
+<p>TDD is the way. Full stop. I noticed that adding the Facebook-iOS-SDK pod to my project wasn&#39;t enough for my test bundle to run, there were some framework dependencies missing:</p>
+<ul>
+<li>AdSupport.framework</li>
+<li>Social.framework</li>
+</ul>
+</div><div id="paginator"><div><a href="/blog/things-learned-in-june"><<&nbsp;Some things I learned in June</a></div><div style="text-align: right"><a href="/blog/osx-a-scanner-and-the-drivers-drama">OSX, a scanner, and the drivers drama&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/osx-a-scanner-and-the-drivers-drama">OSX, a scanner, and the drivers drama</a></h2><p class="post-meta"><span class="post-date">Tue Jun 11 2013&nbsp;</span><a href="/tag/OS X/index.html" class="post-tag">-OS X</a></p><div class="post"><p>Today I had to scan some documents, and I thought: it&#39;s gonna be super easy! I have a Mac, the <a href="https://www.samsung.com/uk/consumer/print-solutions/print-solutions/colour-multifunction-printer/CLX-3305FW/SEE-support" target="_blank">printer</a> is made by Samsung, all reliable manufacturers, a piece of cake. Yes, I know <a href="http://theoatmeal.com/comics/printers">printers are evil objects</a>, but I needed to use the scanner part, what could have gone wrong? The answer is... the classic missing drivers!!!</p>
+<p><a href="http://amokafullofstuff.files.wordpress.com/2013/06/picture_2_c.jpg"><img class="size-full wp-image aligncenter" id="i-115" alt="Image" src="http://amokafullofstuff.files.wordpress.com/2013/06/picture_2_c.jpg?w=351" /></a></p>
+<p style="text-align:left;">It took me a while but I finally found the drivers, in the least expectable place, an <a href="http://support.apple.com/kb/dl905">official Apple page</a>!</p>
+<p style="text-align:left;">This is the end of the post. I hope one day another young and desperate guy will land on this page and find a smile, other than the damn drivers!</p>
+</div><div id="paginator"><div><a href="/blog/mokagios-self-memo-for-facebook-integration-on-ios-part-1"><<&nbsp;mokagio's self memo for Facebook Integration on iOS - Part 1</a></div><div style="text-align: right"><a href="/blog/multiple-builds-of-the-same-app-and-testflight">Multiple builds of the same app and TestFlight&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/multiple-builds-of-the-same-app-and-testflight">Multiple builds of the same app and TestFlight</a></h2><p class="post-meta"><span class="post-date">Wed May 29 2013&nbsp;</span><a href="/tag/automation/index.html" class="post-tag">-automation</a><a href="/tag/development/index.html" class="post-tag">-development</a><a href="/tag/testflight/index.html" class="post-tag">-testflight</a><a href="/tag/xcode/index.html" class="post-tag">-xcode</a></p><div class="post"><h3>The Multiple Builds Dream</h3>
+
+<p>Working in <a href="http://www.memrise.com">Memrise</a> on <a href="http://www.catacademy.com/">CatAcademy</a> I&#39;ve been massively using <a href="https://testflightapp.com">TestFlight</a> to test new features before releasing the next versions of the app. One thing that always annoyed me was the fact that my development version overrode the release one, or that I couldn&#39;t keep a &quot;stable&quot; build and a &quot;development&quot; build on my device at the same time.</p>
+
+<p>After attending the <a href="https://developers.facebook.com/events/mobiledevcon/london/">Facebook Mobile DevCon 2013</a> in London, where the <a href="https://www.youtube.com/watch?feature=player_embedded&amp;v=77aUV6ks4Ks">talk from Alan Cannistraro</a> on how Facebook made their iOS app I realized that having multiple builds of the same app was possible. But how to do it?</p>
+
+<p>I did some research and found <a href="http://blog.chrismiles.info/2011/04/ios-dev-beta-production-builds.html">this post</a>, which had almost all the info I need on how to setup my multiple builds infrastructure. There&#39;s no point in me copy-pasting what&#39;s written there, besides I&#39;m sure 99.9% of you readers already opened the link in a new tab.</p>
+
+<p>The post is pretty old, so here&#39;s an updated screenshot of the Build Settings editor.</p>
+
+<p><a href="http://amokafullofstuff.files.wordpress.com/2013/05/screen-shot-2013-05-29-at-22-05-48.png"><img src="http://amokafullofstuff.files.wordpress.com/2013/05/screen-shot-2013-05-29-at-22-05-48.png?w=300" alt="Screen Shot 2013-05-29 at 22.05.48" width="300" height="187" class="alignnone size-medium wp-image-100" /></a></p>
+<p>If you follow the instructions and run the app on the simulator or on the device, you&#39;ll see the new development app appearing next to the release one, as expected.</p>
+
+<p>This is pretty handy to go around with the two versions of the app and to some user testing with the friends, but guess what? It doesn&#39;t work with TestFlight! But fear not, there are only two other steps to make before reaching the goal.</p>
+
+<h3>Making a Development Archive</h3>
+
+<p>First problem: when we archive the app the Release configuration is used. Changing this option is pretty easy through the &quot;Edit Scheme…&quot; menu, but wait a second! If we change now the Build Configuration for the archive action from Release to Debug, we&#39;ll have to change it back once we&#39;re going to publish on the App Store.
+Better creating a new <a href="http://developer.apple.com/library/ios/#featuredarticles/XcodeConcepts/Concept-Schemes.html" title="Xcode Scheme" target="_blank">Scheme</a> and change the configuration in that one.</p>
+
+<p>&quot;Changing the Scheme every time we want to submit it just as annoying as editing it&quot;. Fair enough. But not really… Switching Scheme requires 2 clicks, while editing it at least 6. :P No, seriously switching Scheme is something we can <strong>easily automate</strong>, using xcodebuild or <a href="https://github.com/facebook/xctool">xctool</a> and a couple of lines in your favourite scripting language.</p>
+
+<h3>Making it work on TestFlight</h3>
+
+<p>All right! Now we&#39;re finally able to archive our development version of the app and upload it on TestFlight, maybe through the TestFlight App which is nice and fast. But if we try to do it this is the result:</p>
+
+<blockquote>
+<p>The provisioning profile is made for distribution builds but your app is built for development. Please select a valid development identity to continue.</p>
+</blockquote>
+<p>Don&#39;t panic! The message gives us a tip already on how to solve the issue, we just need another Provisioning Profile! Select Development when creating the new profile and use the AppID of the &quot;original&quot; app. This last point surprised me, but I think it may have something to do with the sort of hierarchy structure the bundle ids have.</p>
+
+<p>Once your Provisioning Profile is ready update the certificates list in Xcode, through the Organizer window, and proceed to Archive the app. Now when you&#39;ll upload the archive with the TestFlight App the new development certificate will appear.</p>
+
+<p>Here we go!</p>
+
+<h3>Further Steps</h3>
+
+<ul>
+<li>Add other Build Configurations, such as Testing, and other options, for example to have different icons for the different builds.</li>
+<li>Manage the archive operation with xctool.</li>
+<li>Automate even further using the TestFlight Upload APIs.</li>
+</ul>
+</div><div id="paginator"><div><a href="/blog/osx-a-scanner-and-the-drivers-drama"><<&nbsp;OSX, a scanner, and the drivers drama</a></div><div style="text-align: right"><a href="/blog/cocoapods-how-to-create-your-own-pod">CocoaPods - How to create your own Pod&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/cocoapods-how-to-create-your-own-pod">CocoaPods - How to create your own Pod</a></h2><p class="post-meta"><span class="post-date">Mon Jan 21 2013&nbsp;</span><a href="/tag/CocoaPods/index.html" class="post-tag">-CocoaPods</a><a href="/tag/git/index.html" class="post-tag">-git</a><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a></p><div class="post"><p>Like I said in the <a href="http://amokafullofstuff.wordpress.com/2013/01/05/cocoapods/">first part</a> of my exploration of CocoaPods, using this iOS dependencies management is freaking easy, and reading what&#39;s on the homepage is more than enough to get started. Anyway let&#39;s see how we can create our how Pods.</p>
+<p>To learn how to do it I started the development of a little &quot;framework&quot; I called <a href="https://github.com/mokagio/MGCraftman">MGCraftman</a>, where I&#39;ll put some utils methods I sometimes write to speed up UI development when I&#39;m not using Interface Builder. But let&#39;s stop the chitchat and let&#39;s code!</p>
+<p><h3>Step 1 - Code the Library!</h3>
+The first step is to have something to make a pod of, I guess every developer has his own little set of smart methods that make his life easier. Don&#39;t be greedy, share them with the community!</p>
+<p><h3>Step 2 - Tag your pod properly</h3>
+Since we&#39;re gonna work with a dependency manager we need to take care of the version number of our pod.</p>
+<pre><code class="">git <span class="hljs-built_in">tag</span> <span class="hljs-attribute">-a</span> <span class="hljs-number">1.0</span><span class="hljs-number">.0</span> <span class="hljs-attribute">-m</span> <span class="hljs-string">"Tag release 1.0.0"</span>
+</code></pre><p>Take a couple of minutes to read through the <a href="http://semver.org/">Semantic Versioning</a> to learn how to use tagging for version numbers properly and in a way that allows for <a href="https://github.com/CocoaPods/Specs/wiki/Cross-dependencies-resolution-example">resolution of cross-dependencies</a>.</p>
+<p><h3>Step 3 - The podspec</h3>
+Once our project is tagged properly we can create the <code>.podspec</code> file. The extension name explains that it will contain the &quot;specs&quot; of our &quot;pod&quot;.</p>
+<pre><code class="">pod spec <span class="hljs-operator"><span class="hljs-keyword">create</span> Donut</span>
+</code></pre><p>This will generate the <code>Donut.podspec</code> file.</p>
+<p>You can also generate the <code>podspec</code> from a GitHub repo using the GitHub url instead of the name.</p>
+<p><h3>Step 4 - Leave your mark on the podspec</h3>
+If you open the freshly generated <code>Donut.podspec</code> you&#39;ll find a lot of comments explaining the information you need to provide. There are a lot of options, but you don&#39;t need to set them all. You&#39;ll also notice that its nothing more that a Ruby file.</p>
+<p>Here&#39;s how the podspec of my toy framework, looks like.</p>
+<pre><code class="">{<span class="hljs-subst">%</span> highlight objective<span class="hljs-attribute">-c</span> <span class="hljs-subst">%</span>}
+Pod<span class="hljs-tag">::Spec.new</span> <span class="hljs-keyword">do</span> <span class="hljs-subst">|</span>s<span class="hljs-subst">|</span>
+  s<span class="hljs-built_in">.</span>name         <span class="hljs-subst">=</span> <span class="hljs-string">"MGCraftman"</span>
+  s<span class="hljs-built_in">.</span>version      <span class="hljs-subst">=</span> <span class="hljs-string">"0.1.0"</span>
+  s<span class="hljs-built_in">.</span>summary      <span class="hljs-subst">=</span> <span class="hljs-string">"A framework to speedup development when you can't (or don't want to) use Interface Builder."</span>
+  s<span class="hljs-built_in">.</span>homepage     <span class="hljs-subst">=</span> <span class="hljs-string">"https://github.com/mokagio/MGCraftman"</span>
+
+  s<span class="hljs-built_in">.</span>license      <span class="hljs-subst">=</span> { :<span class="hljs-keyword">type</span> <span class="hljs-subst">=&amp;</span><span class="hljs-literal">gt</span>; <span class="hljs-string">'MIT'</span>, :file <span class="hljs-subst">=&amp;</span><span class="hljs-literal">gt</span>; <span class="hljs-string">'LICENSE'</span> }
+
+  s<span class="hljs-built_in">.</span>author       <span class="hljs-subst">=</span> { <span class="hljs-string">"Giovanni Lodi"</span> <span class="hljs-subst">=&amp;</span><span class="hljs-literal">gt</span>; <span class="hljs-string">"mokagio42@gmail.com"</span> }
+
+  s<span class="hljs-built_in">.</span>source       <span class="hljs-subst">=</span> { :git <span class="hljs-subst">=&amp;</span><span class="hljs-literal">gt</span>; <span class="hljs-string">"https://github.com/mokagio/MGCraftman.git"</span>, :<span class="hljs-built_in">tag</span> <span class="hljs-subst">=&amp;</span><span class="hljs-literal">gt</span>; <span class="hljs-string">"0.1.0"</span> }
+  s<span class="hljs-built_in">.</span>source_files <span class="hljs-subst">=</span> <span class="hljs-string">'MGCraftman/*.{h,m}'</span>
+
+  s<span class="hljs-built_in">.</span>platform     <span class="hljs-subst">=</span> :ios
+end
+{<span class="hljs-subst">%</span> endhighlight <span class="hljs-subst">%</span>}
+</code></pre><p><h3>Step 5 - Is my podspec ok?</h3>
+Once your <code>podspec</code> its ready validate it running</p>
+<pre><code class="">pod spec lint Peanut<span class="hljs-preprocessor">.podspec</span>
+</code></pre><p>If everything is fine you&#39;ll read</p>
+<pre><code class="">pod spec lint Peanut.podspec 
+-<span class="ruby">&gt; <span class="hljs-constant">Peanut</span> (<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>)
+</span>Analyzed 1 podspec.
+Peanut.podspec passed validation.
+</code></pre><p>Otherwise <code>pod spec</code> will explain the error or warning, as everything is so simple also fixing the problems will be. Anyway the error report is already formatted in <a href="http://daringfireball.net/projects/markdown/">Markdown</a> so you can copy it and paste it in an issue on the <a href="https://github.com/CocoaPods/CocoaPods/issues/new">CocoaPods Issues page</a>.</p>
+<p><h3>Step 6 - Let your pod fly</h3>
+We&#39;re almost done here. Now to make our pod available to the community, or just to ourselves and feel cool, we have two options. The rookie way is open an issue, but we&#39;ve just coded an iOS library, with it&#39;s own repo on GitHub, and generated the <code>podspec</code> fetching the data from there, so we&#39;re not rookies. The second option is to fork the <a href="https://github.com/CocoaPods/Specs">Specs repo</a>, add our pod, submit the PR and wait.</p>
+<p>I submitted my PR at 8:44 GTM+0 on a Sunday<span style="text-decoration:line-through;">, let&#39;s see how long it takes to merge it</span>. The PR approved and merged in less that 2 hours. That&#39;s what I call efficiency. Also you can ask for push rights, in order to maintain your pod without submitting a pull request every time.</p>
+<p>And here we are. My MGCraftman framework is ready to be imported via CocoaPods, and all the world will be happy to use it, or not.</p>
+
+<p>That&#39;s all folks, happy coding!</p>
+</div><div id="paginator"><div><a href="/blog/multiple-builds-of-the-same-app-and-testflight"><<&nbsp;Multiple builds of the same app and TestFlight</a></div><div style="text-align: right"><a href="/blog/cocoapods">CocoaPods!&nbsp;>></a></div></div></div><div class="post-container"><h2 class="post-title"><a href="/blog/cocoapods">CocoaPods!</a></h2><p class="post-meta"><span class="post-date">Sat Jan 05 2013&nbsp;</span><a href="/tag/CocoaPods/index.html" class="post-tag">-CocoaPods</a><a href="/tag/git/index.html" class="post-tag">-git</a><a href="/tag/iOS/index.html" class="post-tag">-iOS</a><a href="/tag/Objective-C/index.html" class="post-tag">-Objective-C</a></p><div class="post"><h2>description: A brief introduction to CocoaPods, the Objective-C dependencies manager.</h2>
+
+<h2>What is CocoaPods?</h2>
+
+<blockquote>
+  <p>CocoaPods: The best way to manage library dependencies in Objective-C projects.</p>
+</blockquote>
+
+<p>If you&#39;re familiar with Ruby on Rails, it&#39;s the same thing as <a href="http://gembundler.com/">Bundler</a>, or it&#39;s lame copy attempt for Symfony 2, <a href="http://getcomposer.org/">Composer</a>.</p>
+
+<p>If you&#39;re not, and you haven&#39;t sorted it out from the quote above, CocoaPods is a tool that&#39;s let us manage our libraries and their dependencies in our Objective-C projects. This means:</p>
+
+<ol>
+<li>No more wasted time downloading all the libraries the one we want to use depends on.</li>
+<li>Smart and safe version management, specially when we&#39;re working on a project with other people, which is 90% of the time.</li>
+</ol>
+
+<p>To <em>&quot;get my hands dirty&quot;</em> with CocoaPods I made this little project called <a href="https://github.com/mokagio/justninegags">JustNineGags</a>, feel free to check it out on GitHub.</p></p>
+
+<h2>Why should I use it?</h2>
+
+<p>Because it&#39;s awesome! It makes development faster and easier, and also safer! It easier to work in teams and keep the libraries versions even. Should I go on? Ok! Just think about this: you won&#39;t download and move in your project a library anymore, <code>pod</code> will do it all for you!</p>
+
+<h2>Installing CocoaPods</h2>
+
+<p>Installing CocoaPods is as simple as installing all the other Ruby Gems, I shouldn&#39;t even writing this, as what&#39;s written in the <a href="http://cocoapods.org/#install">install section</a> is more than enough, anyway:</p>
+
+<div class="highlight"><pre lang="">gem install cocoapods
+</pre></div>
+
+<p>Once the installation is completed run:</p>
+
+<div class="highlight"><pre lang="">pod setup
+</pre></div>
+
+<p>This will, guess what, setup everything CocoaPods needs on your system. You should see an output like this:</p>
+
+<div class="highlight"><pre lang="">Setting up CocoaPods master repo
+Cloning spec repo <code>master&#39; from</code><a href='https://github.com/CocoaPods/Specs.git'>https://github.com/CocoaPods/Specs.git</a>&#39; (branch `master&#39;)
+Setup completed (read-only access)
+</pre></div>
+
+<p>Done! :)</p>
+
+<p><em>You should avoid using <code>sudo</code> otherwise everything else you&#39;ll do with <code>pod</code> will need to use <code>sudo</code> as well. And this mean that the folders and file that are gonna be created will be owend by <code>root</code> instead that by you.</em></p>
+
+<h2>Using CocoaPods</h2>
+
+<p>Again, everything written on the <a href="http://cocoapods.org/#get_started">website</a> is pretty straightforward.</p>
+
+<p>Go in the root folder of your Objective-C project and create a file named <code>Podfile</code>, with whatever editor you like. We&#39;ll use this file to list all the libraries, <em>pods</em>, we need in the project. The JustNineGags <code>Podfile</code> content is:</p>
+
+<pre><code>
+platform :ios
+pod 'MBProgressHUD', '~> 0.5'
+pod 'Reachability',  '~> 3.1.0'
+</code></pre>
+
+<h3>Adding a Pod</h3>
+
+<p>As you can see adding a Pod is really easy, just go on <a href="http://cocoapods.org">CocoaPods website</a>, look for the it, and then add it to the <code>Podfile</code> using it&#39;s name and the version you need.</p>
+
+<h3>Installing the Pods</h3>
+
+<p>Right now we&#39;ve told CocoaPods the Pods we need but they aren&#39;t yet in out project. So let&#39;s run</p>
+
+<div class="highlight"><pre lang="">pod install
+</pre></div>
+
+<p>This will download all the libraries we&#39;ve asked for, and all their dependencies. Sweet!</p>
+
+<p>The first time we run <code>pod install</code> something else will happen, a <code>Pods/</code> folder, a <code>Podfile.lock</code>, and a <code>YourProjectName.xcworkspace</code> will be created.</p>
+
+<p><strong>Important!</strong> From now on remember to open your project through the <code>YourProjectName.xcworkspace</code> file, otherwise the pods won&#39;t be loaded by Xcode.</p>
+
+<p>That&#39;s all folks! :)</p>
+
+<h3>What should we track?</h3>
+
+<p>Using CocoaPods adds some files and folders to our project, which of those should we track in our repo, and which should be left aside, adding them to the <code>.gitignore</code>? That of course assuming you&#39;re using git, and you definitely should. Let&#39;s have a look at the new stuff:</p>
+
+<ul>
+<li><code>Podfile</code>, we definitely <b>need</b> this one, as all the pods we need are listed in it.</li>
+<li><code>Podfile.lock</code>, as for all the other library management systems, we <b>need</b> this one too, because it&#39;s used to assure all the developers are using the same versions of the pods and their dependencies.</li>
+<li><code>Pods/</code>, we <b>don&#39;t need</b> to track this folder, it&#39;s created by <code>pod install</code>, and all it&#39;s content is downloaded for us from other repos.</li>
+<li><code>YourProjectName.xcworkspace</code>, we <b>don&#39;t need</b> this one either, because it&#39;s generated by <code>pod install</code> too.</li>
+</ul>
+
+<h2>What&#39;s coming next?</h2>
+
+<p>How to setup our own pods. I&#39;ll probably write a little and simple Category to add other colors to the <code>UIColor</code> factories, stay tuned!</p>
+
+<hr />
+
+<h2>Update 2013-01-06</h2>
+
+<p>To implement HTTP requests in <a href="https://github.com/mokagio/justninegags">JustNineGags</a> I used <code><a href="https://github.com/nfarina/webrequest">SMWebRequest</a></code> because I&#39;m too lazy to write everything by myself. <code>SMWebRequest</code> wasn&#39;t a Pod yet so I opened an <a href="https://github.com/nfarina/webrequest/issues/7">issue</a> asking good guy <a href="https://twitter.com/nfarina">nfarina</a> to add it. In less than 12 hours the Pod was added! :D</p></div><div id="paginator"><div><a href="/blog/cocoapods-how-to-create-your-own-pod"><<&nbsp;CocoaPods - How to create your own Pod</a></div></div></div></div><div class="col-12 footer">made with &hearts; by mokagio since 2013 
 &nbsp;- twitter:&nbsp;<a href="https://twitter.com/mokagio">@mokagio</a>&nbsp;- github:&nbsp;<a href="https://github.com/mokagio">mokagio</a></div></div></div></body></html>
