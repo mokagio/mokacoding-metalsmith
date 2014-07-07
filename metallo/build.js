@@ -48,11 +48,9 @@ metalsmith(__dirname)
           post.date = new Date(date);
         }
 
-        var slug = post.slug;
-        if (!slug) {
-          slug = name.slice(11, -3);
-          post.slug = slug;
-        }
+        // set post slug based on file name
+        var slug = name.slice(11, -3);
+        post.slug = slug;
 
         // set tags to empty array if tags are missing form post
         // (this avoids crashes in the templete)

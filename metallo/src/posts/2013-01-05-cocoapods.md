@@ -1,6 +1,12 @@
-<hr />
-
-<p>date: 2013-01-05<br />title: CocoaPods!<br />tags:<br />- CocoaPods<br />- git<br />- iOS<br />- Objective-C<br />slug: cocoapods</p>
+---
+date: 2013-01-05
+title: CocoaPods!
+tags:
+- CocoaPods
+- git
+- iOS
+- Objective-C
+---
 
 <h2>description: A brief introduction to CocoaPods, the Objective-C dependencies manager.</h2>
 
